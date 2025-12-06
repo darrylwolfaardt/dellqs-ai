@@ -1,0 +1,298 @@
+DELLQS-AI,,,
+,,,
+Measuring  List - New Build,,,
+,,,
+FOUNDATIONS,,,
+,Clear site DQSRule Measure 2m beyond perimeter of building,,m2
+,Strip topsoil DQSRule measure 1m beyond perimeterof building,,m2
+,"Excavate for surface trenches, holes DQSRule take strip footing excavation 700mm wide x 1500mm deep",,m3
+,Risk of collapse DQSRule Take area of both sides of excavation,,m2
+,Compaction DQSRule area of bottom of excavation for surface trenches,,m2
+,Soil poisoning to trench excavations DQSRule measure bottom area + area of both sides of excavation,,m2
+,Backfilling DQSRule Take volume of excavation less (volume of brickwork in foundations and volume of concrete in foundations),,m3
+,Cart away DQSRulee of excated volume,,m3
+,Compaction tests DQSRule area of bottom of excavation,,No
+,Soil material tests DQSRule take as one per 10m of footing excavation,,No
+,Mass concrete footings DQSRule Measure 700 x 250mm deep x length of footings,,m3
+,"Reinforced concrete bases, ground beams",,m3
+,"Formwork to sides of ground beams, bases",,m2
+,Reinforcement DQSRule take as 100kg per m3 of concrete,,t
+,"Brickwork in fndns DQRule Take as one brick wall , mesaure as depth of excavation - 250mm thick concrete + 100mm thick surface bed",,m2
+,Brickforce DQSRule take as 2.94m per m2 of brickwork,,m
+,Exra over ordinary brickwork for facings in fndns,,m2
+,,,
+REINFORCED CONCRETE STRUCTURE,,,
+,Columns,,m3
+,Beams,,m3
+,Slabs,,m3
+,Formwork DQSRule take as both sides of excavation,,m2
+,Reinforcement DQSRule Take as 100kg/m3 of concrete,,tonnes
+,Powerfloat DQRule Measure top area of floor,,m2
+,Broomswept finish to concrete DQRule Measure top area of floor,,m2
+,,,
+BRICKWORK STRUCTURE,,,
+,DPC Dampproof course DQSRule Length of trench excavation x 200mm wide],,m2
+,Brickwork to walls,,m2
+,Brick reinforcement DQSRule Taken as 2.94m per m2 of brickwork,,m2
+,Airbricks,,No
+,Exra over ordinary brickwork for facings DQRule Measure surface of brickwork over walls and halfway into reveals],,m2
+,"Hoop iron ties, truss tiesd DQSRule 2 per timber roof truss",,
+,,,
+SURFACE BED CONSTRUCTION,,,
+,Filling beneath floors DQSRule Measure over area of building,,m3
+,Compaction,,m2
+,Soil poisoning beneath surface beds,,m2
+,50mm Thick Sandbed,,m2
+,Dampproof membrane,,m2
+,Concrete in surface beds DBRule Floor area x 0.10m,,m3
+,Formwork to edges not exc 300mm high DBRule Taken at doorways only,,m
+,Reinforcing mesh to surface beds DQSRule Area of floor,,m2
+,Sawcuts,,m
+,Movement joints,,m
+,"Float top surfaces, to falls and patterns  DQSRule Area of floor",,m2
+,Powerfloat  DQSRule Area of floor,,m2
+,,,
+ROOFS AND RAINWATER DISPOSAL,,,
+,Wallplates,,m
+,Tie downs,,No
+,Trusses,,No
+,Cross bracing DBRules Measure as Width of building x 3,,m
+,Longitudinal bracing DBRules Times length of building  1.4 for raking length,,m
+,Purlins,,m
+,Dakseal,,m2
+,Battens,,m2
+,Tilting fillet,,m
+,Hurricane clips DbRules One ver intersection of truss and purlin\,,No
+,Roof tiles ,,m2
+,Gutters,,m
+,Outlets DQSRules One outlet per downpipe,,No
+,Angles  DQSRules Take one per 90degree corner,,No
+,Stopped ends,,No
+,Downpipes,,m
+,Eaves projections DQSRule One per downpipe,,No
+,Bends  DQSRule Two per downpipe,,No
+,Shoes DQSRule One per downpipe,,No
+,Precast rainwater channel DQSRule One per downpipe,,m
+,,,
+EXTERNAL FINISHES,,,
+,Exra over ordinary brickwork for facings,,m2
+,Beamfilling,,
+,Plaster,,m2
+,Paint to walls,,m2
+,,,
+INTERNAL FLOOR FINISHES,,,
+,Grano,,m2
+,Screed,,m2
+,Carpet,,m2
+,Tiles,,m2
+,Skirtings,,m
+,Varnish on skirtings not exceeding 300mm girth,,m
+,,,
+INTERNAL WALL FINISHES,,,
+,Plaster,,m2
+,Airbricks DQSRule One per room,,No
+,Paint on walls,,m2
+,Tiling,,m2
+,Dado,,m2
+,,,
+CEILINGS,,,
+,Brandering,,m2
+,Insulation,,m2
+,Ceiling boarding,,m2
+,Suspended ceilings,,m2
+,Plaster,,m2
+,Paint on ceilings,,m2
+,Cornices,,m
+,,,
+DOORS,,,
+,Frame,,No
+,Door,,No
+,"Glass to fanlight, sidelight",,m2
+,Beading to glass,,m
+,Paint on door,,m2
+,Paint on frame,,m2
+,Ironmongery,,No
+,Architrave,,m
+,Silicone seal around frame,,m
+,,,
+DOOR ADJUSTMENTS,,,
+,Lintel,,m
+,Brickforce above lintels,,
+,Ddt brick walls,,m2
+,Ddt brick reinforcement,,m
+,Close cavities all around,,m
+,Ddt external plaster,,m2
+,Ddt external finish to walls,,m2
+,Ddt internal plaster,,m2
+,Ddt internal finish to walls,,m2
+,External cill,,m
+,Internal cill,,m
+,External facings/plaster to reveals,,m2
+,External finish to reveals,,m2
+,Internal finish to reveals,,m2
+,Ddt Tiling to walls,,m2
+,Tile reveals,,m
+,Trim to tiling edges,,m
+,Screed at threshold,,m2
+,Brass/alum trim at threshold,,m
+,,,
+WINDOWS,,,
+,Window,,No
+,Glazing,,m2
+,Beads,,m
+,Paint on window,,m2
+,Silicone seal around window,,m
+,,,
+WINDOW ADJUSTMENTS,,,
+,Lintel,,m
+,Brickforce over lintels,,
+,Ddt brick walls,,m2
+,Ddt brick reinforcement,,m
+,Close cavities all around,,m
+,Ddt external plaster,,m2
+,Ddt external finish to walls,,m2
+,Ddt internal plaster,,m2
+,Ddt internal finish to walls,,m2
+,External cill,,m
+,Internal cill,,m
+,DPC beneath cill,,m2
+,External facings/plaster to reveals,,m2
+,External finish to reveals,,m2
+,Internal finish to reveals,,m2
+,Ddt Tiling to walls,,m2
+,Tile reveals,,m
+,Trim to tiling edges,,m
+,,,
+PLAIN OPENINGS,,,
+,Plain opening,,
+,,,
+PLAIN OPENING ADJUSTMETNS,,,
+,Lintel,,m
+,Brickforce over lintels,,
+,Ddt brick walls,,m2
+,Ddt brick reinforcement,,m
+,Close cavities all around,,m
+,Ddt external plaster,,m2
+,Ddt external finish to walls,,m2
+,Ddt internal plaster,,m2
+,Ddt internal finish to walls,,m2
+,External facings/plaster to reveals,,m2
+,External finish to reveals,,m2
+,Internal finish to reveals,,m2
+,,,
+JOINERY FITTINGS,,,
+,Joinery,,No
+,,,
+SUNDRIES,,,
+,Mirrors,,No
+,Toilet roll holders,,No
+,Stainless steel grab rails,,No
+,,,
+PLUMBING AND DRAINAGE,,,
+,WATER SUPPLY,,
+,5000 Litre Water Tank,,
+,Tank,,No
+,Tank Stand,,No
+,To connect water supply from bottom of tank:,,
+,,Class 10 HDPE,m
+,,40mm HDPE male nipple,No
+,,"1 1/2"" plastic open/close valve",No
+,,"40 x 1 1/2"" male adaptor",No
+,,40mm or other size HDPE pipe ,No
+,To connect tap only,,
+,,40mm nipple to tank,No
+,,"1"" plastic open/close valve",No
+,,"25mm x 1"" male adapter",No
+,,22mm Copper Class 1 Pipe,No
+,,20mm Heavy duty brass hose bibtap,No
+,Tank overflow:,,
+,,40mm Nylon Elbow male,No
+,,Push on HDPE light duty pipe,m
+,,,
+,SANITARY FITTINGS,,
+,,WC,
+,,Wash hand basin,
+,,Bath,
+,,Shower,
+,,Urinal,
+,,Sink,
+,,,
+,SANITARY PLUMBING,,
+,,,
+,SOIL DRAINAGE,,
+,,,
+,FIRE SERVICES,,
+,Fire Extinguishers,,
+,,4.5Kg DCP (dry chemical powder) SABS fire extinguisher,
+,,9Kg DCP (dry chemical powder) (Safequip Code M30) SABS fire extinguisher,
+,Backing boards,,
+,,Backing board Saligna 450mm long for 4.5kg extinguisher,
+,,600mm Long for 9kg extinguisher,
+,Fire Hose Reels,,
+,,Step down to 38mm galvanised piping,
+,,38x25mm Reducer,
+,,25mm galvanised pipe and fittings,
+,Fire hose reel SABS certified,,
+,,30m Hose  to SANS1086,
+,,Wall mounting bracket,
+,,Hose guide,
+,,Durable nozzle,
+,,Stopcock,
+,,Instantneous adapter (includes male and female fittings),
+,"Double door hose reel cabinet, size 850x250x850mm, with closed back",,
+,,,
+,Fire Hydrant,,
+,,HDPE to 80mm galvanised pipe adaptor,
+,,80mm Diameter galvanised pipe,
+,,80mm Tamper proof hydrant valve with handwheel,
+,,Woodlands WHS-80 Right Angle Valve and Single Lug Outlet,
+,,Concrete hydrant,
+,,,
+SUNDRY METAL WORK ITEMS,,,
+,Balustrades,,m
+,,,
+ETERNAL WORKS,,,
+,Hoardings,,m
+,Platforms,,m3
+,Fencing and gates,,m
+,Roads ,,m2
+,Paving,,m2
+,Aprons,,m2
+,Stormwater drainage,,m
+,Water supply reticulation,,m
+,Fire supply reticulation,,m
+,Soil drainage reticulation,,m
+,,,
+BUILDERS WORK TO SPECIALIST INSTALLATIONS,,,
+,Chasing for electrical conduits ,,m
+,Building in distribution board,,No
+,50mm Sleeves through walls,,No
+,100mm Sleeves through walls,,No
+,,,
+ELECTRICAL INSTALLATION,,,
+,Conduits,,m
+,Wiring,,m
+,Power sockets,,No
+,Light switches,,No
+,Light fittings,,No
+,Distribution board,,No
+,Breakers,,No
+,Cable from power supply pole to dist board,,m
+,,,
+PRELIMINARIES,,,
+,Preliminaries,,No
+,,,
+,,,
+HEALTH AND SAFETY ,,,
+H&S REQUIREMENTS,,,
+,STAGE 1 - DESIGN,,
+,Baseline Risk Assessment by H&S Agent,,
+,Risk Register set up right at design start,,
+,,,
+,Costs of H&S,,
+1,Type of building - risks,,
+2,Client insurance for construction method,,
+3,Liability Insurance for design team incl QS,,
+,,,
+,,,
+,,,
