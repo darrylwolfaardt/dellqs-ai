@@ -1,0 +1,29 @@
+{
+  "category": "concrete",
+  "region": "gauteng",
+  "effective_date": "2024-12-01",
+  "currency": "ZAR",
+  "source": "supplier_average",
+  "rates": {
+    "ready_mix_25mpa": {
+      "unit": "m3",
+      "rate": 1850.00,
+      "notes": "Delivered, excl. pump"
+    },
+    "ready_mix_30mpa": {
+      "unit": "m3",
+      "rate": 1950.00,
+      "notes": "Delivered, excl. pump"
+    },
+    "ready_mix_35mpa": {
+      "unit": "m3",
+      "rate": 2100.00,
+      "notes": "Delivered, excl. pump"
+    },
+    "pump_hire": {
+      "unit": "m3",
+      "rate": 180.00,
+      "notes": "Boom pump, min 40m3"
+    }
+  }
+}

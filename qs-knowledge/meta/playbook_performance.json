@@ -1,0 +1,29 @@
+{
+  "analytics_version": "1.0.0",
+  "last_updated": "2024-12-10",
+  "playbooks": {
+    "residential-new-build": {
+      "usage_count": 0,
+      "success_rate": null,
+      "avg_completion_time": null,
+      "feedback_score": null
+    },
+    "commercial-new-build": {
+      "usage_count": 0,
+      "success_rate": null,
+      "avg_completion_time": null,
+      "feedback_score": null
+    },
+    "industrial-new-build": {
+      "usage_count": 0,
+      "success_rate": null,
+      "avg_completion_time": null,
+      "feedback_score": null
+    }
+  },
+  "summary": {
+    "total_playbook_runs": 0,
+    "active_playbooks": 9,
+    "archived_playbooks": 1
+  }
+}

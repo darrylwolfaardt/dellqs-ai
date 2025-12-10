@@ -1,0 +1,36 @@
+# Archived: Residential New Build Playbook
+# Version: 2024.06.1 (Archived)
+
+playbook_id: residential-new-build-v2024.06.1
+version: "2024.06.1"
+name: Residential New Build (Archived)
+description: Archived version of residential new build playbook
+project_type: new-build
+sector: residential
+status: archived
+
+created_date: 2024-06-01
+last_updated: 2024-06-30
+archived_date: 2024-12-10
+author: QS Team
+
+phases:
+  - phase_id: feasibility
+    name: Feasibility & Planning
+    tasks: []
+
+  - phase_id: design
+    name: Design Development
+    tasks: []
+
+  - phase_id: procurement
+    name: Procurement
+    tasks: []
+
+  - phase_id: construction
+    name: Construction
+    tasks: []
+
+  - phase_id: completion
+    name: Completion & Handover
+    tasks: []

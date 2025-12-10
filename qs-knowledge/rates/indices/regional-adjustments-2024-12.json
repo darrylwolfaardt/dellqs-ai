@@ -1,0 +1,16 @@
+{
+  "effective_date": "2024-12-01",
+  "baseline_region": "gauteng",
+  "adjustments": {
+    "gauteng": 1.00,
+    "western_cape": 1.05,
+    "kwazulu_natal": 0.98,
+    "eastern_cape": 0.95,
+    "free_state": 0.92,
+    "mpumalanga": 0.97,
+    "limpopo": 0.93,
+    "north_west": 0.94,
+    "northern_cape": 0.96
+  },
+  "notes": "Factors reflect material transport and labour availability differentials"
+}

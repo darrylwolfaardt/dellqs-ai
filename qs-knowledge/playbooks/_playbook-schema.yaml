@@ -1,0 +1,49 @@
+# Playbook Validation Schema
+# Version: 1.0.0
+
+schema_version: "1.0.0"
+description: "Schema for validating QS playbook files"
+
+required_fields:
+  - playbook_id
+  - version
+  - name
+  - description
+  - project_type
+  - created_date
+  - last_updated
+  - phases
+
+field_definitions:
+  playbook_id:
+    type: string
+    pattern: "^[a-z]+-[a-z]+-v[0-9]+\\.[0-9]+$"
+
+  version:
+    type: string
+    pattern: "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+
+  name:
+    type: string
+    max_length: 100
+
+  description:
+    type: string
+    max_length: 500
+
+  project_type:
+    type: enum
+    values:
+      - new-build
+      - refurbishment
+      - fit-out
+      - alterations
+
+  phases:
+    type: array
+    items:
+      type: object
+      required:
+        - phase_id
+        - name
+        - tasks

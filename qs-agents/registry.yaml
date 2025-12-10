@@ -1,0 +1,58 @@
+# QS Agent Registry
+# Central index of all agents in the ecosystem
+
+version: "1.0.0"
+last_updated: "2024-12-10"
+
+autonomy_levels:
+  level_1_suggest:
+    description: Agent suggests, human decides
+    requires_approval: true
+
+  level_2_confirm:
+    description: Agent acts, human confirms before external output
+    requires_approval: true
+
+  level_3_notify:
+    description: Agent acts autonomously, notifies human
+    requires_approval: false
+
+agents:
+  core:
+    orchestrator:
+      path: core/orchestrator.agent.yaml
+      status: active
+      entry_point: true
+
+    intake:
+      path: core/intake-analyst.agent.yaml
+      status: active
+
+    context_enricher:
+      path: core/context-enricher.agent.yaml
+      status: pending
+
+    measure:
+      path: core/measure.agent.yaml
+      status: active
+
+    cost:
+      path: core/cost.agent.yaml
+      status: active
+
+    qa:
+      path: core/qa.agent.yaml
+      status: active
+
+    output:
+      path: core/output.agent.yaml
+      status: active
+
+  background:
+    standards_keeper:
+      path: background/standards-keeper.agent.yaml
+      status: active
+
+    improvement:
+      path: background/improvement.agent.yaml
+      status: active

@@ -1,0 +1,39 @@
+{
+  "category": "commercial",
+  "year": 2024,
+  "currency": "ZAR",
+  "region": "gauteng",
+  "benchmarks": {
+    "retail_shell": {
+      "range_min": 8000,
+      "range_max": 12000,
+      "typical": 10000,
+      "unit": "m2_gla"
+    },
+    "retail_fitted": {
+      "range_min": 14000,
+      "range_max": 22000,
+      "typical": 18000,
+      "unit": "m2_gla"
+    },
+    "office_grade_b": {
+      "range_min": 16000,
+      "range_max": 22000,
+      "typical": 19000,
+      "unit": "m2_gla"
+    },
+    "office_grade_a": {
+      "range_min": 22000,
+      "range_max": 32000,
+      "typical": 27000,
+      "unit": "m2_gla"
+    },
+    "office_premium": {
+      "range_min": 32000,
+      "range_max": 45000,
+      "typical": 38000,
+      "unit": "m2_gla"
+    }
+  },
+  "notes": "Excludes land, professional fees, tenant fit-out"
+}

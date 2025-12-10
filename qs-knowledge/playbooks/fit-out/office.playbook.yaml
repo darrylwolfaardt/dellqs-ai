@@ -1,0 +1,34 @@
+# Office Fit-Out Playbook
+# Version: 1.0.0
+
+playbook_id: office-fit-out-v1.0
+version: "1.0.0"
+name: Office Fit-Out
+description: Standard playbook for office fit-out projects
+project_type: fit-out
+sector: office
+
+created_date: 2024-12-10
+last_updated: 2024-12-10
+author: QS Team
+
+phases:
+  - phase_id: brief
+    name: Brief & Requirements
+    tasks: []
+
+  - phase_id: design
+    name: Design Development
+    tasks: []
+
+  - phase_id: procurement
+    name: Procurement
+    tasks: []
+
+  - phase_id: fit-out
+    name: Fit-Out Works
+    tasks: []
+
+  - phase_id: completion
+    name: Completion & Handover
+    tasks: []

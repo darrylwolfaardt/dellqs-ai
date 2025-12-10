@@ -1,0 +1,305 @@
+playbook:
+  metadata:
+    id: new-build-residential
+    version: 2024.12.1
+    author: original_expert  # Your brother-in-law
+    last_reviewed: 2024-12-10
+    applicable_to:
+      project_types: [new_build]
+      building_types: [residential, single_dwelling, townhouse]
+      regions: [za, uk]  # Works for both markets
+    
+  description: |
+    Measurement sequence for new residential construction following
+    builder's construction logic. Proceeds from ground up, outside in,
+    structure before finishes.
+    
+  principles:
+    - Measure in construction sequence
+    - Complete each trade before moving to next
+    - Resolve dependencies before dependent items
+    - Group by subcontractor logic where practical
+    
+  pre_checks:
+    - confirm_drawing_set_complete
+    - identify_specification_documents
+    - establish_measurement_units (metric/imperial)
+    - note_drawing_scales
+    
+  sequence:
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 1: SITE & SUBSTRUCTURE
+    # Builder: Clear site, excavate, lay foundations
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: site_establishment
+      sequence_number: 1
+      builder_logic: "First on site, set up before any construction"
+      steps:
+        - step: site_clearance
+          measure: [area_to_clear, trees_to_remove, demolition_items]
+          drawings: [site_plan]
+          notes: "Include access roads, storage areas"
+          
+        - step: earthworks
+          measure: [bulk_excavation_volume, cut_and_fill, spoil_removal]
+          drawings: [site_plan, sections]
+          dependencies: [site_clearance]
+          calculation_notes: |
+            Calculate from site sections. Allow for bulking factor 1.25.
+            Note: Topsoil strip usually 150-225mm, stockpile for reuse.
+            
+    - phase: foundations
+      sequence_number: 2
+      builder_logic: "Foundation contractor arrives after earthworks"
+      steps:
+        - step: foundation_excavation
+          measure: [trench_length, trench_depth, trench_width]
+          drawings: [foundation_plan, sections]
+          dependencies: [earthworks]
+          calculation_notes: |
+            Measure from foundation plan. Working space 150mm each side
+            if formwork required. Note soil type from geotech.
+            
+        - step: concrete_foundations
+          measure: [strip_footing_volume, pad_volume, blinding_area]
+          drawings: [foundation_plan, foundation_details]
+          dependencies: [foundation_excavation]
+          rates_category: concrete_substructure
+          
+        - step: foundation_walls
+          measure: [masonry_below_dpc, dpc_length, weepholes]
+          drawings: [foundation_plan, sections]
+          dependencies: [concrete_foundations]
+          
+        - step: floor_construction
+          measure: [hardcore_area, dpm_area, slab_volume, mesh_area]
+          drawings: [foundation_plan, floor_details]
+          dependencies: [foundation_walls]
+          
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 2: SUPERSTRUCTURE
+    # Builder: Walls up, roof on - building is "closed"
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: external_walls
+      sequence_number: 3
+      builder_logic: "Bricklayers start once slab is cured"
+      steps:
+        - step: external_masonry
+          measure: [wall_area_by_type, openings_to_deduct, fair_face_area]
+          drawings: [floor_plans, elevations]
+          dependencies: [floor_construction]
+          calculation_notes: |
+            Measure each wall type separately (cavity, solid, etc).
+            Deduct openings > 0.5m². Note reveals, sills, lintels.
+            
+        - step: structural_openings
+          measure: [lintels_by_span, cavity_closers, dpc_to_openings]
+          drawings: [elevations, window_schedule, door_schedule]
+          dependencies: [external_masonry]
+          
+    - phase: upper_floors
+      sequence_number: 4
+      builder_logic: "Floor structure before upper walls"
+      conditional: has_upper_floors
+      steps:
+        - step: floor_structure
+          measure: [beam_lengths, block_infill_area, structural_topping]
+          drawings: [first_floor_plan, structural_details]
+          dependencies: [external_walls]
+          
+        # ... continues for upper level walls
+        
+    - phase: roof_structure
+      sequence_number: 5
+      builder_logic: "Roof trusses once walls at plate height"
+      steps:
+        - step: roof_carpentry
+          measure: [truss_count_by_type, wall_plates, bracing]
+          drawings: [roof_plan, truss_details, sections]
+          dependencies: [external_walls, upper_floors]
+          calculation_notes: |
+            Count trusses from roof plan. Standard vs girder trusses.
+            Include all bracing per engineer's spec.
+            
+        - step: roof_covering
+          measure: [roof_area_by_pitch, ridges, hips, valleys, verges]
+          drawings: [roof_plan, elevations]
+          dependencies: [roof_carpentry]
+          calculation_notes: |
+            Measure true area (plan × pitch factor). Separate tile types.
+            
+        - step: rainwater_goods
+          measure: [gutter_length, downpipe_count, accessories]
+          drawings: [roof_plan, elevations]
+          dependencies: [roof_covering]
+          
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 3: BUILDING ENVELOPE
+    # Builder: Make weathertight before internal work
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: external_joinery
+      sequence_number: 6
+      builder_logic: "Windows and doors close the envelope"
+      steps:
+        - step: windows
+          measure: [window_schedule_quantities, types, sizes]
+          drawings: [window_schedule, elevations]
+          dependencies: [external_walls, roof_structure]
+          
+        - step: external_doors
+          measure: [door_schedule_quantities, types, frames, ironmongery]
+          drawings: [door_schedule, floor_plans]
+          dependencies: [external_walls]
+          
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 4: FIRST FIX
+    # Builder: Services roughed in before walls closed up
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: services_first_fix
+      sequence_number: 7
+      builder_logic: "MEP rough-in while walls accessible"
+      steps:
+        - step: plumbing_first_fix
+          measure: [pipe_runs_by_diameter, connection_points, tanks]
+          drawings: [plumbing_layout, elevations]
+          dependencies: [roof_structure]
+          
+        - step: electrical_first_fix
+          measure: [circuit_count, points_count_by_type, distribution_boards]
+          drawings: [electrical_layout]
+          dependencies: [roof_structure]
+          
+        - step: hvac_first_fix
+          measure: [duct_runs, diffuser_count, equipment_units]
+          drawings: [hvac_layout]
+          dependencies: [roof_structure]
+          conditional: has_hvac
+          
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 5: INTERNAL CONSTRUCTION
+    # Builder: Partitions after first fix, before finishes
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: internal_walls
+      sequence_number: 8
+      builder_logic: "Internal partitions after services roughed in"
+      steps:
+        - step: internal_masonry
+          measure: [partition_area_by_type, openings_to_deduct]
+          drawings: [floor_plans]
+          dependencies: [services_first_fix]
+          
+        - step: internal_door_frames
+          measure: [frame_count_by_type, borrowed_lights]
+          drawings: [door_schedule, floor_plans]
+          dependencies: [internal_masonry]
+          
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 6: FINISHES (Outside In, Top Down)
+    # Builder: External finishes while internal continues
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: external_finishes
+      sequence_number: 9
+      builder_logic: "Scaffolding still up from roof work"
+      steps:
+        - step: external_plastering
+          measure: [render_area_by_type, dubbing_allowance]
+          drawings: [elevations, specifications]
+          dependencies: [external_joinery]
+          
+        - step: external_painting
+          measure: [paint_area_by_type, preparation_allowance]
+          drawings: [elevations, paint_schedule]
+          dependencies: [external_plastering]
+          
+    - phase: internal_finishes
+      sequence_number: 10
+      builder_logic: "Top down - ceilings, walls, floors"
+      steps:
+        - step: ceilings
+          measure: [ceiling_area_by_type, cornices, access_panels]
+          drawings: [floor_plans, reflected_ceiling_plan]
+          dependencies: [internal_walls, services_first_fix]
+          calculation_notes: |
+            Measure per room. Group by ceiling type.
+            
+        - step: internal_wall_finishes
+          measure: [plaster_area, skim_area, tile_area_by_room]
+          drawings: [floor_plans, room_finishes_schedule]
+          dependencies: [ceilings]
+          
+        - step: floor_finishes
+          measure: [screed_area, tile_area, carpet_area, timber_area]
+          drawings: [floor_plans, room_finishes_schedule]
+          dependencies: [internal_wall_finishes]
+          calculation_notes: |
+            Floor finishes last - protects from construction traffic.
+            
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 7: SECOND FIX
+    # Builder: Fittings and fixtures after finishes
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: second_fix
+      sequence_number: 11
+      builder_logic: "Final fittings after walls/floors finished"
+      steps:
+        - step: internal_doors
+          measure: [door_leaves_by_type, ironmongery_sets]
+          drawings: [door_schedule]
+          dependencies: [floor_finishes]
+          
+        - step: joinery_fittings
+          measure: [kitchen_units, vanity_units, wardrobes]
+          drawings: [kitchen_layout, joinery_details]
+          dependencies: [floor_finishes]
+          
+        - step: plumbing_second_fix
+          measure: [sanitary_fittings_by_type, taps, accessories]
+          drawings: [plumbing_layout, sanitary_schedule]
+          dependencies: [floor_finishes]
+          
+        - step: electrical_second_fix
+          measure: [fittings_by_type, switches, sockets, fixtures]
+          drawings: [electrical_layout, lighting_schedule]
+          dependencies: [floor_finishes]
+          
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 8: EXTERNAL WORKS
+    # Builder: Site works after building complete
+    # ══════════════════════════════════════════════════════════════
+    
+    - phase: external_works
+      sequence_number: 12
+      builder_logic: "External works last - heavy traffic finished"
+      steps:
+        - step: drainage
+          measure: [pipe_lengths_by_diameter, manholes, connections]
+          drawings: [drainage_layout, manhole_schedule]
+          dependencies: [plumbing_first_fix]
+          
+        - step: paving
+          measure: [paving_area_by_type, edging, sub_base]
+          drawings: [site_plan, paving_layout]
+          dependencies: [drainage]
+          
+        - step: landscaping
+          measure: [soft_landscaping_area, planting_schedule, irrigation]
+          drawings: [landscape_plan]
+          dependencies: [paving]
+          
+        - step: boundary_works
+          measure: [walling_length_by_type, gates, fencing]
+          drawings: [site_plan, boundary_details]
+          dependencies: [paving]
+          
+  post_checks:
+    - verify_all_phases_complete
+    - cross_check_totals_against_gfa
+    - confirm_no_orphan_items
+    - validate_dependency_chain

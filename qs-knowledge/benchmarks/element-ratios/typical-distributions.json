@@ -1,0 +1,32 @@
+{
+  "description": "Typical elemental cost distributions by building type",
+  "source": "historical_project_analysis",
+  "last_updated": "2024-12-01",
+  "distributions": {
+    "residential_standard": {
+      "substructure": { "min": 0.08, "typical": 0.10, "max": 0.14 },
+      "superstructure": { "min": 0.22, "typical": 0.26, "max": 0.30 },
+      "external_envelope": { "min": 0.15, "typical": 0.18, "max": 0.22 },
+      "internal_finishes": { "min": 0.12, "typical": 0.15, "max": 0.18 },
+      "services": { "min": 0.18, "typical": 0.22, "max": 0.28 },
+      "external_works": { "min": 0.05, "typical": 0.09, "max": 0.12 }
+    },
+    "commercial_office": {
+      "substructure": { "min": 0.06, "typical": 0.08, "max": 0.12 },
+      "superstructure": { "min": 0.20, "typical": 0.24, "max": 0.28 },
+      "external_envelope": { "min": 0.18, "typical": 0.22, "max": 0.28 },
+      "internal_finishes": { "min": 0.10, "typical": 0.14, "max": 0.18 },
+      "services": { "min": 0.22, "typical": 0.28, "max": 0.35 },
+      "external_works": { "min": 0.03, "typical": 0.04, "max": 0.06 }
+    },
+    "industrial_warehouse": {
+      "substructure": { "min": 0.12, "typical": 0.16, "max": 0.22 },
+      "superstructure": { "min": 0.35, "typical": 0.42, "max": 0.50 },
+      "external_envelope": { "min": 0.20, "typical": 0.25, "max": 0.30 },
+      "internal_finishes": { "min": 0.02, "typical": 0.04, "max": 0.06 },
+      "services": { "min": 0.06, "typical": 0.08, "max": 0.12 },
+      "external_works": { "min": 0.04, "typical": 0.05, "max": 0.08 }
+    }
+  },
+  "usage_notes": "Use to validate estimates - significant deviation requires explanation"
+}

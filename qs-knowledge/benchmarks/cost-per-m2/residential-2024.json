@@ -1,0 +1,39 @@
+{
+  "category": "residential",
+  "year": 2024,
+  "currency": "ZAR",
+  "region": "gauteng",
+  "benchmarks": {
+    "low_cost_housing": {
+      "range_min": 6500,
+      "range_max": 8500,
+      "typical": 7500,
+      "unit": "m2_gfa"
+    },
+    "affordable_housing": {
+      "range_min": 9000,
+      "range_max": 12000,
+      "typical": 10500,
+      "unit": "m2_gfa"
+    },
+    "standard_residential": {
+      "range_min": 14000,
+      "range_max": 18000,
+      "typical": 16000,
+      "unit": "m2_gfa"
+    },
+    "premium_residential": {
+      "range_min": 20000,
+      "range_max": 28000,
+      "typical": 24000,
+      "unit": "m2_gfa"
+    },
+    "luxury_residential": {
+      "range_min": 30000,
+      "range_max": 50000,
+      "typical": 38000,
+      "unit": "m2_gfa"
+    }
+  },
+  "notes": "Excludes land, professional fees, and external works"
+}

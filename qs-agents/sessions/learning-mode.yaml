@@ -1,0 +1,45 @@
+# Learning Mode Configuration
+# Activated: 2024-12-10
+# Purpose: Capture observations, decisions, and outcomes during initial runs
+
+learning_mode:
+  enabled: true
+  activated: "2024-12-10"
+  session_id: "initial-run-001"
+
+  capture_settings:
+    # Capture every decision point for review
+    decision_logging: verbose
+
+    # Record all clarification needs
+    clarification_tracking: true
+
+    # Log confidence scores for calibration
+    confidence_calibration: true
+
+    # Track timing for bottleneck analysis
+    timing_instrumentation: true
+
+    # Capture all assumptions made
+    assumption_logging: true
+
+  review_triggers:
+    # Flag for human review when:
+    - confidence_below: 0.7
+    - novel_situation: true
+    - multiple_valid_approaches: true
+    - knowledge_gap_detected: true
+
+  learning_outputs:
+    # Where to write learnings
+    session_log: sessions/current-session.md
+    observations: sessions/observations.md
+    improvement_proposals: sessions/proposals/
+
+  post_task_protocol:
+    # After each task, agents should document:
+    - what_worked_well
+    - what_was_unclear
+    - knowledge_gaps_found
+    - suggested_improvements
+    - confidence_calibration_notes

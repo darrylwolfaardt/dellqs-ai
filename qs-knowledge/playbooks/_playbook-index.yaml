@@ -1,0 +1,54 @@
+# Active Playbooks Index
+# Last Updated: 2024-12-10
+
+active_playbooks:
+  new-build:
+    - id: residential-new-build
+      file: new-build/residential.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+    - id: commercial-new-build
+      file: new-build/commercial.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+    - id: industrial-new-build
+      file: new-build/industrial.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+  refurbishment:
+    - id: residential-refurbishment
+      file: refurbishment/residential.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+    - id: commercial-refurbishment
+      file: refurbishment/commercial.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+  fit-out:
+    - id: office-fit-out
+      file: fit-out/office.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+    - id: retail-fit-out
+      file: fit-out/retail.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+  alterations:
+    - id: extension-alterations
+      file: alterations/extension.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+    - id: internal-alterations
+      file: alterations/internal.playbook.yaml
+      version: "1.0.0"
+      status: active
+
+deprecated_playbooks: []

@@ -1,0 +1,39 @@
+{
+  "category": "industrial",
+  "year": 2024,
+  "currency": "ZAR",
+  "region": "gauteng",
+  "benchmarks": {
+    "warehouse_basic": {
+      "range_min": 4500,
+      "range_max": 6500,
+      "typical": 5500,
+      "unit": "m2_gfa"
+    },
+    "warehouse_distribution": {
+      "range_min": 6000,
+      "range_max": 9000,
+      "typical": 7500,
+      "unit": "m2_gfa"
+    },
+    "light_industrial": {
+      "range_min": 7000,
+      "range_max": 10000,
+      "typical": 8500,
+      "unit": "m2_gfa"
+    },
+    "manufacturing_standard": {
+      "range_min": 9000,
+      "range_max": 14000,
+      "typical": 11500,
+      "unit": "m2_gfa"
+    },
+    "manufacturing_specialist": {
+      "range_min": 14000,
+      "range_max": 25000,
+      "typical": 18000,
+      "unit": "m2_gfa"
+    }
+  },
+  "notes": "Excludes land, professional fees, specialist equipment"
+}

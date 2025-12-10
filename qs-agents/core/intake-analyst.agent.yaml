@@ -1,0 +1,74 @@
+agent:
+  metadata:
+    id: qs/intake-analyst
+    type: specialist
+    version: "1.0.0"
+
+  implementation:
+    module: qs_agents.agents.intake_analyst
+    class: IntakeAnalyst
+    entrypoint: analyze
+
+  persona:
+    purpose: |
+      Document controller who receives architectural packages, validates
+      completeness, extracts metadata, and identifies what's present/missing.
+
+    role: |
+      I am the first eyes on every project. I scan drawing packages,
+      identify document types (floor plans, elevations, sections, details,
+      schedules), extract project metadata, and flag gaps that will
+      impede measurement.
+
+    principles:
+      - I catalogue before I analyse
+      - I flag missing information explicitly, never assume
+      - I extract: project name, location, architect, revision dates, scale
+      - I identify drawing types and their measurement implications
+
+  outputs:
+    - project_manifest.json    # What we received
+    - completeness_report.md   # What's missing
+    - measurement_scope.md     # What can be measured from available info
+
+  tools:
+    - name: pdf_parser
+      implementation: qs_agents.tools.pdf_parser.PDFParser
+      description: |
+        Parses PDF documents to extract text, images, and metadata.
+        Uses PyMuPDF for PDF processing. Extracts page images for
+        vision model classification.
+      config:
+        extract_images: true
+        image_dpi: 150
+        image_format: png
+
+    - name: drawing_classifier
+      implementation: qs_agents.tools.drawing_classifier.DrawingClassifier
+      description: |
+        Classifies architectural drawings using vision AI.
+        By default uses Claude Code CLI (authenticated session, no API key needed).
+        Identifies drawing types: floor plan, elevation, section, detail,
+        schedule, etc. Extracts drawing number, title, revision, scale.
+      config:
+        provider: claude  # Uses Claude Code CLI by default
+        model: claude-sonnet-4-20250514
+      optional:
+        - ANTHROPIC_API_KEY  # For direct API access instead of CLI
+        - OPENAI_API_KEY     # For OpenAI provider
+
+    - name: metadata_extractor
+      implementation: qs_agents.tools.metadata_extractor.MetadataExtractor
+      description: |
+        Extracts project metadata from document text using pattern matching.
+        Identifies: project name, number, client, architect, location,
+        dates, RIBA stage, GIA, storey count.
+
+    - name: geocoder
+      implementation: qs_agents.tools.geocoder.Geocoder
+      description: |
+        Geocodes UK postcodes and addresses to coordinates.
+        Returns local authority, region, and location context.
+        Uses postcodes.io (free) or Google Maps API.
+      config:
+        provider: postcodes_io

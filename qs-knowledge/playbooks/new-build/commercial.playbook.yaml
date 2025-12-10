@@ -1,0 +1,1823 @@
+# Commercial New Build Playbook
+# Version: 2.0.0
+# Standards-Keeper Agent Review: 2024-12-10
+# Source: Reference/playbook-example.yaml + Reference/QS-Task-Template.md
+
+playbook:
+  metadata:
+    id: new-build-commercial
+    version: 2024.12.1
+    author: standards-keeper-agent
+    reviewed_by: standards-keeper
+    last_reviewed: 2024-12-10
+    applicable_to:
+      project_types: [new_build]
+      building_types: [commercial, office, retail, mixed_use]
+      regions: [za, uk]
+
+  description: |
+    Comprehensive measurement sequence for commercial new build construction.
+    Follows builder's construction logic with integrated DQSRules and DBRules
+    for consistent quantity surveying practice. Proceeds from ground up,
+    outside in, structure before finishes.
+
+  principles:
+    - Measure in construction sequence
+    - Complete each trade before moving to next
+    - Resolve dependencies before dependent items
+    - Group by subcontractor logic where practical
+    - Apply DQSRules (Dell QS Rules) for measurement methodology
+    - Apply DBRules (Dell Builder Rules) for construction-specific approaches
+    - Always reference architectural drawings for verification
+    - Document all assumptions and deviations
+
+  reference_documents:
+    primary:
+      - Reference/QS-Task-Template.md
+      - Reference/QSPlus_Export_Module.py
+      - Reference/QSPlus_Export_Guide.md
+    standards:
+      - qs-knowledge/standards/measurement/sa-standard-v2024.1.md
+      - qs-knowledge/standards/measurement/nrm2-v2024.md
+
+  output_requirements:
+    mandatory_folder: "Final Bills of Quantities/"
+    file_naming: "[ProjectName]_BOQ_QSPlus_[YYYYMMDD].xlsx"
+    backup_format: "[ProjectName]_BOQ_Backup_[YYYYMMDD].csv"
+
+  pre_checks:
+    - confirm_drawing_set_complete
+    - identify_specification_documents
+    - establish_measurement_units (metric)
+    - note_drawing_scales
+    - verify_project_brief_requirements
+    - confirm_autonomy_level (level_2_confirm for commercial)
+
+  sequence:
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 1: FOUNDATIONS
+    # Builder: Clear site, excavate, lay foundations
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: foundations
+      phase_id: P01
+      sequence_number: 1
+      builder_logic: "First on site - establish foundations before any superstructure"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: site_preparation
+          step_id: P01-S01
+          description: "Site clearance and preparation"
+          drawings: [site_plan]
+
+          tasks:
+            - task_id: P01-S01-T01
+              item: "Clear site"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Measure 2m beyond perimeter of building"
+              drawings: [site_plan]
+
+            - task_id: P01-S01-T02
+              item: "Strip topsoil"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Measure 1m beyond perimeter of building"
+              drawings: [site_plan]
+              notes: "Stockpile for reuse if specified"
+
+        - step: excavation
+          step_id: P01-S02
+          description: "Foundation excavation works"
+          drawings: [foundation_plan, sections]
+          dependencies: [site_preparation]
+
+          tasks:
+            - task_id: P01-S02-T01
+              item: "Excavate for surface trenches, holes"
+              unit: m3
+              measurement_rule: DQSRule
+              rule_detail: "Take strip footing excavation 700mm wide x 1500mm deep"
+              drawings: [foundation_plan, sections]
+              calculation_notes: |
+                Calculate from foundation plan. Working space 150mm each side
+                if formwork required. Note soil type from geotech report.
+
+            - task_id: P01-S02-T02
+              item: "Risk of collapse"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Take area of both sides of excavation"
+              drawings: [foundation_plan, sections]
+
+            - task_id: P01-S02-T03
+              item: "Compaction"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Area of bottom of excavation for surface trenches"
+              drawings: [foundation_plan]
+
+            - task_id: P01-S02-T04
+              item: "Soil poisoning to trench excavations"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Measure bottom area + area of both sides of excavation"
+              drawings: [foundation_plan]
+
+        - step: material_management
+          step_id: P01-S03
+          description: "Backfilling and disposal"
+          drawings: [foundation_plan, sections]
+          dependencies: [excavation]
+
+          tasks:
+            - task_id: P01-S03-T01
+              item: "Backfilling"
+              unit: m3
+              measurement_rule: DQSRule
+              rule_detail: "Volume of excavation less (volume of brickwork in foundations + volume of concrete in foundations)"
+              drawings: [foundation_plan, sections]
+              calculation_notes: "Allow for bulking factor 1.25"
+
+            - task_id: P01-S03-T02
+              item: "Cart away"
+              unit: m3
+              measurement_rule: DBRule
+              rule_detail: "Volume of excavated material"
+              drawings: [foundation_plan]
+
+        - step: testing
+          step_id: P01-S04
+          description: "Soil and compaction testing"
+          drawings: [foundation_plan, geotech_report]
+          dependencies: [excavation]
+
+          tasks:
+            - task_id: P01-S04-T01
+              item: "Compaction tests"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "Area of bottom of excavation (number based on spec)"
+              drawings: [foundation_plan]
+
+            - task_id: P01-S04-T02
+              item: "Soil material tests"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "Take as one per 10m of footing excavation"
+              drawings: [foundation_plan]
+
+        - step: concrete_foundations
+          step_id: P01-S05
+          description: "Mass and reinforced concrete foundation work"
+          drawings: [foundation_plan, foundation_details]
+          dependencies: [testing]
+          rates_category: concrete_substructure
+
+          tasks:
+            - task_id: P01-S05-T01
+              item: "Mass concrete footings"
+              unit: m3
+              measurement_rule: DQSRule
+              rule_detail: "Measure 700 x 250mm deep x length of footings"
+              drawings: [foundation_plan, foundation_details]
+
+            - task_id: P01-S05-T02
+              item: "Reinforced concrete bases, ground beams"
+              unit: m3
+              measurement_rule: DBRule
+              rule_detail: "Measure from structural drawings"
+              drawings: [foundation_plan, structural_details]
+
+            - task_id: P01-S05-T03
+              item: "Formwork to sides of ground beams, bases"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Both sides of beams and bases"
+              drawings: [foundation_details]
+
+            - task_id: P01-S05-T04
+              item: "Reinforcement"
+              unit: t
+              measurement_rule: DQSRule
+              rule_detail: "Take as 100kg per m3 of concrete"
+              drawings: [structural_details]
+              calculation_notes: "Verify against structural engineer's schedule"
+
+        - step: foundation_brickwork
+          step_id: P01-S06
+          description: "Brickwork in foundations"
+          drawings: [foundation_plan, sections]
+          dependencies: [concrete_foundations]
+
+          tasks:
+            - task_id: P01-S06-T01
+              item: "Brickwork in foundations"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Take as one brick wall, measure as depth of excavation - 250mm thick concrete + 100mm thick surface bed"
+              drawings: [foundation_plan, sections]
+
+            - task_id: P01-S06-T02
+              item: "Brickforce"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Take as 2.94m per m2 of brickwork"
+              drawings: [foundation_plan]
+
+            - task_id: P01-S06-T03
+              item: "Extra over ordinary brickwork for facings in foundations"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Measure exposed face areas"
+              drawings: [foundation_plan, sections]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 2: REINFORCED CONCRETE STRUCTURE
+    # Builder: Frame structure for commercial buildings
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: reinforced_concrete_structure
+      phase_id: P02
+      sequence_number: 2
+      builder_logic: "Structural frame before envelope - commercial typically has RC frame"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: structural_elements
+          step_id: P02-S01
+          description: "Columns, beams, and slabs"
+          drawings: [structural_plans, structural_details, sections]
+          dependencies: [foundations]
+          rates_category: concrete_superstructure
+
+          tasks:
+            - task_id: P02-S01-T01
+              item: "Columns"
+              unit: m3
+              measurement_rule: DBRule
+              rule_detail: "Measure from structural drawings"
+              drawings: [structural_plans, column_schedule]
+
+            - task_id: P02-S01-T02
+              item: "Beams"
+              unit: m3
+              measurement_rule: DBRule
+              rule_detail: "Measure from structural drawings"
+              drawings: [structural_plans, beam_schedule]
+
+            - task_id: P02-S01-T03
+              item: "Slabs"
+              unit: m3
+              measurement_rule: DBRule
+              rule_detail: "Area x thickness from structural drawings"
+              drawings: [structural_plans, slab_details]
+
+            - task_id: P02-S01-T04
+              item: "Formwork"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Take as both sides of beams, soffit of slabs, all faces of columns"
+              drawings: [structural_details]
+
+            - task_id: P02-S01-T05
+              item: "Reinforcement"
+              unit: tonnes
+              measurement_rule: DQSRule
+              rule_detail: "Take as 100kg/m3 of concrete"
+              drawings: [structural_details, reinforcement_schedule]
+              calculation_notes: "Commercial typically higher - verify with engineer"
+
+        - step: floor_finishes_structural
+          step_id: P02-S02
+          description: "Structural floor finishes"
+          drawings: [floor_plans, specifications]
+          dependencies: [structural_elements]
+
+          tasks:
+            - task_id: P02-S02-T01
+              item: "Powerfloat"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Measure top area of floor"
+              drawings: [floor_plans]
+
+            - task_id: P02-S02-T02
+              item: "Broomswept finish to concrete"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Measure top area of floor"
+              drawings: [floor_plans]
+              notes: "External areas and service areas"
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 3: BRICKWORK STRUCTURE
+    # Builder: External and internal masonry walls
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: brickwork_structure
+      phase_id: P03
+      sequence_number: 3
+      builder_logic: "Bricklayers start once frame/slab is ready"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: external_masonry
+          step_id: P03-S01
+          description: "External walls and DPC"
+          drawings: [floor_plans, elevations, sections]
+          dependencies: [reinforced_concrete_structure]
+
+          tasks:
+            - task_id: P03-S01-T01
+              item: "DPC Dampproof course"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Length of trench excavation x 200mm wide"
+              drawings: [foundation_plan, sections]
+
+            - task_id: P03-S01-T02
+              item: "Brickwork to walls"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Measure each wall type separately (cavity, solid). Deduct openings > 0.5m²"
+              drawings: [floor_plans, elevations]
+              calculation_notes: "Note reveals, sills, lintels separately"
+
+            - task_id: P03-S01-T03
+              item: "Brick reinforcement"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Taken as 2.94m per m2 of brickwork"
+              drawings: [floor_plans]
+
+            - task_id: P03-S01-T04
+              item: "Airbricks"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Count from elevations and specifications"
+              drawings: [elevations, specifications]
+
+            - task_id: P03-S01-T05
+              item: "Extra over ordinary brickwork for facings"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Measure surface of brickwork over walls and halfway into reveals"
+              drawings: [elevations]
+
+            - task_id: P03-S01-T06
+              item: "Hoop iron ties, truss ties"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "2 per timber roof truss (if applicable)"
+              drawings: [roof_plan, structural_details]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 4: SURFACE BED CONSTRUCTION
+    # Builder: Ground floor slab construction
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: surface_bed_construction
+      phase_id: P04
+      sequence_number: 4
+      builder_logic: "Ground floor slab after foundations complete"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: base_preparation
+          step_id: P04-S01
+          description: "Sub-base and preparation layers"
+          drawings: [floor_plans, sections, specifications]
+          dependencies: [foundations]
+
+          tasks:
+            - task_id: P04-S01-T01
+              item: "Filling beneath floors"
+              unit: m3
+              measurement_rule: DQSRule
+              rule_detail: "Measure over area of building"
+              drawings: [floor_plans, sections]
+
+            - task_id: P04-S01-T02
+              item: "Compaction"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Area of sub-base"
+              drawings: [floor_plans]
+
+            - task_id: P04-S01-T03
+              item: "Soil poisoning beneath surface beds"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Full floor area"
+              drawings: [floor_plans]
+
+            - task_id: P04-S01-T04
+              item: "50mm Thick Sandbed"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Full floor area"
+              drawings: [floor_plans, sections]
+
+            - task_id: P04-S01-T05
+              item: "Dampproof membrane"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Full floor area + laps"
+              drawings: [floor_plans, sections]
+
+        - step: concrete_slab
+          step_id: P04-S02
+          description: "Surface bed concrete work"
+          drawings: [floor_plans, sections, structural_details]
+          dependencies: [base_preparation]
+          rates_category: concrete_floors
+
+          tasks:
+            - task_id: P04-S02-T01
+              item: "Concrete in surface beds"
+              unit: m3
+              measurement_rule: DQSRule
+              rule_detail: "Floor area x 0.10m (or as specified)"
+              drawings: [floor_plans, sections]
+
+            - task_id: P04-S02-T02
+              item: "Formwork to edges not exceeding 300mm high"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Taken at doorways and edge details only"
+              drawings: [floor_plans, details]
+
+            - task_id: P04-S02-T03
+              item: "Reinforcing mesh to surface beds"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Area of floor"
+              drawings: [floor_plans, structural_details]
+
+            - task_id: P04-S02-T04
+              item: "Sawcuts"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per specification and floor layout"
+              drawings: [floor_plans]
+
+            - task_id: P04-S02-T05
+              item: "Movement joints"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per structural specification"
+              drawings: [floor_plans, structural_details]
+
+        - step: surface_finishes
+          step_id: P04-S03
+          description: "Floor surface treatments"
+          drawings: [floor_plans, specifications]
+          dependencies: [concrete_slab]
+
+          tasks:
+            - task_id: P04-S03-T01
+              item: "Float top surfaces, to falls and patterns"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Area of floor"
+              drawings: [floor_plans]
+
+            - task_id: P04-S03-T02
+              item: "Powerfloat"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Area of floor"
+              drawings: [floor_plans]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 5: ROOFS AND RAINWATER DISPOSAL
+    # Builder: Roof structure and weatherproofing
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: roofs_and_rainwater
+      phase_id: P05
+      sequence_number: 5
+      builder_logic: "Roof once walls at plate height - closes the building"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: roof_structure
+          step_id: P05-S01
+          description: "Roof carpentry and structure"
+          drawings: [roof_plan, truss_details, sections]
+          dependencies: [brickwork_structure]
+
+          tasks:
+            - task_id: P05-S01-T01
+              item: "Wallplates"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of roof bearing"
+              drawings: [roof_plan, sections]
+
+            - task_id: P05-S01-T02
+              item: "Tie downs"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per structural specification"
+              drawings: [roof_plan, structural_details]
+
+            - task_id: P05-S01-T03
+              item: "Trusses"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Count from roof plan - note standard vs girder trusses"
+              drawings: [roof_plan, truss_schedule]
+
+            - task_id: P05-S01-T04
+              item: "Cross bracing"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Measure as Width of building x 3"
+              drawings: [roof_plan, bracing_details]
+
+            - task_id: P05-S01-T05
+              item: "Longitudinal bracing"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Length of building x 1.4 for raking length"
+              drawings: [roof_plan, bracing_details]
+
+            - task_id: P05-S01-T06
+              item: "Purlins"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "From roof plan and specification"
+              drawings: [roof_plan]
+
+        - step: roof_covering
+          step_id: P05-S02
+          description: "Roof covering and accessories"
+          drawings: [roof_plan, elevations, specifications]
+          dependencies: [roof_structure]
+
+          tasks:
+            - task_id: P05-S02-T01
+              item: "Dakseal/Sarking"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Roof area (plan x pitch factor)"
+              drawings: [roof_plan]
+
+            - task_id: P05-S02-T02
+              item: "Battens"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Roof area"
+              drawings: [roof_plan]
+
+            - task_id: P05-S02-T03
+              item: "Tilting fillet"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Eaves length"
+              drawings: [roof_plan, eaves_detail]
+
+            - task_id: P05-S02-T04
+              item: "Hurricane clips"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "One per intersection of truss and purlin"
+              drawings: [roof_plan]
+
+            - task_id: P05-S02-T05
+              item: "Roof tiles/sheeting"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "True area (plan × pitch factor). Separate by type"
+              drawings: [roof_plan, specifications]
+              calculation_notes: "Commercial often uses metal sheeting - measure accordingly"
+
+        - step: rainwater_system
+          step_id: P05-S03
+          description: "Gutters and downpipes"
+          drawings: [roof_plan, elevations]
+          dependencies: [roof_covering]
+
+          tasks:
+            - task_id: P05-S03-T01
+              item: "Gutters"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Eaves length"
+              drawings: [roof_plan, elevations]
+
+            - task_id: P05-S03-T02
+              item: "Outlets"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "One outlet per downpipe"
+              drawings: [roof_plan]
+
+            - task_id: P05-S03-T03
+              item: "Angles"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "Take one per 90 degree corner"
+              drawings: [roof_plan]
+
+            - task_id: P05-S03-T04
+              item: "Stopped ends"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Count from roof plan"
+              drawings: [roof_plan]
+
+            - task_id: P05-S03-T05
+              item: "Downpipes"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Height from gutter to ground/drain"
+              drawings: [elevations]
+
+            - task_id: P05-S03-T06
+              item: "Eaves projections"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "One per downpipe"
+              drawings: [roof_plan]
+
+            - task_id: P05-S03-T07
+              item: "Bends"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "Two per downpipe"
+              drawings: [elevations]
+
+            - task_id: P05-S03-T08
+              item: "Shoes"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "One per downpipe"
+              drawings: [elevations]
+
+            - task_id: P05-S03-T09
+              item: "Precast rainwater channel"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "One per downpipe location"
+              drawings: [site_plan, drainage_layout]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 6: EXTERNAL FINISHES
+    # Builder: External envelope completion
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: external_finishes
+      phase_id: P06
+      sequence_number: 6
+      builder_logic: "External finishes while scaffolding still up"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: external_wall_finishes
+          step_id: P06-S01
+          description: "External plastering and painting"
+          drawings: [elevations, specifications]
+          dependencies: [brickwork_structure, roofs_and_rainwater]
+
+          tasks:
+            - task_id: P06-S01-T01
+              item: "Extra over ordinary brickwork for facings"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "External face areas"
+              drawings: [elevations]
+
+            - task_id: P06-S01-T02
+              item: "Beamfilling"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Area between beams and brickwork"
+              drawings: [sections, details]
+
+            - task_id: P06-S01-T03
+              item: "Plaster"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "External wall areas - deduct openings"
+              drawings: [elevations]
+
+            - task_id: P06-S01-T04
+              item: "Paint to walls"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "External wall areas - deduct openings"
+              drawings: [elevations, paint_schedule]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 7: INTERNAL FLOOR FINISHES
+    # Builder: Floor finishes after walls complete
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: internal_floor_finishes
+      phase_id: P07
+      sequence_number: 7
+      builder_logic: "Floor finishes last - protects from construction traffic"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: floor_finishes
+          step_id: P07-S01
+          description: "All floor finish types"
+          drawings: [floor_plans, room_finishes_schedule]
+          dependencies: [internal_wall_finishes]
+
+          tasks:
+            - task_id: P07-S01-T01
+              item: "Grano"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per room finishes schedule"
+              drawings: [floor_plans, finishes_schedule]
+
+            - task_id: P07-S01-T02
+              item: "Screed"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per room finishes schedule"
+              drawings: [floor_plans, finishes_schedule]
+
+            - task_id: P07-S01-T03
+              item: "Carpet"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per room finishes schedule"
+              drawings: [floor_plans, finishes_schedule]
+
+            - task_id: P07-S01-T04
+              item: "Tiles"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per room finishes schedule"
+              drawings: [floor_plans, finishes_schedule]
+
+            - task_id: P07-S01-T05
+              item: "Skirtings"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of rooms - deduct door openings"
+              drawings: [floor_plans]
+
+            - task_id: P07-S01-T06
+              item: "Varnish on skirtings not exceeding 300mm girth"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Same as skirting length"
+              drawings: [floor_plans]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 8: INTERNAL WALL FINISHES
+    # Builder: Wall finishes after ceilings
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: internal_wall_finishes
+      phase_id: P08
+      sequence_number: 8
+      builder_logic: "Internal wall finishes after services first fix"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: wall_finishes
+          step_id: P08-S01
+          description: "Internal wall treatments"
+          drawings: [floor_plans, room_finishes_schedule]
+          dependencies: [internal_walls, services_first_fix]
+
+          tasks:
+            - task_id: P08-S01-T01
+              item: "Plaster"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Wall areas - deduct openings"
+              drawings: [floor_plans, finishes_schedule]
+
+            - task_id: P08-S01-T02
+              item: "Airbricks"
+              unit: No
+              measurement_rule: DQSRule
+              rule_detail: "One per room (verify against specification)"
+              drawings: [elevations, specifications]
+
+            - task_id: P08-S01-T03
+              item: "Paint on walls"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Wall areas - deduct openings"
+              drawings: [floor_plans, paint_schedule]
+
+            - task_id: P08-S01-T04
+              item: "Tiling"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per room finishes schedule - typically wet areas"
+              drawings: [floor_plans, finishes_schedule]
+
+            - task_id: P08-S01-T05
+              item: "Dado"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per specification and finishes schedule"
+              drawings: [floor_plans, finishes_schedule]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 9: CEILINGS
+    # Builder: Ceilings before wall finishes (top down)
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: ceilings
+      phase_id: P09
+      sequence_number: 9
+      builder_logic: "Top down - ceilings before wall finishes"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: ceiling_construction
+          step_id: P09-S01
+          description: "All ceiling types and finishes"
+          drawings: [floor_plans, reflected_ceiling_plan]
+          dependencies: [internal_walls, services_first_fix]
+
+          tasks:
+            - task_id: P09-S01-T01
+              item: "Brandering"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Ceiling area per room"
+              drawings: [reflected_ceiling_plan]
+
+            - task_id: P09-S01-T02
+              item: "Insulation"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Ceiling area"
+              drawings: [reflected_ceiling_plan, specifications]
+
+            - task_id: P09-S01-T03
+              item: "Ceiling boarding"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Ceiling area per room"
+              drawings: [reflected_ceiling_plan]
+
+            - task_id: P09-S01-T04
+              item: "Suspended ceilings"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Ceiling area - common in commercial"
+              drawings: [reflected_ceiling_plan]
+              notes: "Commercial buildings typically have suspended ceilings for services access"
+
+            - task_id: P09-S01-T05
+              item: "Plaster"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Ceiling area per room"
+              drawings: [reflected_ceiling_plan]
+
+            - task_id: P09-S01-T06
+              item: "Paint on ceilings"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Ceiling area per room"
+              drawings: [reflected_ceiling_plan, paint_schedule]
+
+            - task_id: P09-S01-T07
+              item: "Cornices"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of rooms"
+              drawings: [reflected_ceiling_plan]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 10: DOORS
+    # Builder: Frames with walls, leaves after finishes
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: doors
+      phase_id: P10
+      sequence_number: 10
+      builder_logic: "Frames with walls, door leaves and hardware after finishes"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: door_installation
+          step_id: P10-S01
+          description: "Door frames, leaves, and ironmongery"
+          drawings: [floor_plans, door_schedule, door_details]
+          dependencies: [internal_walls]
+
+          tasks:
+            - task_id: P10-S01-T01
+              item: "Frame"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per door schedule"
+              drawings: [door_schedule]
+
+            - task_id: P10-S01-T02
+              item: "Door"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per door schedule"
+              drawings: [door_schedule]
+
+            - task_id: P10-S01-T03
+              item: "Glass to fanlight, sidelight"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per door schedule and details"
+              drawings: [door_schedule, door_details]
+
+            - task_id: P10-S01-T04
+              item: "Beading to glass"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of glazed panels"
+              drawings: [door_details]
+
+            - task_id: P10-S01-T05
+              item: "Paint on door"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Both faces"
+              drawings: [door_schedule, paint_schedule]
+
+            - task_id: P10-S01-T06
+              item: "Paint on frame"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "All visible faces"
+              drawings: [door_schedule, paint_schedule]
+
+            - task_id: P10-S01-T07
+              item: "Ironmongery"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per door schedule - ironmongery sets"
+              drawings: [door_schedule, ironmongery_schedule]
+
+            - task_id: P10-S01-T08
+              item: "Architrave"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per door - both sides"
+              drawings: [door_details]
+
+            - task_id: P10-S01-T09
+              item: "Silicone seal around frame"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of frame"
+              drawings: [door_details]
+
+        - step: door_adjustments
+          step_id: P10-S02
+          description: "Deductions and additions for door openings"
+          drawings: [floor_plans, door_schedule, sections]
+          dependencies: [door_installation]
+
+          tasks:
+            - task_id: P10-S02-T01
+              item: "Lintel"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Opening width + 150mm each side"
+              drawings: [door_details, structural_details]
+
+            - task_id: P10-S02-T02
+              item: "Brickforce above lintels"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Per specification"
+              drawings: [door_details]
+
+            - task_id: P10-S02-T03
+              item: "Deduct brick walls"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Opening size"
+              drawings: [floor_plans]
+
+            - task_id: P10-S02-T04
+              item: "Deduct brick reinforcement"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Opening width x courses"
+              drawings: [floor_plans]
+
+            - task_id: P10-S02-T05
+              item: "Close cavities all around"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of opening"
+              drawings: [door_details]
+
+            - task_id: P10-S02-T06
+              item: "Deduct external plaster"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Opening size"
+              drawings: [elevations]
+
+            - task_id: P10-S02-T07
+              item: "Deduct internal plaster"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Opening size"
+              drawings: [floor_plans]
+
+            - task_id: P10-S02-T08
+              item: "External cill"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Opening width"
+              drawings: [door_details]
+
+            - task_id: P10-S02-T09
+              item: "Internal cill"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Opening width"
+              drawings: [door_details]
+
+            - task_id: P10-S02-T10
+              item: "External facings/plaster to reveals"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Reveal depth x perimeter"
+              drawings: [door_details]
+
+            - task_id: P10-S02-T11
+              item: "Internal finish to reveals"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Reveal depth x perimeter"
+              drawings: [door_details]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 11: WINDOWS
+    # Builder: Windows close the envelope
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: windows
+      phase_id: P11
+      sequence_number: 11
+      builder_logic: "Windows and doors close the envelope"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: window_installation
+          step_id: P11-S01
+          description: "Window frames and glazing"
+          drawings: [elevations, window_schedule]
+          dependencies: [external_walls]
+
+          tasks:
+            - task_id: P11-S01-T01
+              item: "Window"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per window schedule"
+              drawings: [window_schedule]
+
+            - task_id: P11-S01-T02
+              item: "Glazing"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per window schedule"
+              drawings: [window_schedule]
+
+            - task_id: P11-S01-T03
+              item: "Beads"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of glazed panels"
+              drawings: [window_details]
+
+            - task_id: P11-S01-T04
+              item: "Paint on window"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per window schedule"
+              drawings: [window_schedule, paint_schedule]
+
+            - task_id: P11-S01-T05
+              item: "Silicone seal around window"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of window"
+              drawings: [window_details]
+
+        - step: window_adjustments
+          step_id: P11-S02
+          description: "Deductions and additions for window openings"
+          drawings: [elevations, window_schedule, sections]
+          dependencies: [window_installation]
+
+          tasks:
+            - task_id: P11-S02-T01
+              item: "Lintel"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Opening width + 150mm each side"
+              drawings: [window_details, structural_details]
+
+            - task_id: P11-S02-T02
+              item: "Brickforce over lintels"
+              unit: m
+              measurement_rule: DQSRule
+              rule_detail: "Per specification"
+              drawings: [window_details]
+
+            - task_id: P11-S02-T03
+              item: "Deduct brick walls"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Opening size"
+              drawings: [elevations]
+
+            - task_id: P11-S02-T04
+              item: "Close cavities all around"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Perimeter of opening"
+              drawings: [window_details]
+
+            - task_id: P11-S02-T05
+              item: "External cill"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Opening width"
+              drawings: [window_details]
+
+            - task_id: P11-S02-T06
+              item: "Internal cill"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Opening width"
+              drawings: [window_details]
+
+            - task_id: P11-S02-T07
+              item: "DPC beneath cill"
+              unit: m2
+              measurement_rule: DQSRule
+              rule_detail: "Cill width x depth"
+              drawings: [window_details]
+
+            - task_id: P11-S02-T08
+              item: "External facings/plaster to reveals"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Reveal depth x perimeter"
+              drawings: [window_details]
+
+            - task_id: P11-S02-T09
+              item: "Internal finish to reveals"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Reveal depth x perimeter"
+              drawings: [window_details]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 12: JOINERY FITTINGS
+    # Builder: Fitted furniture after finishes
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: joinery_fittings
+      phase_id: P12
+      sequence_number: 12
+      builder_logic: "Fitted furniture after floor finishes complete"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: fitted_joinery
+          step_id: P12-S01
+          description: "Kitchen, bathroom, and general joinery"
+          drawings: [joinery_details, kitchen_layout]
+          dependencies: [floor_finishes]
+
+          tasks:
+            - task_id: P12-S01-T01
+              item: "Joinery"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per joinery schedule"
+              drawings: [joinery_schedule, joinery_details]
+              notes: "Commercial may include reception desks, counters, built-in furniture"
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 13: SUNDRIES
+    # Builder: Accessories and fittings
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: sundries
+      phase_id: P13
+      sequence_number: 13
+      builder_logic: "Final accessories before handover"
+      autonomy: level_3_notify
+
+      steps:
+        - step: accessories
+          step_id: P13-S01
+          description: "Mirrors, holders, and accessories"
+          drawings: [specifications, room_layouts]
+          dependencies: [internal_finishes]
+
+          tasks:
+            - task_id: P13-S01-T01
+              item: "Mirrors"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per specification"
+              drawings: [specifications]
+
+            - task_id: P13-S01-T02
+              item: "Toilet roll holders"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per sanitary schedule"
+              drawings: [specifications]
+
+            - task_id: P13-S01-T03
+              item: "Stainless steel grab rails"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per specification - accessibility requirements"
+              drawings: [specifications]
+              notes: "Commercial buildings have accessibility requirements"
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 14: PLUMBING AND DRAINAGE
+    # Builder: First fix early, second fix late
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: plumbing_and_drainage
+      phase_id: P14
+      sequence_number: 14
+      builder_logic: "Rough-in with structure, fittings after finishes"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: water_supply
+          step_id: P14-S01
+          description: "Water storage and distribution"
+          drawings: [plumbing_layout, site_services]
+          dependencies: [structure]
+
+          tasks:
+            - task_id: P14-S01-T01
+              item: "Water Tank (5000 Litre or as specified)"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per specification"
+              drawings: [plumbing_layout]
+
+            - task_id: P14-S01-T02
+              item: "Tank Stand"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per tank specification"
+              drawings: [plumbing_layout]
+
+            - task_id: P14-S01-T03
+              item: "HDPE pipe and fittings"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per plumbing layout"
+              drawings: [plumbing_layout]
+
+            - task_id: P14-S01-T04
+              item: "Valves and adaptors"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per plumbing layout and specification"
+              drawings: [plumbing_layout]
+
+        - step: sanitary_fittings
+          step_id: P14-S02
+          description: "Sanitary ware installation"
+          drawings: [plumbing_layout, sanitary_schedule]
+          dependencies: [floor_finishes]
+
+          tasks:
+            - task_id: P14-S02-T01
+              item: "WC"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per sanitary schedule"
+              drawings: [sanitary_schedule]
+
+            - task_id: P14-S02-T02
+              item: "Wash hand basin"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per sanitary schedule"
+              drawings: [sanitary_schedule]
+
+            - task_id: P14-S02-T03
+              item: "Urinal"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per sanitary schedule"
+              drawings: [sanitary_schedule]
+              notes: "Common in commercial male facilities"
+
+            - task_id: P14-S02-T04
+              item: "Shower"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per sanitary schedule"
+              drawings: [sanitary_schedule]
+
+            - task_id: P14-S02-T05
+              item: "Sink"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per sanitary schedule - kitchenettes, cleaners"
+              drawings: [sanitary_schedule]
+
+        - step: drainage
+          step_id: P14-S03
+          description: "Soil and waste drainage"
+          drawings: [drainage_layout]
+          dependencies: [structure]
+
+          tasks:
+            - task_id: P14-S03-T01
+              item: "Sanitary plumbing work"
+              unit: Item
+              measurement_rule: DBRule
+              rule_detail: "Per plumbing layout"
+              drawings: [plumbing_layout]
+
+            - task_id: P14-S03-T02
+              item: "Soil drainage work"
+              unit: Item
+              measurement_rule: DBRule
+              rule_detail: "Per drainage layout"
+              drawings: [drainage_layout]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 15: FIRE SERVICES
+    # Builder: Critical for commercial occupancy
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: fire_services
+      phase_id: P15
+      sequence_number: 15
+      builder_logic: "Fire services essential for commercial certificate of occupancy"
+      autonomy: level_1_suggest
+      notes: "Higher scrutiny - fire compliance critical for commercial"
+
+      steps:
+        - step: fire_extinguishers
+          step_id: P15-S01
+          description: "Portable fire fighting equipment"
+          drawings: [fire_layout, specifications]
+          dependencies: [internal_finishes]
+
+          tasks:
+            - task_id: P15-S01-T01
+              item: "4.5Kg DCP SABS fire extinguisher"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout and regulations"
+              drawings: [fire_layout]
+
+            - task_id: P15-S01-T02
+              item: "9Kg DCP SABS fire extinguisher"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout and regulations"
+              drawings: [fire_layout]
+
+            - task_id: P15-S01-T03
+              item: "Backing boards"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "One per extinguisher"
+              drawings: [fire_layout]
+
+        - step: fire_hose_reels
+          step_id: P15-S02
+          description: "Fixed fire fighting installation"
+          drawings: [fire_layout, fire_details]
+          dependencies: [plumbing_first_fix]
+
+          tasks:
+            - task_id: P15-S02-T01
+              item: "Galvanised piping and fittings"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout"
+              drawings: [fire_layout]
+
+            - task_id: P15-S02-T02
+              item: "Fire hose reel SABS certified complete"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout - includes 30m hose, bracket, nozzle"
+              drawings: [fire_layout]
+
+            - task_id: P15-S02-T03
+              item: "Hose reel cabinet"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout"
+              drawings: [fire_layout]
+
+        - step: fire_hydrant
+          step_id: P15-S03
+          description: "External fire hydrant installation"
+          drawings: [site_plan, fire_layout]
+          dependencies: [external_works]
+
+          tasks:
+            - task_id: P15-S03-T01
+              item: "80mm galvanised pipe"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout"
+              drawings: [fire_layout]
+
+            - task_id: P15-S03-T02
+              item: "Hydrant valve and fittings"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout"
+              drawings: [fire_layout]
+
+            - task_id: P15-S03-T03
+              item: "Concrete hydrant pit"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout"
+              drawings: [fire_layout, fire_details]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 16: SUNDRY METALWORK
+    # Builder: Structural and decorative metalwork
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: sundry_metalwork
+      phase_id: P16
+      sequence_number: 16
+      builder_logic: "Metalwork installed with structure or finishes as appropriate"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: metalwork_items
+          step_id: P16-S01
+          description: "Balustrades and structural metalwork"
+          drawings: [floor_plans, elevations, metalwork_details]
+          dependencies: [structure]
+
+          tasks:
+            - task_id: P16-S01-T01
+              item: "Balustrades"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per floor plans and elevations"
+              drawings: [floor_plans, elevations]
+              notes: "Commercial often requires code-compliant balustrades"
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 17: EXTERNAL WORKS
+    # Builder: Site works after building complete
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: external_works
+      phase_id: P17
+      sequence_number: 17
+      builder_logic: "External works last - heavy traffic finished"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: site_works
+          step_id: P17-S01
+          description: "Roads, paving, and site infrastructure"
+          drawings: [site_plan, civil_drawings]
+          dependencies: [building_complete]
+
+          tasks:
+            - task_id: P17-S01-T01
+              item: "Hoardings"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Site perimeter during construction"
+              drawings: [site_plan]
+
+            - task_id: P17-S01-T02
+              item: "Platforms"
+              unit: m3
+              measurement_rule: DBRule
+              rule_detail: "Per site levels"
+              drawings: [site_plan, sections]
+
+            - task_id: P17-S01-T03
+              item: "Fencing and gates"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Site boundary"
+              drawings: [site_plan]
+
+            - task_id: P17-S01-T04
+              item: "Roads"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per site plan"
+              drawings: [site_plan, civil_drawings]
+
+            - task_id: P17-S01-T05
+              item: "Paving"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Per site plan and paving layout"
+              drawings: [site_plan, paving_layout]
+
+            - task_id: P17-S01-T06
+              item: "Aprons"
+              unit: m2
+              measurement_rule: DBRule
+              rule_detail: "Building perimeter"
+              drawings: [site_plan]
+
+        - step: site_services
+          step_id: P17-S02
+          description: "Underground services reticulation"
+          drawings: [site_plan, services_layout]
+          dependencies: [structure]
+
+          tasks:
+            - task_id: P17-S02-T01
+              item: "Stormwater drainage"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per drainage layout"
+              drawings: [drainage_layout]
+
+            - task_id: P17-S02-T02
+              item: "Water supply reticulation"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per services layout"
+              drawings: [services_layout]
+
+            - task_id: P17-S02-T03
+              item: "Fire supply reticulation"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per fire layout"
+              drawings: [fire_layout]
+
+            - task_id: P17-S02-T04
+              item: "Soil drainage reticulation"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per drainage layout"
+              drawings: [drainage_layout]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 18: BUILDERS WORK TO SPECIALIST INSTALLATIONS
+    # Builder: Coordination with M&E contractors
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: builders_work_specialists
+      phase_id: P18
+      sequence_number: 18
+      builder_logic: "Builder's work to facilitate specialist installations"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: mep_builders_work
+          step_id: P18-S01
+          description: "Chases, sleeves, and building-in"
+          drawings: [electrical_layout, mechanical_layout]
+          dependencies: [structure]
+
+          tasks:
+            - task_id: P18-S01-T01
+              item: "Chasing for electrical conduits"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout]
+
+            - task_id: P18-S01-T02
+              item: "Building in distribution board"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout]
+
+            - task_id: P18-S01-T03
+              item: "50mm Sleeves through walls"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per services layouts"
+              drawings: [services_layouts]
+
+            - task_id: P18-S01-T04
+              item: "100mm Sleeves through walls"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per services layouts"
+              drawings: [services_layouts]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 19: ELECTRICAL INSTALLATION
+    # Builder: Typically subcontracted
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: electrical_installation
+      phase_id: P19
+      sequence_number: 19
+      builder_logic: "First fix early, second fix after finishes"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: electrical_work
+          step_id: P19-S01
+          description: "Complete electrical installation"
+          drawings: [electrical_layout, lighting_schedule]
+          dependencies: [structure]
+
+          tasks:
+            - task_id: P19-S01-T01
+              item: "Conduits"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout]
+
+            - task_id: P19-S01-T02
+              item: "Wiring"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout]
+
+            - task_id: P19-S01-T03
+              item: "Power sockets"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout]
+              notes: "Commercial typically has higher socket density"
+
+            - task_id: P19-S01-T04
+              item: "Light switches"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout]
+
+            - task_id: P19-S01-T05
+              item: "Light fittings"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per lighting schedule"
+              drawings: [lighting_schedule]
+
+            - task_id: P19-S01-T06
+              item: "Distribution board"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout]
+              notes: "Commercial may have multiple DBs per floor"
+
+            - task_id: P19-S01-T07
+              item: "Breakers"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Per DB schedule"
+              drawings: [electrical_layout]
+
+            - task_id: P19-S01-T08
+              item: "Cable from power supply to dist board"
+              unit: m
+              measurement_rule: DBRule
+              rule_detail: "Per electrical layout"
+              drawings: [electrical_layout, site_services]
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 20: PRELIMINARIES
+    # Builder: Project overheads and establishment
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: preliminaries
+      phase_id: P20
+      sequence_number: 20
+      builder_logic: "Project overhead costs"
+      autonomy: level_2_confirm
+
+      steps:
+        - step: preliminaries_general
+          step_id: P20-S01
+          description: "General preliminaries allowance"
+          drawings: [specifications, contract_documents]
+
+          tasks:
+            - task_id: P20-S01-T01
+              item: "Preliminaries"
+              unit: No
+              measurement_rule: DBRule
+              rule_detail: "Percentage of measured work - typically 10-18% for commercial"
+              drawings: [specifications]
+              calculation_notes: |
+                Commercial projects typically:
+                - Small (<R10m): 8-12%
+                - Medium (R10m-R50m): 10-15%
+                - Large (>R50m): 12-18%
+                Consider project duration, complexity, and site constraints.
+
+    # ══════════════════════════════════════════════════════════════
+    # PHASE 21: HEALTH AND SAFETY
+    # Builder: Mandatory for commercial projects
+    # ══════════════════════════════════════════════════════════════
+
+    - phase: health_and_safety
+      phase_id: P21
+      sequence_number: 21
+      builder_logic: "H&S requirements from project inception"
+      autonomy: level_1_suggest
+      notes: "Critical compliance item - requires expert review"
+
+      steps:
+        - step: design_stage_hs
+          step_id: P21-S01
+          description: "Design stage H&S requirements"
+          drawings: [specifications, contract_documents]
+
+          tasks:
+            - task_id: P21-S01-T01
+              item: "Baseline Risk Assessment by H&S Agent"
+              unit: Item
+              measurement_rule: DBRule
+              rule_detail: "Per project requirements"
+              drawings: [specifications]
+
+            - task_id: P21-S01-T02
+              item: "Risk Register setup"
+              unit: Item
+              measurement_rule: DBRule
+              rule_detail: "Required at design start"
+              drawings: [specifications]
+
+        - step: hs_costs
+          step_id: P21-S02
+          description: "H&S cost allowances"
+          drawings: [specifications, contract_documents]
+
+          tasks:
+            - task_id: P21-S02-T01
+              item: "Building type risk assessment"
+              unit: Item
+              measurement_rule: DBRule
+              rule_detail: "Risk profile affects costs"
+              drawings: [specifications]
+
+            - task_id: P21-S02-T02
+              item: "Client insurance for construction"
+              unit: Item
+              measurement_rule: DBRule
+              rule_detail: "Per contract requirements"
+              drawings: [contract_documents]
+
+            - task_id: P21-S02-T03
+              item: "Professional liability insurance"
+              unit: Item
+              measurement_rule: DBRule
+              rule_detail: "Design team including QS"
+              drawings: [contract_documents]
+
+  post_checks:
+    - verify_all_phases_complete
+    - cross_check_totals_against_gfa
+    - confirm_no_orphan_items
+    - validate_dependency_chain
+    - verify_all_DQSRules_applied
+    - verify_all_DBRules_applied
+    - confirm_commercial_compliance_items (fire, accessibility, H&S)
+    - validate_output_to_Final_Bills_of_Quantities_folder
+
+  learning_mode_hooks:
+    on_task_complete:
+      - log_confidence_score
+      - capture_assumptions_made
+      - note_clarifications_needed
+    on_phase_complete:
+      - summarize_phase_learnings
+      - identify_knowledge_gaps
+    on_playbook_complete:
+      - generate_improvement_proposals
+      - update_experiment_history

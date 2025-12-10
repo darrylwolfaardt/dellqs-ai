@@ -1,0 +1,51 @@
+{
+  "region": "gauteng",
+  "effective_period": "2024-Q4",
+  "currency": "ZAR",
+  "source": "bargaining_council",
+  "rates": {
+    "general_labourer": {
+      "unit": "hour",
+      "rate": 45.00,
+      "all_in_rate": 85.00
+    },
+    "bricklayer": {
+      "unit": "hour",
+      "rate": 75.00,
+      "all_in_rate": 140.00
+    },
+    "carpenter": {
+      "unit": "hour",
+      "rate": 80.00,
+      "all_in_rate": 150.00
+    },
+    "plasterer": {
+      "unit": "hour",
+      "rate": 70.00,
+      "all_in_rate": 130.00
+    },
+    "plumber": {
+      "unit": "hour",
+      "rate": 90.00,
+      "all_in_rate": 170.00
+    },
+    "electrician": {
+      "unit": "hour",
+      "rate": 95.00,
+      "all_in_rate": 180.00
+    },
+    "steelfixer": {
+      "unit": "hour",
+      "rate": 70.00,
+      "all_in_rate": 130.00
+    },
+    "painter": {
+      "unit": "hour",
+      "rate": 65.00,
+      "all_in_rate": 120.00
+    }
+  },
+  "notes": {
+    "all_in_rate": "Includes employer contributions, leave, overheads"
+  }
+}

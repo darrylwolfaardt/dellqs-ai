@@ -1,0 +1,26 @@
+{
+  "source": "statssa_ppi",
+  "last_updated": "2024-12-01",
+  "base_year": 2020,
+  "annual_factors": {
+    "2020": 1.000,
+    "2021": 1.065,
+    "2022": 1.152,
+    "2023": 1.218,
+    "2024": 1.285
+  },
+  "category_indices": {
+    "construction_materials": {
+      "2024": 1.31,
+      "trend": "moderating"
+    },
+    "labour": {
+      "2024": 1.25,
+      "trend": "stable"
+    },
+    "plant_equipment": {
+      "2024": 1.22,
+      "trend": "stable"
+    }
+  }
+}
