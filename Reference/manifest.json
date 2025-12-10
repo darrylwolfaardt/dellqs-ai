@@ -1,0 +1,394 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "manifest_version": "1.0.0",
+  "generated_at": "2025-01-15T09:30:00Z",
+  "generated_by": "qs-intake-agent",
+
+  "project": {
+    "id": "2025-001",
+    "name": "Riverside Office Complex",
+    "reference": "CLIENT-REF-2025-0042",
+    "description": "Three-storey commercial office building with basement parking",
+    "building_type": "commercial_office",
+    "client": {
+      "name": "Riverside Developments Ltd",
+      "contact": "John Smith",
+      "email": "john@riverside.co.za",
+      "phone": "+27 11 555 0123"
+    },
+    "dates": {
+      "received": "2025-01-15",
+      "deadline": "2025-01-29",
+      "target_completion": "2025-01-25"
+    },
+    "priority": "standard"
+  },
+
+  "location": {
+    "address": "123 River Road, Sandton",
+    "suburb": "Sandton",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "country": "ZA",
+    "erf_number": "ERF 4521 SANDTON",
+    "coordinates": {
+      "latitude": -26.1076,
+      "longitude": 28.0567,
+      "source": "geocoded_from_address",
+      "confidence": 0.95
+    },
+    "municipal_jurisdiction": "City of Johannesburg Metropolitan Municipality"
+  },
+
+  "standards": {
+    "measurement_system": "sa_standard",
+    "measurement_version": "6th_edition",
+    "alternative_standards": ["nrm2"],
+    "regional_adaptations": ["gauteng_dolomite", "jhb_municipal"],
+    "currency": "ZAR",
+    "unit_system": "metric"
+  },
+
+  "scope": {
+    "deliverables_requested": [
+      "preliminary_boq",
+      "elemental_estimate",
+      "risk_assessment"
+    ],
+    "boq_format": "elemental",
+    "pricing_required": true,
+    "pricing_source": "internal_rates_2025",
+    "exclusions": [
+      "loose_furniture",
+      "it_infrastructure",
+      "specialist_equipment"
+    ],
+    "special_instructions": "Client requires separate cost centres for basement vs above-ground works"
+  },
+
+  "value_add_services": {
+    "geological_assessment": {
+      "enabled": true,
+      "status": "pending",
+      "data_sources": ["cgs_geological", "gauteng_dolomite_risk"]
+    },
+    "regulatory_overlay": {
+      "enabled": true,
+      "status": "pending",
+      "data_sources": ["coj_zoning", "heritage_register"]
+    },
+    "climate_validation": {
+      "enabled": true,
+      "status": "pending",
+      "data_sources": ["saws_climate_zones"]
+    },
+    "supply_chain_intelligence": {
+      "enabled": false,
+      "status": "not_requested",
+      "data_sources": []
+    },
+    "services_infrastructure": {
+      "enabled": true,
+      "status": "pending",
+      "data_sources": ["coj_services", "eskom_supply"]
+    },
+    "lifecycle_costing": {
+      "enabled": false,
+      "status": "not_requested",
+      "data_sources": []
+    }
+  },
+
+  "drawings": {
+    "summary": {
+      "total_files": 12,
+      "total_sheets": 28,
+      "formats": ["pdf"],
+      "quality_assessment": "good",
+      "completeness": "partial"
+    },
+    "architectural": [
+      {
+        "filename": "A001_Site_Plan.pdf",
+        "sheet_number": "A001",
+        "title": "Site Plan",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "1:200",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      },
+      {
+        "filename": "A100_Ground_Floor_Plan.pdf",
+        "sheet_number": "A100",
+        "title": "Ground Floor Plan",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "1:100",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      },
+      {
+        "filename": "A101_First_Floor_Plan.pdf",
+        "sheet_number": "A101",
+        "title": "First Floor Plan",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "1:100",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      },
+      {
+        "filename": "A102_Second_Floor_Plan.pdf",
+        "sheet_number": "A102",
+        "title": "Second Floor Plan",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "1:100",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      },
+      {
+        "filename": "A103_Basement_Plan.pdf",
+        "sheet_number": "A103",
+        "title": "Basement Plan",
+        "revision": "P02",
+        "date": "2025-01-08",
+        "scale": "1:100",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Older revision than other plans - verify current"
+      },
+      {
+        "filename": "A200_Elevations.pdf",
+        "sheet_number": "A200",
+        "title": "Elevations - North & South",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "1:100",
+        "pages": 2,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      },
+      {
+        "filename": "A201_Elevations.pdf",
+        "sheet_number": "A201",
+        "title": "Elevations - East & West",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "1:100",
+        "pages": 2,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      },
+      {
+        "filename": "A300_Sections.pdf",
+        "sheet_number": "A300",
+        "title": "Building Sections",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "1:50",
+        "pages": 3,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      }
+    ],
+    "structural": [
+      {
+        "filename": "S001_Foundation_Layout.pdf",
+        "sheet_number": "S001",
+        "title": "Foundation Layout",
+        "revision": "P02",
+        "date": "2025-01-08",
+        "scale": "1:100",
+        "pages": 1,
+        "status": "preliminary",
+        "extracted": false,
+        "notes": "Marked preliminary - confirm with engineer"
+      },
+      {
+        "filename": "S100_Structural_Plans.pdf",
+        "sheet_number": "S100",
+        "title": "Structural Floor Plans",
+        "revision": "P02",
+        "date": "2025-01-08",
+        "scale": "1:100",
+        "pages": 4,
+        "status": "preliminary",
+        "extracted": false,
+        "notes": null
+      }
+    ],
+    "services": [],
+    "schedules": [
+      {
+        "filename": "SCH_Doors_Windows.pdf",
+        "sheet_number": "SCH-01",
+        "title": "Door and Window Schedule",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "NTS",
+        "pages": 3,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      },
+      {
+        "filename": "SCH_Finishes.pdf",
+        "sheet_number": "SCH-02",
+        "title": "Finishes Schedule",
+        "revision": "P03",
+        "date": "2025-01-10",
+        "scale": "NTS",
+        "pages": 2,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": null
+      }
+    ]
+  },
+
+  "specifications": {
+    "received": true,
+    "format": "pdf",
+    "filename": "Specification_Riverside_P03.pdf",
+    "sections_identified": [
+      "preliminaries",
+      "concrete_work",
+      "masonry",
+      "structural_steelwork",
+      "waterproofing",
+      "roofing",
+      "glazing",
+      "internal_finishes",
+      "external_works"
+    ],
+    "missing_sections": [
+      "mechanical",
+      "electrical",
+      "fire_protection"
+    ]
+  },
+
+  "site_information": {
+    "survey_received": false,
+    "geotech_report_received": false,
+    "existing_services_drawing": false,
+    "site_photos": false,
+    "notes": "No site-specific information provided - relying on desktop assessment"
+  },
+
+  "gaps_and_flags": {
+    "critical": [
+      {
+        "code": "GAP-001",
+        "category": "drawings",
+        "description": "No services drawings received (mechanical, electrical, hydraulic)",
+        "impact": "Cannot quantify services - allowance only",
+        "action_required": "RFI to architect/client",
+        "status": "pending"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "WARN-001",
+        "category": "drawings",
+        "description": "Basement plan revision P02 older than other architectural drawings P03",
+        "impact": "Potential inconsistency",
+        "action_required": "Verify if superseded",
+        "status": "pending"
+      },
+      {
+        "code": "WARN-002",
+        "category": "structural",
+        "description": "Structural drawings marked preliminary",
+        "impact": "Foundation quantities may change",
+        "action_required": "Flag in estimate as provisional",
+        "status": "acknowledged"
+      },
+      {
+        "code": "WARN-003",
+        "category": "specifications",
+        "description": "No M&E specifications received",
+        "impact": "Services specification assumptions required",
+        "action_required": "RFI or apply standard allowances",
+        "status": "pending"
+      }
+    ],
+    "information": [
+      {
+        "code": "INFO-001",
+        "category": "location",
+        "description": "Site located in Gauteng dolomite risk area - geological assessment recommended",
+        "impact": "Foundation design may require specialist input",
+        "action_required": "Run geological assessment module",
+        "status": "pending"
+      }
+    ]
+  },
+
+  "workflow": {
+    "current_checkpoint": "init-complete",
+    "checkpoints_completed": [
+      {
+        "checkpoint": "intake-received",
+        "timestamp": "2025-01-15T09:00:00Z",
+        "agent": "qs-intake-agent"
+      },
+      {
+        "checkpoint": "folder-structure-created",
+        "timestamp": "2025-01-15T09:15:00Z",
+        "agent": "qs-intake-agent"
+      },
+      {
+        "checkpoint": "drawings-catalogued",
+        "timestamp": "2025-01-15T09:25:00Z",
+        "agent": "qs-intake-agent"
+      },
+      {
+        "checkpoint": "init-complete",
+        "timestamp": "2025-01-15T09:30:00Z",
+        "agent": "qs-intake-agent"
+      }
+    ],
+    "next_steps": [
+      "geological_assessment",
+      "regulatory_overlay",
+      "drawing_extraction"
+    ],
+    "blocked_by": [],
+    "requires_user_input": [
+      "GAP-001",
+      "WARN-001"
+    ]
+  },
+
+  "audit": {
+    "created_by": "qs-intake-agent",
+    "created_at": "2025-01-15T09:30:00Z",
+    "last_modified_by": "qs-intake-agent",
+    "last_modified_at": "2025-01-15T09:30:00Z",
+    "version": 1,
+    "change_log": [
+      {
+        "version": 1,
+        "timestamp": "2025-01-15T09:30:00Z",
+        "agent": "qs-intake-agent",
+        "action": "manifest_created",
+        "details": "Initial manifest generated from project intake"
+      }
+    ]
+  }
+}

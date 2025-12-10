@@ -2,7 +2,7 @@ agent:
   metadata:
     id: qs/intake-analyst
     type: specialist
-    version: "1.0.0"
+    version: "1.1.0"
 
   implementation:
     module: qs_agents.agents.intake_analyst
@@ -13,23 +13,35 @@ agent:
     purpose: |
       Document controller who receives architectural packages, validates
       completeness, extracts metadata, and identifies what's present/missing.
+      Initializes the project folder structure and creates all required
+      tracking files per the QS workflow standards.
 
     role: |
       I am the first eyes on every project. I scan drawing packages,
       identify document types (floor plans, elevations, sections, details,
       schedules), extract project metadata, and flag gaps that will
-      impede measurement.
+      impede measurement. I organize incoming documents into the standard
+      folder structure and initialize the project state for downstream agents.
 
     principles:
       - I catalogue before I analyse
       - I flag missing information explicitly, never assume
       - I extract: project name, location, architect, revision dates, scale
       - I identify drawing types and their measurement implications
+      - I route documents to correct intake subfolders (architectural, structural, services, schedules)
+      - I initialize all _project tracking files on first run
+      - I enable value-add services based on location context (e.g., geological for Gauteng)
 
   outputs:
-    - project_manifest.json    # What we received
-    - completeness_report.md   # What's missing
+    # Primary deliverables
+    - project_manifest.json    # Full project metadata per manifest schema
+    - completeness_report.md   # What's missing, gaps identified
     - measurement_scope.md     # What can be measured from available info
+
+    # Project state files (/_project folder)
+    - state.json               # Checkpoint/resume state for workflow
+    - flags.json               # Items requiring human review
+    - audit-log.json           # Processing history and decisions
 
   tools:
     - name: pdf_parser
@@ -67,8 +79,182 @@ agent:
     - name: geocoder
       implementation: qs_agents.tools.geocoder.Geocoder
       description: |
-        Geocodes UK postcodes and addresses to coordinates.
-        Returns local authority, region, and location context.
-        Uses postcodes.io (free) or Google Maps API.
+        Geocodes addresses to coordinates with regional context.
+        Returns local authority, region, province, and location metadata.
+        Supports South African addresses via Google Maps API or
+        UK postcodes via postcodes.io.
       config:
-        provider: postcodes_io
+        provider: google_maps  # Primary for SA addresses
+        fallback: postcodes_io  # UK postcodes
+      optional:
+        - GOOGLE_MAPS_API_KEY
+
+    - name: document_router
+      implementation: qs_agents.tools.document_router.DocumentRouter
+      description: |
+        Routes classified documents to the correct intake subfolder
+        based on drawing_classifier output. Maintains the standard
+        folder structure:
+          /01-intake/drawings/architectural/
+          /01-intake/drawings/structural/
+          /01-intake/drawings/services/
+          /01-intake/drawings/schedules/
+          /01-intake/specifications/
+          /01-intake/site-info/
+          /01-intake/brief/
+        Creates folders if they don't exist. Logs all routing decisions
+        to audit trail.
+      config:
+        create_folders: true
+        preserve_originals: false  # Move, don't copy
+        naming_convention: preserve  # Keep original filenames
+
+    - name: spec_parser
+      implementation: qs_agents.tools.spec_parser.SpecParser
+      description: |
+        Parses specification documents (NBS format, material specs,
+        standards references). Extracts:
+          - Section headings and hierarchy
+          - Material specifications and brands
+          - Performance requirements
+          - Standards references (SANS, BS, etc.)
+          - Workmanship clauses
+        Outputs structured JSON for downstream agents.
+      config:
+        extract_tables: true
+        identify_standards: true
+        supported_formats: [pdf, docx]
+
+    - name: brief_analyzer
+      implementation: qs_agents.tools.brief_analyzer.BriefAnalyzer
+      description: |
+        Extracts scope and requirements from brief documents,
+        RFQs, and client correspondence. Identifies:
+          - Deliverables requested (BOQ, estimate, etc.)
+          - Deadlines and milestones
+          - Special instructions and exclusions
+          - Budget constraints if stated
+          - Client contact details
+        Populates the scope and client sections of manifest.
+      config:
+        extract_dates: true
+        identify_deliverables: true
+        supported_formats: [pdf, docx, eml, msg]
+
+    - name: value_add_initializer
+      implementation: qs_agents.tools.value_add_initializer.ValueAddInitializer
+      description: |
+        Determines which value-add services to enable based on
+        project location and characteristics. Rules:
+          - Gauteng address → enable geological_assessment (dolomite risk)
+          - Heritage area → enable regulatory_overlay
+          - Coastal region → enable climate_validation
+          - Large project (>5000m²) → enable supply_chain_intelligence
+        Updates manifest.value_add_services with enabled flags
+        and appropriate data sources.
+      config:
+        auto_enable_geological:
+          - Gauteng
+          - North West  # Dolomite areas
+        auto_enable_heritage:
+          - Cape Town CBD
+          - Johannesburg Inner City
+        auto_enable_climate:
+          - Western Cape  # Fire risk
+          - KwaZulu-Natal  # Coastal/humidity
+
+    - name: state_initializer
+      implementation: qs_agents.tools.state_initializer.StateInitializer
+      description: |
+        Creates and manages the /_project state files:
+          - state.json: Checkpoint/resume tracking
+          - flags.json: Human review items
+          - audit-log.json: Processing history
+        Initializes files on first run, updates on subsequent runs.
+        Supports checkpoint/resume pattern for long-running projects.
+      config:
+        checkpoint_on_complete: true
+        auto_log_tool_calls: true
+
+  workflow:
+    sequence:
+      1_initialize:
+        description: Create project folder structure and state files
+        tools: [state_initializer]
+        checkpoints: [folder-structure-created]
+
+      2_parse_documents:
+        description: Extract content from all received documents
+        tools: [pdf_parser]
+        parallel: true  # Process multiple PDFs concurrently
+
+      3_classify_and_route:
+        description: Classify document types and route to correct folders
+        tools: [drawing_classifier, document_router]
+        checkpoints: [drawings-catalogued]
+
+      4_extract_metadata:
+        description: Extract project metadata from documents
+        tools: [metadata_extractor, brief_analyzer, spec_parser]
+        parallel: true
+
+      5_geocode_location:
+        description: Geocode project address and determine regional context
+        tools: [geocoder]
+        outputs: [location_block]
+
+      6_enable_value_adds:
+        description: Enable appropriate value-add services based on location
+        tools: [value_add_initializer]
+        depends_on: [5_geocode_location]
+
+      7_generate_manifest:
+        description: Compile all extracted data into project manifest
+        outputs: [project_manifest.json]
+        checkpoints: [init-complete]
+
+      8_generate_reports:
+        description: Generate completeness and scope reports
+        outputs: [completeness_report.md, measurement_scope.md]
+
+    checkpoints:
+      - id: intake-received
+        description: Documents received and validated
+      - id: folder-structure-created
+        description: Project folders created per standard structure
+      - id: drawings-catalogued
+        description: All drawings classified and routed
+      - id: init-complete
+        description: Intake phase complete, ready for analysis
+
+  manifest_schema:
+    reference: Reference/manifest.json
+    required_sections:
+      - project           # Project identification and client details
+      - location          # Geocoded address with coordinates
+      - standards         # Measurement system and regional adaptations
+      - scope             # Deliverables, exclusions, special instructions
+      - value_add_services # Enabled services with status
+      - drawings          # Categorized drawing inventory
+      - specifications    # Parsed specification sections
+      - site_information  # Available site data
+      - gaps_and_flags    # Critical/warning/info items
+      - workflow          # Checkpoint history and next steps
+      - audit             # Version history and change log
+
+  folder_structure:
+    reference: Reference/project_folder_structure.md
+    creates:
+      - /01-intake/drawings/architectural/
+      - /01-intake/drawings/structural/
+      - /01-intake/drawings/services/
+      - /01-intake/drawings/schedules/
+      - /01-intake/specifications/
+      - /01-intake/site-info/
+      - /01-intake/brief/
+      - /_project/
+    maintains:
+      - /_project/manifest.json
+      - /_project/state.json
+      - /_project/flags.json
+      - /_project/audit-log.json
