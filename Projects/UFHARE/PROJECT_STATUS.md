@@ -285,19 +285,42 @@ Conversion of an existing old clinic building into Finance Department Offices at
 
 ## 5. OUTSTANDING QUERIES & ARCHITECT CLARIFICATIONS
 
-### Resolved (from SVA Comments 2025-12-09)
+### Resolved (from SVA Comments 2025-12-11)
 
-- [x] **Query 01 - Paving:** Allow for new paving per drawing A-(11)1000, replace existing up to road edge
-  - **Paving Spec:** Bosun Smooth Ethnic Paver (Charcoal)
-  - **Link:** https://www.bosun.co.za/products/paving/regular-paving/smooth-ethnic-paver/
-  - **Additional:** Budget for concrete bollards along road edge
-  - **Landscaping:** R100,000 PC Sum overall
+| Q# | Query | Response | Measurement Action |
+|----|-------|----------|-------------------|
+| 1 | External paving extent | Per A-(11)1000 to road edge | Bosun charcoal paver, bollards, R100k landscaping |
+| 5 | Structural drawings | Received 10-12-2025 | Use Rev E drawings |
+| 7 | Glass thickness | Cannot specify | Use PC sum for glazing |
+| 11 | Cavity vs solid walls | Structural dwgs issued | Refer structural for wall types |
+| 12 | Garage doors | **None in project** | Exclude from BOQ |
+| 13 | Facade doors | Refer door schedules | Measure per details D01-D08 |
+| 14 | Timber flooring removal | Refer A-(52)1001 | Await engineer on sub-structure |
+| 15 | Floor tile removal | Refer floor finishes | Adhesive spec to follow |
+| 17 | Steps and nib wall | Dimensions on plans | Scale from drawings |
+| 18 | Fence | **None required** | **PC Sum R50,000** |
+| 19 | Roof areas | Pitch on sections | Measure on slope from sections |
+| 20 | Ceiling demolition | **All ceilings demolished** | Full ceiling removal |
+| 24 | Existing ablutions | Upgrade per A-(50)6001 | Measure upgrade work |
+| 25 | Finishing schedule | Refer A-(51)1001 | Use wall finishes layout |
+| 28 | Concrete beam finish | Class 1 accuracy | Note in descriptions |
 
-### Pending Resolution
+### Outstanding - Awaiting Response
 
-- [ ] Structural/Civil queries - awaiting response from Alex Semple (Bara Consult)
-- [ ] HSE specification - awaiting from Jay Bhana / Stiaan Burger (Safe Practice)
-- [ ] Review Query List Rev 2 for any new items
+| Q# | Query | Responsible | Status |
+|----|-------|-------------|--------|
+| 4 | Civil dwgs, water/drain blanking | Civil Eng (Alex Semple) | **PENDING** |
+| 6 | H&S Spec and BOQ | H&S Agent (Jay Bhana) | **PENDING** |
+| 10 | Loadbearing walls, roof support | Struct Eng | **PENDING** |
+| 21 | Drainage/water line retention | Civil Eng | **PENDING** |
+| 22 | Electrical removal scope | Elec Eng | **PENDING** |
+| 26 | Wall stability, temp support method | Struct Eng | **PENDING** |
+| 27 | Demolition sequence required? | Struct Eng | **PENDING** |
+
+### PC Sums Confirmed
+- Landscaping: R100,000
+- Fence allowance: R50,000
+- Glass (if unspecified): TBD
 
 ---
 
@@ -306,7 +329,7 @@ Conversion of an existing old clinic building into Finance Department Offices at
 ### PHASE 1: PRE-MEASUREMENT TASKS
 
 #### Document Review & Preparation
-- [ ] **UFH-001:** Review Query List Rev 2 responses and incorporate into measurements
+- [x] **UFH-001:** Review Query List Rev 2 responses *(28 queries reviewed, 15 resolved, 7 pending)*
 - [x] **UFH-002:** Extract Electrical BOQ from ZIP package *(5 files extracted)*
 - [x] **UFH-003:** Extract Fire Detection BOQ from ZIP package *(3 files extracted)*
 - [x] **UFH-004:** Extract HVAC package contents *(3 files extracted)*
@@ -329,9 +352,22 @@ Conversion of an existing old clinic building into Finance Department Offices at
 
 #### DEMOLITIONS (SSM7 Section 2)
 - [x] **UFH-020:** Measure demolition work from demolition plans *(Complete - UFH_Demolitions_BOQ.xlsx)*
-- [ ] **UFH-021:** Verify demolition quantities against Rev 3 drawings
+- [x] **UFH-021:** Verify demolition quantities against Rev 3 drawings *(Drawing A-01-1002 Rev3 reviewed)*
 - [ ] **UFH-022:** Include disposal arrangements in descriptions
 - [ ] **UFH-023:** Cross-check making good requirements with alterations
+
+**Demolition Scope (from A-01-1002 Rev3):**
+- Built-in joinery & cupboards (with concrete soffits)
+- Fireplace, veranda (columns/walls/ceiling)
+- Facade doors/windows, garage walls/doors
+- Sanware with drainage blanking
+- Floor tiles, internal brick walls
+- All windows with ironmongery
+- Steps, nib wall, reception desk
+- ALL roof structures (garage, main, veranda)
+- ALL ceilings (per query response)
+- External wall with fence, gates
+- External paving, concrete slab
 
 #### ALTERATIONS (SSM7 Section 3)
 - [ ] **UFH-030:** Review scope of alterations from drawings
@@ -342,43 +378,50 @@ Conversion of an existing old clinic building into Finance Department Offices at
 - [ ] **UFH-035:** Include making good to wall ends and faces
 
 #### EARTHWORKS (SSM7 Section 4)
-- [ ] **UFH-040:** Calculate site clearance area (building footprint + 2m per DQRules)
-- [ ] **UFH-041:** Measure bulk excavation for foundations (m3, 2m depth stages)
-- [ ] **UFH-042:** Measure trench excavation (m3, 2m depth stages)
-- [ ] **UFH-043:** Measure filling under floors (m3)
-- [ ] **UFH-044:** Include compaction requirements per structural spec
-- [ ] **UFH-045:** Add keeping free of water item
-- [ ] **UFH-046:** Measure external excavation for paving layerworks
+- [x] **UFH-040:** Calculate site clearance area (building footprint + 2m per DQRules) *~250m² estimated*
+- [x] **UFH-041:** Measure bulk excavation for foundations (m3, 2m depth stages) *61m³ - see UFH_Bulk_Excavation_041.md*
+- [x] **UFH-042:** Measure trench excavation (m3, 2m depth stages) *Per foundation layout, 700mm depth*
+- [x] **UFH-043:** Measure filling under floors (m3) *38m³ total (28m³ hardcore + 10m³ sand blinding) - see UFH_Filling_Under_Floors_043.md*
+- [x] **UFH-044:** Include compaction requirements per structural spec *306m² total (186m² internal + 120m² external)*
+- [x] **UFH-045:** Add keeping free of water item *1 Item + R15k P.Sum*
+- [x] **UFH-046:** Measure external excavation for paving layerworks *29m³ excav, 18m³ G5 fill, 120m² bedding*
+
+**Earthworks Estimates (from drawings):**
+- Building footprint: ~186 m²
+- Site clearance: ~250 m² (footprint + 2m perimeter per DQRules)
+- Foundation depth: 700mm (<=2m stage)
+- Trench excavation: refer foundation layout for linear metres
+- External paving area: to be measured from A-(11)1000
 
 #### CONCRETE, FORMWORK & REINFORCEMENT (SSM7 Section 7)
-- [x] **UFH-050:** Measure foundations (m3) *(Complete - UFH_Foundations_700mm final)*
-- [ ] **UFH-051:** Verify foundation measurements against Rev E drawings
-- [ ] **UFH-052:** Measure surface beds (m3)
-- [ ] **UFH-053:** Measure ring beams (m3)
-- [ ] **UFH-054:** Measure formwork to foundations (m2)
-- [ ] **UFH-055:** Measure formwork to ring beams (m2)
-- [ ] **UFH-056:** Measure reinforcement from structural details (t)
-- [ ] **UFH-057:** Measure concrete canopy per detail A-(53)2003
-- [ ] **UFH-058:** Add test blocks item
+- [x] **UFH-050:** Measure foundations (m3) *45m³ (107m × 0.6m × 0.7m) + 4m³ blinding*
+- [x] **UFH-051:** Verify foundation measurements against Rev E drawings *Verified - see UFH_Concrete_050_to_058.md*
+- [x] **UFH-052:** Measure surface beds (m3) *24m³ (186m² × 0.125m)*
+- [x] **UFH-053:** Measure ring beams (m3) *14m³ (RB1:11m³ + RB2:3m³)*
+- [x] **UFH-054:** Measure formwork to foundations (m2) *150m²*
+- [x] **UFH-055:** Measure formwork to ring beams (m2) *114m²*
+- [x] **UFH-056:** Measure reinforcement from structural details (t) *6.0t estimated*
+- [x] **UFH-057:** Measure concrete canopy per detail A-(53)2003 *1m³ provisional*
+- [x] **UFH-058:** Add test blocks item *60 No. cubes*
 
 #### PRECAST CONCRETE (SSM7 Section 8)
-- [ ] **UFH-060:** Check drawings for any precast elements
-- [ ] **UFH-061:** Measure precast items if applicable (No or m)
+- [x] **UFH-060:** Check drawings for any precast elements *N/A - no precast in project*
+- [x] **UFH-061:** Measure precast items if applicable (No or m) *N/A*
 
 #### MASONRY (SSM7 Section 10)
-- [ ] **UFH-070:** Measure blockwork walls (m2) from ground storey plan
-- [ ] **UFH-071:** Separate internal and external blockwork
-- [ ] **UFH-072:** Measure blockwork to piers and pilasters (m)
-- [ ] **UFH-073:** Add fair face blockwork as extra over where required
-- [ ] **UFH-074:** Measure beam filling (m2)
-- [ ] **UFH-075:** Measure closing cavities (m)
-- [ ] **UFH-076:** Include DPC under walls
-- [ ] **UFH-077:** Add fabricated lintels (m)
+- [x] **UFH-070:** Measure blockwork walls (m2) from ground storey plan *112m² total*
+- [x] **UFH-071:** Separate internal and external blockwork *36m² ext + 76m² int*
+- [x] **UFH-072:** Measure blockwork to piers and pilasters (m) *None identified*
+- [x] **UFH-073:** Add fair face blockwork as extra over where required *36m² Platinum Satin*
+- [x] **UFH-074:** Measure beam filling (m2) *22m²*
+- [x] **UFH-075:** Measure closing cavities (m) *N/A - solid walls*
+- [x] **UFH-076:** Include DPC under walls *59m*
+- [x] **UFH-077:** Add fabricated lintels (m) *36 No.*
 
 #### WATERPROOFING
-- [ ] **UFH-080:** Check specifications for waterproofing requirements
-- [ ] **UFH-081:** Measure DPM under surface beds if required (m2)
-- [ ] **UFH-082:** Measure waterproofing to ablutions (m2)
+- [x] **UFH-080:** Check specifications for waterproofing requirements *Reviewed*
+- [x] **UFH-081:** Measure DPM under surface beds if required (m2) *186m²*
+- [x] **UFH-082:** Measure waterproofing to ablutions (m2) *26m² floor + 63m² walls*
 
 #### ROOFING
 - [ ] **UFH-085:** Review roof plan for any new roofing work
@@ -519,6 +562,13 @@ Track work completed in each session for continuity:
 |---------|------|-----------------|-----------|
 | 1 | 2026-01-04 | PROJECT_STATUS.md created. 78 tasks defined. Document inventory complete. | UFH-001 |
 | 1 | 2026-01-04 | UFH-002,003,004,005 complete. Specialist packages extracted: Elec(5), FD(3), HVAC(3), Fire(3). | UFH-001 |
+| 1 | 2026-01-04 | UFH-001 complete. Query list reviewed: 15 resolved, 7 pending. PC sums: R100k landscape, R50k fence. | UFH-006 |
+| 1 | 2026-01-04 | Phase 2 started. Drawings reviewed: Foundation (S-01 Rev E), Demolition (A-01 Rev3), Ground Plan (A-11 Rev4). Building ~186m². | UFH-040 |
+| 2 | 2026-01-04 | UFH-041 complete. Bulk excavation measured: 61m³ (186m² × 0.325m depth). Surface bed layerworks: 125mm slab + 50mm blinding + 150mm hardcore = 325mm. | UFH-043 |
+| 2 | 2026-01-04 | UFH-043 complete. Filling under floors: 28m³ hardcore (150mm) + 10m³ sand blinding (50mm) = 38m³ total. | UFH-044 |
+| 2 | 2026-01-04 | UFH-044,045,046 complete. Earthworks section finished. Compaction 306m², dewatering P.Sum R15k, external paving excavation 29m³. Total excavation 135m³. | UFH-050 |
+| 2 | 2026-01-04 | UFH-050-058 complete. Concrete section finished. Total concrete 88m³ (Found 45, RB 14, SB 24, Canopy 1, Blinding 4). Formwork 272m². Rebar 6t. | UFH-060 |
+| 2 | 2026-01-04 | UFH-060-082 complete. Precast N/A. Masonry 112m² blockwork + 78m² drywall. Waterproofing: DPM 186m², ablutions 89m². | UFH-085 |
 
 ---
 
@@ -531,11 +581,35 @@ Track work completed in each session for continuity:
 4. Specialist packages (Elec, HVAC, Fire) are complete and ready for integration
 5. No basement or multi-storey work - ground floor conversion only
 
-### Architect Instructions (from emails)
+### Building Areas (from A-11-1000 Rev 4)
+| Room | Area (m²) |
+|------|-----------|
+| Open Plan Offices | ~57 |
+| Offices 3-5 | 41 |
+| Strong Rooms 1-2 | 26 |
+| Kitchenette | 9 |
+| Passage | 24 |
+| WCs (4 total) | 11 |
+| Student Areas | 18 |
+| **Approx Total** | **~186 m²** |
+
+### Wall Types
+- Ma.01: Existing Brickwork (retain/alter)
+- Ma.02: New Brickwork (measure)
+- Ma.03: Drywalled - Gyproc (measure)
+- Ma.04: Reinforced Concrete (per structural)
+
+### Architect Instructions (from Query List responses)
 1. Paving to extend to road edge per A-(11)1000
 2. Paving specification: Bosun Smooth Ethnic Paver (Charcoal)
 3. Include concrete bollards along road edge
 4. Landscaping PC Sum: R100,000
+5. Fence PC Sum: R50,000 (no fence construction)
+6. No garage doors in project
+7. All ceilings to be demolished
+8. Existing ablutions to be upgraded (not demolished)
+9. Concrete beam finish: Class 1 accuracy
+10. Glass thickness: use PC sum (architect cannot specify)
 
 ### Reference Documents
 - ASAQS Standard System of Measuring Building Work, Seventh Edition (2015)

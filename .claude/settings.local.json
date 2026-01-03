@@ -12,7 +12,9 @@
       "Bash(move \"Projects\\Addo Bridge\\_project\" \"Projects\\Addo Bridge\\_project_backup\")",
       "Bash(set PYTHONPATH=%CD%)",
       "Bash(tree:*)",
-      "Bash(move \"qs-agents\" \"qs_agents\")"
+      "Bash(move \"qs-agents\" \"qs_agents\")",
+      "Bash(\"C:\\\\Users\\\\darryl\\\\source\\\\repos\\\\dellqs-ai\\\\.venv\\\\Scripts\\\\pip.exe\" install python-docx markdown)",
+      "Bash(\"C:\\\\Users\\\\darryl\\\\source\\\\repos\\\\dellqs-ai\\\\.venv\\\\Scripts\\\\python.exe\" -c \"from qs_agents.tools.md_to_docx import convert_md_to_docx; result = convert_md_to_docx\\(r''Projects/UFHARE/1 Pre-Tender/MEASUREMENT UFHare/Claude Measurements/UFH_Bulk_Excavation_041.md''\\); print\\(f''Created: {result}''\\)\")"
     ],
     "deny": [],
     "ask": []
