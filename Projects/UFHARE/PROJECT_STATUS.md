@@ -63,30 +63,30 @@ Conversion of an existing old clinic building into Finance Department Offices at
 ### 3.1 Architectural Drawings (57 files)
 
 #### Floor Plans
-| Drawing No. | Title | Rev | File |
-|-------------|-------|-----|------|
-| A-(11)1000 | Ground Storey Plan | 4 | `Architectural Drawings\A-(11)1000-Ground Storey Plan-(4).pdf` |
-| A-(11)1001 | Roof Plan | 4 | `Architectural Drawings\A-(11)1001-Roof Plan-(4).pdf` |
-| A-(11)1002 | Clerestory Plan Level | 3 | `Architectural Drawings\A-(11)1002-Clerestory Plan Level-(3).pdf` |
-| A-(11)1003 | General Arrangement Layout | 4 | `Architectural Drawings\A-(11)1003-General Arrangement Layout-(4).pdf` |
+| Drawing No. | Title | Rev | File | Split File |
+|-------------|-------|-----|------|------------|
+| A-(11)1000 | Ground Storey Plan | 4 | `Architectural Drawings\A-(11)1000-Ground Storey Plan-(4).pdf` | `split_pdfs\A-(11)1000-Ground Storey Plan-(4)\A-(11)1000-Ground Storey Plan-(4)_page_001.png` |
+| A-(11)1001 | Roof Plan | 4 | `Architectural Drawings\A-(11)1001-Roof Plan-(4).pdf` | `split_pdfs\A-(11)1001-Roof Plan-(4)\A-(11)1001-Roof Plan-(4)_page_001.png` |
+| A-(11)1002 | Clerestory Plan Level | 3 | `Architectural Drawings\A-(11)1002-Clerestory Plan Level-(3).pdf` | - |
+| A-(11)1003 | General Arrangement Layout | 4 | `Architectural Drawings\A-(11)1003-General Arrangement Layout-(4).pdf` | `split_pdfs\A-(11)1003-General Arrangement Layout-(4)\A-(11)1003-General Arrangement Layout-(4)_page_001.png` |
 
 #### Demolition
-| Drawing No. | Title | Rev | File |
-|-------------|-------|-----|------|
-| A-(01)1002 | Demolition Plan | 3 | `Architectural Drawings\A-(01)1002-Demolition Plan(3).pdf` |
-| A-(01)1003 | Demolition Plan | 2 | `Architectural Drawings\A-(01)1003-DEMOLITION PLAN-(2).pdf` |
+| Drawing No. | Title | Rev | File | Split File |
+|-------------|-------|-----|------|------------|
+| A-(01)1002 | Demolition Plan | 3 | `Architectural Drawings\A-(01)1002-Demolition Plan(3).pdf` | `split_pdfs\A-(01)1002-Demolition Plan(3)\A-(01)1002-Demolition Plan(3)_page_001.png` |
+| A-(01)1003 | Demolition Plan | 2 | `Architectural Drawings\A-(01)1003-DEMOLITION PLAN-(2).pdf` | - |
 
 #### Sections & Elevations
-| Drawing No. | Title | Rev | File |
-|-------------|-------|-----|------|
-| A-(12)2000 | Sections | 4 | `Architectural Drawings\A-(12)2000-Sections-(4).pdf` |
-| A-(13)3000 | Elevations | 4 | `Architectural Drawings\A-(13)3000-Elevations-(4).pdf` |
+| Drawing No. | Title | Rev | File | Split File |
+|-------------|-------|-----|------|------------|
+| A-(12)2000 | Sections | 4 | `Architectural Drawings\A-(12)2000-Sections-(4).pdf` | `split_pdfs\A-(12)2000-Sections-(4)\A-(12)2000-Sections-(4)_page_001.png` |
+| A-(13)3000 | Elevations | 4 | `Architectural Drawings\A-(13)3000-Elevations-(4).pdf` | `split_pdfs\A-(13)3000-Elevations-(4)\A-(13)3000-Elevations-(4)_page_001.png` |
 
 #### Ceiling Plans
-| Drawing No. | Title | Rev | File |
-|-------------|-------|-----|------|
-| A-(14)1000 | Ceiling Plan | 3 | `Architectural Drawings\A-(14)1000-Ceiling Plan-(3).pdf` |
-| A-(14)1003 | Ground Storey Ceiling Plan | 1 | `Architectural Drawings\A-(14)1003-GROUND STOREY CEILING PLAN (1).pdf` |
+| Drawing No. | Title | Rev | File | Split File |
+|-------------|-------|-----|------|------------|
+| A-(14)1000 | Ceiling Plan | 3 | `Architectural Drawings\A-(14)1000-Ceiling Plan-(3).pdf` | `split_pdfs\A-(14)1000-Ceiling Plan-(3)\A-(14)1000-Ceiling Plan-(3)_page_001.png` |
+| A-(14)1003 | Ground Storey Ceiling Plan | 1 | `Architectural Drawings\A-(14)1003-GROUND STOREY CEILING PLAN (1).pdf` | `split_pdfs\A-(14)1003-GROUND STOREY CEILING PLAN (1)\A-(14)1003-GROUND STOREY CEILING PLAN (1)_page_001.png` |
 
 #### Fenestration Key Plans
 | Drawing No. | Title | Rev | File |
@@ -132,40 +132,40 @@ Conversion of an existing old clinic building into Finance Department Offices at
 | A-(35)5006 | Window W06 | 1 |
 
 #### Finishes & Details
-| Drawing No. | Title | Rev | File |
-|-------------|-------|-----|------|
-| A-(50)6001 | Ablution Details | 1 | `Architectural Drawings\A-(50)6001-Ablution Details-(1).pdf` |
-| A-(51)1001 | Wall Finishes Layout | 1 | `Architectural Drawings\A-(51)1001-Wall Finishes Layout(1).pdf` |
-| A-(52)1001 | Floor Finishes Layout | 1 | `Architectural Drawings\A-(52)1001-Floor Finishes Layout(1).pdf` |
-| A-(52)1002 | Skirtings | 1 | `Architectural Drawings\A-(52)1002-Skirtings(1).pdf` |
-| A-(53)2001 | Seating and Duct Detail | 1 | `Architectural Drawings\A-(53)2001-Seating and Duct Detail-(1).pdf` |
-| A-(53)2002 | Seating Detail | 1 | `Architectural Drawings\A-(53)2002-Seating Detail-(1).pdf` |
-| A-(53)2003 | Concrete Canopy Detail | 1 | `Architectural Drawings\A-(53)2003-Concrete Canopy Detail-(1).pdf` |
+| Drawing No. | Title | Rev | File | Split File |
+|-------------|-------|-----|------|------------|
+| A-(50)6001 | Ablution Details | 1 | `Architectural Drawings\A-(50)6001-Ablution Details-(1).pdf` | `split_pdfs\A-(50)6001-Ablution Details-(1)\A-(50)6001-Ablution Details-(1)_page_001.png` |
+| A-(51)1001 | Wall Finishes Layout | 1 | `Architectural Drawings\A-(51)1001-Wall Finishes Layout(1).pdf` | - |
+| A-(52)1001 | Floor Finishes Layout | 1 | `Architectural Drawings\A-(52)1001-Floor Finishes Layout(1).pdf` | `split_pdfs\A-(52)1001-Floor Finishes Layout(1)\A-(52)1001-Floor Finishes Layout(1)_page_001.png` |
+| A-(52)1002 | Skirtings | 1 | `Architectural Drawings\A-(52)1002-Skirtings(1).pdf` | `split_pdfs\A-(52)1002-Skirtings(1)\A-(52)1002-Skirtings(1)_page_001.png` |
+| A-(53)2001 | Seating and Duct Detail | 1 | `Architectural Drawings\A-(53)2001-Seating and Duct Detail-(1).pdf` | `split_pdfs\A-(53)2001-Seating and Duct Detail-(1)\A-(53)2001-Seating and Duct Detail-(1)_page_001.png` |
+| A-(53)2002 | Seating Detail | 1 | `Architectural Drawings\A-(53)2002-Seating Detail-(1).pdf` | - |
+| A-(53)2003 | Concrete Canopy Detail | 1 | `Architectural Drawings\A-(53)2003-Concrete Canopy Detail-(1).pdf` | - |
 
 #### Fixed Furniture & Joinery
-| Drawing No. | Title | Rev | File |
-|-------------|-------|-----|------|
-| A-(74)1001 | Fixed Furniture and Fittings Key Plan | 1 | `Architectural Drawings\A-(74)1001-Fixed Furniture and Fittings Key Plan(1).pdf` |
-| A-(74)6001 | JT01 - Security Desk | 1 | `Architectural Drawings\A-(74)6001-JT01 - Security Desk(1).pdf` |
-| A-(74)6002 | JT02 - Kitchenette | 1 | `Architectural Drawings\A-(74)6002-JT02 - Kitchenette(1).pdf` |
+| Drawing No. | Title | Rev | File | Split File |
+|-------------|-------|-----|------|------------|
+| A-(74)1001 | Fixed Furniture and Fittings Key Plan | 1 | `Architectural Drawings\A-(74)1001-Fixed Furniture and Fittings Key Plan(1).pdf` | `split_pdfs\A-(74)1001-Fixed Furniture and Fittings Key Plan(1)\A-(74)1001-Fixed Furniture and Fittings Key Plan(1)_page_001.png` |
+| A-(74)6001 | JT01 - Security Desk | 1 | `Architectural Drawings\A-(74)6001-JT01 - Security Desk(1).pdf` | - |
+| A-(74)6002 | JT02 - Kitchenette | 1 | `Architectural Drawings\A-(74)6002-JT02 - Kitchenette(1).pdf` | - |
 
 #### External Works
-| File | Description |
-|------|-------------|
-| `New Paving Layout.pdf` | External paving layout |
+| File | Description | Split File |
+|------|-------------|------------|
+| `New Paving Layout.pdf` | External paving layout | `split_pdfs\New Paving Layout\New Paving Layout_page_001.png` |
 
 ### 3.2 Structural Drawings (6 files)
 
 **Drawing Series:** S-01-25055-20-XXX
 
-| Drawing No. | Title | Rev | File |
-|-------------|-------|-----|------|
-| S-01-25055-20-000 | Standard Notes | A | `Structural Drawings\S-01-25055-20-000-Rev A-Standard Notes.pdf` |
-| S-01-25055-20-001 | Foundation Layout | E | `Structural Drawings\S-01-25055-20-001-Rev E-Foundation Layout.pdf` |
-| S-01-25055-20-001 | Foundation Layout (Marked) | E | `Structural Drawings\S-01-25055-20-001-Rev E-Foundation Layout- Ron Marked.pdf` |
-| S-01-25055-20-002 | Surface Bed Layout | E | `Structural Drawings\S-01-25055-20-002-Rev E-Surface Bed Layout.pdf` |
-| S-01-25055-20-003 | Ring Beam Layout | E | `Structural Drawings\S-01-25055-20-003-Rev E-Ring Beam Layout.pdf` |
-| S-01-25055-20-004 | Sections | D | `Structural Drawings\S-01-25055-20-004-Rev D-Sections.pdf` |
+| Drawing No. | Title | Rev | File | Split File |
+|-------------|-------|-----|------|------------|
+| S-01-25055-20-000 | Standard Notes | A | `Structural Drawings\S-01-25055-20-000-Rev A-Standard Notes.pdf` | - |
+| S-01-25055-20-001 | Foundation Layout | E | `Structural Drawings\S-01-25055-20-001-Rev E-Foundation Layout.pdf` | `split_pdfs\S-01-25055-20-001-Rev E-Foundation Layout\S-01-25055-20-001-Rev E-Foundation Layout_page_001.png` |
+| S-01-25055-20-001 | Foundation Layout (Marked) | E | `Structural Drawings\S-01-25055-20-001-Rev E-Foundation Layout- Ron Marked.pdf` | `split_pdfs\S-01-25055-20-001-Rev E-Foundation Layout- Ron Marked\S-01-25055-20-001-Rev E-Foundation Layout- Ron Marked_page_001.png` |
+| S-01-25055-20-002 | Surface Bed Layout | E | `Structural Drawings\S-01-25055-20-002-Rev E-Surface Bed Layout.pdf` | `split_pdfs\S-01-25055-20-002-Rev E-Surface Bed Layout\S-01-25055-20-002-Rev E-Surface Bed Layout_page_001.png` |
+| S-01-25055-20-003 | Ring Beam Layout | E | `Structural Drawings\S-01-25055-20-003-Rev E-Ring Beam Layout.pdf` | `split_pdfs\S-01-25055-20-003-Rev E-Ring Beam Layout\S-01-25055-20-003-Rev E-Ring Beam Layout_page_001.png` |
+| S-01-25055-20-004 | Sections | D | `Structural Drawings\S-01-25055-20-004-Rev D-Sections.pdf` | `split_pdfs\S-01-25055-20-004-Rev D-Sections\S-01-25055-20-004-Rev D-Sections_page_001.png` |
 
 ### 3.3 Civil Drawings (1 file)
 
@@ -183,27 +183,27 @@ Conversion of an existing old clinic building into Finance Department Offices at
 | `Mechanical Installation\HVAC\HVAC_Extracted\P8080M02-Spec and BOQ_Rev A.pdf` | HVAC Specification |
 
 #### Fire Protection (Extracted)
-| File | Description |
-|------|-------------|
-| `Mechanical Installation\Fire Protection\Fire_Extracted\P8080M07-BOQ.xlsx` | **Fire Protection BOQ** |
-| `Mechanical Installation\Fire Protection\Fire_Extracted\P8080M07-001_A - FIRE AND WAYFINDING LAYOUT.pdf` | Fire & Wayfinding Layout |
-| `Mechanical Installation\Fire Protection\Fire_Extracted\P8080M07-Spec and BOQ.pdf` | Fire Protection Specification |
+| File | Description | Split File |
+|------|-------------|------------|
+| `Mechanical Installation\Fire Protection\Fire_Extracted\P8080M07-BOQ.xlsx` | **Fire Protection BOQ** | - |
+| `Mechanical Installation\Fire Protection\Fire_Extracted\P8080M07-001_A - FIRE AND WAYFINDING LAYOUT.pdf` | Fire & Wayfinding Layout | `split_pdfs\P8080M07-001_A - FIRE AND WAYFINDING LAYOUT\P8080M07-001_A - FIRE AND WAYFINDING LAYOUT_page_001.png` |
+| `Mechanical Installation\Fire Protection\Fire_Extracted\P8080M07-Spec and BOQ.pdf` | Fire Protection Specification | - |
 
 #### Electrical (Extracted)
-| File | Description |
-|------|-------------|
-| `Electrical Installation\Elec_BOQ_Extracted\251212-UFH Alice Campus-Finance Offices - Elec BOQ Rev00.xlsx` | **Electrical BOQ** |
-| `Electrical Installation\Elec_BOQ_Extracted\P8080E01-003 DB LAYOUT.pdf` | Distribution Board Layout |
-| `Electrical Installation\Elec_BOQ_Extracted\P8099E01-001_C - POWER LAYOUT.pdf` | Power Layout |
-| `Electrical Installation\Elec_BOQ_Extracted\P8099E01-002_C - LIGHTINGLAYOUT.pdf` | Lighting Layout |
-| `Electrical Installation\Elec_BOQ_Extracted\UHF Alice Campus Finance Office - Electrical Spec Rev00.pdf` | Electrical Specification |
+| File | Description | Split Files |
+|------|-------------|-------------|
+| `Electrical Installation\Elec_BOQ_Extracted\251212-UFH Alice Campus-Finance Offices - Elec BOQ Rev00.xlsx` | **Electrical BOQ** | - |
+| `Electrical Installation\Elec_BOQ_Extracted\P8080E01-003 DB LAYOUT.pdf` | Distribution Board Layout | - |
+| `Electrical Installation\Elec_BOQ_Extracted\P8099E01-001_C - POWER LAYOUT.pdf` | Power Layout | `split_pdfs\P8099E01-001_C - POWER LAYOUT\P8099E01-001_C - POWER LAYOUT_page_001.png` |
+| `Electrical Installation\Elec_BOQ_Extracted\P8099E01-002_C - LIGHTINGLAYOUT.pdf` | Lighting Layout | `split_pdfs\P8099E01-002_C - LIGHTINGLAYOUT\P8099E01-002_C - LIGHTINGLAYOUT_page_001.png` |
+| `Electrical Installation\Elec_BOQ_Extracted\UHF Alice Campus Finance Office - Electrical Spec Rev00 (251212-P8080).pdf` | Electrical Specification (40pp) | `split_pdfs\UHF Alice Campus Finance Office - Electrical Spec Rev00 (251212-P8080)\` (40 PNGs: _page_001.png to _page_040.png) |
 
 #### Fire Detection (Extracted)
-| File | Description |
-|------|-------------|
-| `Electrical Installation\FD_BOQ_Extracted\251212-UFH Alice Campus-Finance Offices - FD BOQ Rev00 (Contractors).xlsx` | **Fire Detection BOQ** |
-| `Electrical Installation\FD_BOQ_Extracted\P8080E06-001_00 - ICT Services.pdf` | ICT Services Layout |
-| `Electrical Installation\FD_BOQ_Extracted\UFH Alice Campus Finance Office - Fire Detection Spec Rev00.pdf` | Fire Detection Specification |
+| File | Description | Split Files |
+|------|-------------|-------------|
+| `Electrical Installation\FD_BOQ_Extracted\251212-UFH Alice Campus-Finance Offices - FD BOQ Rev00 (Contractors).xlsx` | **Fire Detection BOQ** | - |
+| `Electrical Installation\FD_BOQ_Extracted\P8080E06-001_00 - ICT Services.pdf` | ICT Services Layout | - |
+| `Electrical Installation\FD_BOQ_Extracted\UFH Alice Campus Finance Office - Fire Detection Spec Rev00 (251212-P8080).pdf` | Fire Detection Specification (42pp) | `split_pdfs\UFH Alice Campus Finance Office - Fire Detection Spec Rev00 (251212-P8080)\` (42 PNGs: _page_001.png to _page_042.png) |
 
 ### 3.5 Health & Safety
 | File | Description |
@@ -264,12 +264,13 @@ Conversion of an existing old clinic building into Finance Department Offices at
 | Alterations | 3 | Pending | 0 | Part of demolitions scope |
 | Earthworks | 4 | Partial | 1 | Site clearance needed, foundations measured |
 | Concrete/Formwork/Rebar | 7 | Complete | 4 | Foundations (700mm) finalized |
-| Masonry | 10 | Pending | 0 | Blockwork walls to measure |
-| Waterproofing | - | Pending | 0 | Check if required |
-| Carpentry & Joinery | - | Partial | 1 | Joinery details exist, measure pending |
-| Ceilings | - | Pending | 0 | Ceiling plan available |
-| Floor Coverings | - | Updated | 1 | Floor finishes BOQ updated |
-| Wall Finishes | - | Pending | 0 | Wall finishes layout available |
+| Masonry | 10 | Complete | 1 | 112m² blockwork + 78m² drywall |
+| Waterproofing | - | Complete | 1 | DPM 186m², ablutions 89m² |
+| Roofing | - | Complete | 1 | UFH_Roofing_085_086.md - NEW roofing 285m² |
+| Carpentry & Joinery | - | Complete | 1 | 18 doors, 2 gates, 2 joinery units, 291m skirtings |
+| Ceilings | - | Complete | 1 | 275m² total (Ce.01:239 + Ce.02:36), 145m bulkheads |
+| Floor Coverings | - | Complete | 1 | 380m² tiles, 220m skirtings, verified |
+| Wall Finishes | - | Complete | 1 | 228m² plaster, 98m² tiles, 402m² paint |
 | Glazing | - | Schedule | 1 | Windows/shopfronts scheduled |
 | Metalwork | - | Pending | 0 | Gates in door schedule |
 | Plumbing | - | Pending | 0 | Ablution details available |
@@ -279,7 +280,7 @@ Conversion of an existing old clinic building into Finance Department Offices at
 | External Works | 22 | Pending | 2 | Paving spec confirmed |
 | Provisional Sums | 23 | Pending | 0 | R100k landscaping confirmed |
 
-**Overall Progress:** ~40% complete
+**Overall Progress:** ~55% complete
 
 ---
 
@@ -424,38 +425,38 @@ Conversion of an existing old clinic building into Finance Department Offices at
 - [x] **UFH-082:** Measure waterproofing to ablutions (m2) *26m² floor + 63m² walls*
 
 #### ROOFING
-- [ ] **UFH-085:** Review roof plan for any new roofing work
-- [ ] **UFH-086:** Measure roof repairs/alterations if applicable
+- [x] **UFH-085:** Review roof plan for any new roofing work *Complete - NEW roofing (not repairs)*
+- [x] **UFH-086:** Measure roofing work *285m² sheeting, 106m flashings, 44m gutters - see UFH_Roofing_085_086.md*
 
 #### CARPENTRY & JOINERY
-- [ ] **UFH-090:** Measure timber door frames from door schedule (No)
-- [ ] **UFH-091:** Measure timber doors from door details D01-D08 (No)
-- [ ] **UFH-092:** Measure built-in joinery - Security Desk JT01 (No)
-- [ ] **UFH-093:** Measure built-in joinery - Kitchenette JT02 (No)
-- [ ] **UFH-094:** Measure skirtings from skirting drawing (m)
-- [ ] **UFH-095:** Measure any other timber work from details
+- [x] **UFH-090:** Measure timber door frames from door schedule (No) *18 No. frames*
+- [x] **UFH-091:** Measure timber doors from door details D01-D08 (No) *18 doors + 2 gates*
+- [x] **UFH-092:** Measure built-in joinery - Security Desk JT01 (No) *1 No. complete*
+- [x] **UFH-093:** Measure built-in joinery - Kitchenette JT02 (No) *1 No. complete*
+- [x] **UFH-094:** Measure skirtings from skirting drawing (m) *291m (Type 01: 197m, Type 02: 94m)*
+- [x] **UFH-095:** Measure any other timber work from details *Roof timber in P.Sum*
 
 #### CEILINGS
-- [ ] **UFH-100:** Measure suspended ceilings from ceiling plan (m2)
-- [ ] **UFH-101:** Separate different ceiling types/heights
-- [ ] **UFH-102:** Measure bulkheads and drops (m)
-- [ ] **UFH-103:** Include access panels (No)
-- [ ] **UFH-104:** Add cornices/shadow lines (m)
+- [x] **UFH-100:** Measure suspended ceilings from ceiling plan (m2) *275m² total*
+- [x] **UFH-101:** Separate different ceiling types/heights *Ce.01: 239m², Ce.02: 36m²*
+- [x] **UFH-102:** Measure bulkheads and drops (m) *145m linear, 63m² soffits*
+- [x] **UFH-103:** Include access panels (No) *7 No. 600x600 + 3 No. 450x450*
+- [x] **UFH-104:** Add cornices/shadow lines (m) *266m shadow line*
 
 #### FLOOR COVERINGS
 - [x] **UFH-110:** Measure floor finishes from layout *(Updated - UFH_Floors_BOQ_Updated.xlsx)*
-- [ ] **UFH-111:** Verify floor finishes quantities against Rev 1 drawing
-- [ ] **UFH-112:** Separate different floor finish types
-- [ ] **UFH-113:** Measure skirtings by type (m)
-- [ ] **UFH-114:** Include floor preparation where required
+- [x] **UFH-111:** Verify floor finishes quantities against Rev 1 drawing *Verified: 350m² general + 30m² ablution*
+- [x] **UFH-112:** Separate different floor finish types *Fl.01, Fl.02, Fl.03 separated*
+- [x] **UFH-113:** Measure skirtings by type (m) *220m total (Type 01: 95m, Type 02: 125m)*
+- [x] **UFH-114:** Include floor preparation where required *380m² prep included*
 
 #### WALL FINISHES
-- [ ] **UFH-120:** Measure plastering to walls (m2)
-- [ ] **UFH-121:** Measure plastering to columns/beams (m2)
-- [ ] **UFH-122:** Measure wall tiling from wall finishes layout (m2)
-- [ ] **UFH-123:** Measure paint to walls by type (m2)
-- [ ] **UFH-124:** Measure paint to ceilings (m2)
-- [ ] **UFH-125:** No deductions for openings <=0.5m2
+- [x] **UFH-120:** Measure plastering to walls (m2) *228m² (188 new + 40 patch)*
+- [x] **UFH-121:** Measure plastering to columns/beams (m2) *45m² ring beams*
+- [x] **UFH-122:** Measure wall tiling from wall finishes layout (m2) *98m² (96 WCs + 2 splashback)*
+- [x] **UFH-123:** Measure paint to walls by type (m2) *402m² (WF01:266 + WF02:136)*
+- [x] **UFH-124:** Measure paint to ceilings (m2) *114m² (bulkheads)*
+- [x] **UFH-125:** No deductions for openings <=0.5m2 *Applied - 106m² deducted*
 
 #### GLAZING
 - [ ] **UFH-130:** Measure windows W01-W06 from detail drawings (No)
@@ -569,6 +570,10 @@ Track work completed in each session for continuity:
 | 2 | 2026-01-04 | UFH-044,045,046 complete. Earthworks section finished. Compaction 306m², dewatering P.Sum R15k, external paving excavation 29m³. Total excavation 135m³. | UFH-050 |
 | 2 | 2026-01-04 | UFH-050-058 complete. Concrete section finished. Total concrete 88m³ (Found 45, RB 14, SB 24, Canopy 1, Blinding 4). Formwork 272m². Rebar 6t. | UFH-060 |
 | 2 | 2026-01-04 | UFH-060-082 complete. Precast N/A. Masonry 112m² blockwork + 78m² drywall. Waterproofing: DPM 186m², ablutions 89m². | UFH-085 |
+| 3 | 2026-01-04 | UFH-085-086 complete. Roofing: NEW work (not repairs). 285m² Klip-Lok sheeting, 106m flashings, 44m gutters, 38m² waterproofing. P.Sum R150k roof structure. | UFH-090 |
+| 3 | 2026-01-04 | UFH-090-095 complete. Carpentry & Joinery: 18 doors + 2 gates, JT01 Security Desk, JT02 Kitchenette, 291m skirtings. See UFH_Carpentry_Joinery_090_095.md | UFH-100 |
+| 4 | 2026-01-04 | UFH-100-104 complete. Ceilings: Ce.01 239m² + Ce.02 36m² = 275m² total. Bulkheads 145m + 63m² soffits. 10 access panels. 266m shadow line. See UFH_Ceilings_100_104.md | UFH-111 |
+| 4 | 2026-01-04 | UFH-111-114 verified (floors BOQ complete). UFH-120-125 complete. Wall Finishes: 228m² plaster, 98m² tiles, 402m² paint. See UFH_Wall_Finishes_120_125.md | UFH-130 |
 
 ---
 
@@ -615,6 +620,70 @@ Track work completed in each session for continuity:
 - ASAQS Standard System of Measuring Building Work, Seventh Edition (2015)
 - DQRules v2.0 - Dell Quantity Surveying AI Measurement Rules
 - ASAQS Model Bills of Quantities with Rules
+
+### Split PDF Files Available
+Large PDFs have been pre-split and are available in `Projects\UFHARE\split_pdfs\`. See `split_pdfs\split_manifest.md` for full index.
+
+**Manifest Info:** Processed 2026-01-04, 28 PDFs processed, 130+ output files total.
+
+**Summary of Split Files:**
+| Original | Size | Pages | Method | Output Files |
+|----------|------|-------|--------|--------------|
+| A-(01)1002-Demolition Plan(3).pdf | 1.6MB | 1 | render | 1 PNG (1.7MB) |
+| A-(11)1000-Ground Storey Plan-(4).pdf | 2.1MB | 1 | render | 1 PNG (2.9MB) |
+| A-(11)1001-Roof Plan-(4).pdf | 1.4MB | 1 | render | 1 PNG (1.7MB) |
+| A-(11)1003-General Arrangement Layout-(4).pdf | 1.9MB | 1 | render | 1 PNG (1.9MB) |
+| A-(12)2000-Sections-(4).pdf | 5.4MB | 1 | render | 1 PNG (4.2MB) |
+| A-(13)3000-Elevations-(4).pdf | 11.3MB | 1 | render | 1 PNG (5.2MB) |
+| A-(14)1000-Ceiling Plan-(3).pdf | 1.3MB | 1 | render | 1 PNG (1.7MB) |
+| A-(14)1003-GROUND STOREY CEILING PLAN (1).pdf | 1.3MB | 1 | render | 1 PNG (1.8MB) |
+| A-(50)6001-Ablution Details-(1).pdf | 1.4MB | 1 | render | 1 PNG (1.2MB) |
+| A-(52)1001-Floor Finishes Layout(1).pdf | 1.5MB | 1 | render | 1 PNG (2.1MB) |
+| A-(52)1002-Skirtings(1).pdf | 1.4MB | 1 | render | 1 PNG (1.7MB) |
+| A-(53)2001-Seating and Duct Detail-(1).pdf | 1.3MB | 1 | render | 1 PNG (0.8MB) |
+| A-(74)1001-Fixed Furniture and Fittings Key Plan(1).pdf | 1.6MB | 1 | render | 1 PNG (0.9MB) |
+| New Paving Layout.pdf | 3.3MB | 1 | render | 1 PNG (3.2MB) |
+| P8099E01-001_C - POWER LAYOUT.pdf | 1.4MB | 1 | render | 1 PNG (1.8MB) |
+| P8099E01-002_C - LIGHTINGLAYOUT.pdf | 1.3MB | 1 | render | 1 PNG (1.5MB) |
+| P8080M07-001_A - FIRE AND WAYFINDING LAYOUT.pdf | 1.9MB | 1 | render | 1 PNG (1.7MB) |
+| S-01-25055-20-001-Rev E-Foundation Layout.pdf | 5.3MB | 1 | render | 1 PNG (5.5MB) |
+| S-01-25055-20-001-Rev E-Foundation Layout- Ron Marked.pdf | 5.9MB | 1 | render | 1 PNG (5.6MB) |
+| S-01-25055-20-002-Rev E-Surface Bed Layout.pdf | 4.6MB | 1 | render | 1 PNG (4.2MB) |
+| S-01-25055-20-003-Rev E-Ring Beam Layout.pdf | 4.2MB | 1 | render | 1 PNG (3.6MB) |
+| S-01-25055-20-004-Rev D-Sections.pdf | 3.3MB | 1 | render | 1 PNG (3.5MB) |
+| UHF Alice Campus Finance Office - Electrical Spec Rev00 (251212-P8080).pdf | 3.2MB | 40 | render | 40 PNGs (71KB-1.8MB each) |
+| UFH Alice Campus Finance Office - Fire Detection Spec Rev00 (251212-P8080).pdf | 2.4MB | 42 | render | 42 PNGs (33KB-656KB each) |
+
+### Handling Large PDF Files
+When reading large PDF files (typically >500KB), you may encounter **HTTP 413 (Request Too Large)** errors. Use the PDF Splitter Module to handle these:
+
+**Reference Files:**
+- `Reference\PDF_Splitter_Module.py` - Python module with split functions
+- `Reference\PDF_Splitter_Guide.md` - Usage documentation
+
+**Quick Usage:**
+```python
+from Reference.PDF_Splitter_Module import handle_large_pdf, cleanup_split_files
+
+# Smart handler - automatically chooses best strategy
+result = handle_large_pdf("path/to/large_drawing.pdf")
+
+if result.success:
+    for part_file in result.split_files:
+        # Read and process each part
+        pass
+    cleanup_split_files(result)  # Optional: cleanup temp files
+```
+
+**Command Line:**
+```bash
+python Reference/PDF_Splitter_Module.py "Projects/path/to/large.pdf" 500
+```
+
+**Strategy:**
+- Multi-page PDFs → Split into smaller PDFs
+- Single-page large PDFs → Render to image (PNG/JPG)
+- Files under 500KB → Return original (no split needed)
 
 ---
 
