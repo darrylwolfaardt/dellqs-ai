@@ -579,6 +579,7 @@ Track work completed in each session for continuity:
 | 4 | 2026-01-04 | UFH-150-154 complete. Plumbing: 20 fittings, 300m pipework, 60m drainage. See UFH_Plumbing_150_154.md | UFH-190 |
 | 4 | 2026-01-04 | UFH-190-195 complete. External Works: 128m² paving, 80m edging. UFH-200-202 complete. PC Sums R415k. See files. | Phase 3 |
 | 5 | 2026-01-04 | UFH-210 complete. Created UFH_CONSOLIDATED_BOQ_DRAFT.md with all 14 trade measurements. See file for full BOQ structure. | UFH-211 |
+| 5 | 2026-01-04 | UFH-213, UFH-214 complete. Created UFH_DQRules_Verification.md - all items COMPLIANT. Descriptions verified, units correct. | UFH-211 |
 
 ---
 
