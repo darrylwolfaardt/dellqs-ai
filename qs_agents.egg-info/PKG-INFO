@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: qs-agents
+Version: 1.0.0
+Summary: Quantity Surveying AI Agent Framework
+Author-email: Dell QS <info@dellqs.co.za>
+License: Proprietary
+Keywords: quantity-surveying,construction,ai,agents
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: PyMuPDF>=1.23.0
+Requires-Dist: anthropic>=0.18.0
+Requires-Dist: openai>=1.10.0
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: httpx>=0.26.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: Pillow>=10.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23.0; extra == "dev"

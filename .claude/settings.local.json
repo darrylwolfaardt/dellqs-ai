@@ -8,7 +8,11 @@
       "Bash(dir:*)",
       "Bash(findstr:*)",
       "WebSearch",
-      "WebFetch(domain:estimationqs.com)"
+      "WebFetch(domain:estimationqs.com)",
+      "Bash(move \"Projects\\Addo Bridge\\_project\" \"Projects\\Addo Bridge\\_project_backup\")",
+      "Bash(set PYTHONPATH=%CD%)",
+      "Bash(tree:*)",
+      "Bash(move \"qs-agents\" \"qs_agents\")"
     ],
     "deny": [],
     "ask": []

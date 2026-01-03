@@ -1,0 +1,488 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "manifest_version": "1.0.0",
+  "generated_at": "2025-12-10T00:00:00Z",
+  "generated_by": "qs-intake-analyst",
+
+  "project": {
+    "id": "DP3976",
+    "name": "Addo Elephant Bridge Over Road and Rail",
+    "reference": "DP3976",
+    "description": "Wildlife crossing bridge (ecoduct) over road and rail infrastructure at Addo Elephant National Park. Consists of two tunnels - a vehicle tunnel and a rail tunnel - with earth-filled bridge deck for elephant and wildlife crossing.",
+    "building_type": "infrastructure_bridge",
+    "project_type": "new_build_commercial",
+    "client": {
+      "name": "Networking for Animals",
+      "contact": "D Garcia",
+      "email": "dgat@telkomsa.net",
+      "phone": null
+    },
+    "consultant": {
+      "name": "G Squared Project Management (Pty) Ltd",
+      "role": "Project Managers & Consulting Engineers",
+      "architect": "G Squared Architectural",
+      "address": "1 Kingston Road, Adcockvale",
+      "tel": "041 374 1933",
+      "fax": "086 548 1334"
+    },
+    "dates": {
+      "received": "2025-12-10",
+      "deadline": null,
+      "target_completion": null,
+      "shukuma_estimate_date": "2021-05-13"
+    },
+    "priority": "standard"
+  },
+
+  "location": {
+    "address": "Addo Elephant National Park",
+    "suburb": "Addo",
+    "city": "Addo",
+    "province": "Eastern Cape",
+    "country": "ZA",
+    "erf_number": null,
+    "coordinates": {
+      "latitude": -33.4500,
+      "longitude": 25.7667,
+      "source": "estimated_from_park_location",
+      "confidence": 0.70
+    },
+    "municipal_jurisdiction": "Sundays River Valley Local Municipality"
+  },
+
+  "standards": {
+    "measurement_system": "sa_standard",
+    "measurement_version": "6th_edition",
+    "alternative_standards": [],
+    "regional_adaptations": ["sanparks_environmental", "transnet_rail_requirements"],
+    "currency": "ZAR",
+    "unit_system": "metric"
+  },
+
+  "scope": {
+    "deliverables_requested": [
+      "preliminary_boq",
+      "elemental_estimate"
+    ],
+    "boq_format": "elemental",
+    "pricing_required": true,
+    "pricing_source": "internal_rates_2025",
+    "exclusions": [],
+    "special_instructions": "Wildlife crossing infrastructure - specialist environmental considerations apply. Two separate tunnel structures (car and rail)."
+  },
+
+  "value_add_services": {
+    "geological_assessment": {
+      "enabled": false,
+      "status": "not_applicable",
+      "data_sources": [],
+      "notes": "Eastern Cape location - no dolomite risk"
+    },
+    "regulatory_overlay": {
+      "enabled": true,
+      "status": "pending",
+      "data_sources": ["sanparks_regulations", "environmental_impact"],
+      "notes": "National park location - environmental compliance required"
+    },
+    "climate_validation": {
+      "enabled": false,
+      "status": "not_requested",
+      "data_sources": []
+    },
+    "supply_chain_intelligence": {
+      "enabled": true,
+      "status": "pending",
+      "data_sources": ["shukuma_flooring_pe"],
+      "notes": "Shukuma estimates already received - specialist supplier identified"
+    },
+    "services_infrastructure": {
+      "enabled": false,
+      "status": "not_applicable",
+      "data_sources": []
+    },
+    "lifecycle_costing": {
+      "enabled": false,
+      "status": "not_requested",
+      "data_sources": []
+    }
+  },
+
+  "drawings": {
+    "summary": {
+      "total_files": 12,
+      "total_sheets": 12,
+      "formats": ["pdf"],
+      "quality_assessment": "good",
+      "completeness": "partial"
+    },
+    "architectural": [
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-SP-001C Site Plan Elevations.PDF",
+        "sheet_number": "SP-001",
+        "title": "Site Layout Plan",
+        "revision": "C",
+        "date": null,
+        "scale": "1:25 (section X-X)",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Shows overall bridge layout with car and rail tunnels, L11 Terra-Force blocks, site section. Total bridge length ~233m."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-SP-002D Sections Elevations.PDF",
+        "sheet_number": "SP-002",
+        "title": "Typical Sections and Elevations",
+        "revision": "D",
+        "date": null,
+        "scale": "1:50, 1:25, 1:75",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Enlarged sections through vehicle and train tunnels, side elevations, Terraforce block wall detail, wall footing detail. Shows stone wall cladding, 120mm Shukuma wall panels."
+      }
+    ],
+    "structural": [
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-F-001 Fndn Car.pdf",
+        "sheet_number": "F-001",
+        "title": "Road Tunnel Foundation Plan and Details",
+        "revision": "P",
+        "date": null,
+        "scale": "1:100, 1:50, 1:25",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Road tunnel foundation and column layout, reinforcing layout, typical section through foundation. Foundation length ~87m, width varies. Cover to concrete 50mm."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-F-002 Fndn Rail.pdf",
+        "sheet_number": "F-002",
+        "title": "Rail Tunnel Foundation Plan and Details",
+        "revision": "P",
+        "date": null,
+        "scale": "1:100, 1:50, 1:25",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Rail tunnel foundation and column layout, reinforcing layout. Similar configuration to car tunnel. Cover to concrete 50mm."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-S-01P-C Section Car RevC.PDF",
+        "sheet_number": "S-001P-C",
+        "title": "Car Tunnel Typical Details Structural Steelwork in Portal",
+        "revision": "C",
+        "date": "2021/05/03",
+        "scale": "1:50, 1:10",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Section through car tunnel at 1:50. Shows 120mm Shukuma panels, 5-250mm thick flooring and 24-200mm thick flooring (2950kg Type F). Main struts 254x146x31UC. Tubular bracing details. Steel to SABS 1200 H, welds to SABS 0147-1984 and 044 specs. All structural steelwork Grade S355JR."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-S-02P Steel at End Walls.pdf",
+        "sheet_number": "S-002P",
+        "title": "Car Tunnel Typical Details Structural Steelwork in End Walls",
+        "revision": "P",
+        "date": "2021/05/17",
+        "scale": "1:50",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Inside and outside elevation on headwall. 100x100 T sections, 200x75x25 PFC, 254x146x31UB columns/posts, 305x165x46UB, 152x152x30UC. Fibre cement boards 1800mm x 2400mm fixed with M8 Post-drive screws."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-S-02P-A Steel at End Walls RevA.PDF",
+        "sheet_number": "S-002P-A",
+        "title": "Car Tunnel Typical Details Structural Steelwork in End Walls",
+        "revision": "A",
+        "date": "2021/05/17",
+        "scale": "1:50",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Revised version of S-002P with Shukuma panels revision. Same steelwork details."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-S-02SP Schukuma at End Walls.PDF",
+        "sheet_number": "S-002SP",
+        "title": "Road and Rail Tunnels Typical Details of Shukuma Panels in End Walls",
+        "revision": "A",
+        "date": "2021/05/17",
+        "scale": "1:50",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Shukuma gable panel layout for both tunnels. Road tunnel: 16517mm width. Rail tunnel: 13168mm width. All panels 150mm thick with Wire F."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-S-03P A Section RAIL Portal Steel.PDF",
+        "sheet_number": "S-003P-A",
+        "title": "Train Tunnel Typical Details Structural Steelwork in Portal",
+        "revision": "A",
+        "date": "2020/12/16",
+        "scale": "1:50, 1:10, 1:100",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Section through train tunnel. 6-250mm thick Shukuma flooring and 18-200mm thick (2950kg Type F). 457x191x67UB rafters, 305x165x46UB columns. All bracing members #102x4.5 SHS. All gussets 8mm and end plates 10mm. All bolts M16GR8.8."
+      },
+      {
+        "filename": "DP3976 ADDO ELEPHANT BRIDGE-S-04P-A Elevation RAIL Headwalls.PDF",
+        "sheet_number": "S-004P-A",
+        "title": "Train Tunnel Typical Details Structural Steelwork in Headwalls",
+        "revision": "A",
+        "date": "2021/05/17",
+        "scale": "1:50",
+        "pages": 1,
+        "status": "for_tender",
+        "extracted": false,
+        "notes": "Inside and outside elevation on headwall for train tunnel. IPE 200 sections throughout. 254x146x31UB posts, 305x165x46UB, 152x152x30UC. Fibre cement boards 1800mm x 2400mm."
+      }
+    ],
+    "services": [],
+    "schedules": [
+      {
+        "filename": "SHUKUMA Estimate Car Tunnel - 12 May 2021.pdf",
+        "sheet_number": "E21-0329-CAR",
+        "title": "Shukuma Revised Estimate - Car Tunnel",
+        "revision": null,
+        "date": "2021-05-13",
+        "scale": "NTS",
+        "pages": 3,
+        "status": "estimate",
+        "extracted": true,
+        "notes": "Shukuma flooring estimate. Slab 200F: 1720m², Slab 250H+2: 478m², Slab 120B: 778m², Slab 150F: 248m². Core Open: 800m. Total Value: R3,182,572 excl VAT (R3,659,957.80 incl). Rate/m²: R987.15. Engineer: Andries Stücki Pr. Eng. Estimate valid 120 days."
+      },
+      {
+        "filename": "SHUKUMA Estimate Train Tunnel -12 May 2021.pdf",
+        "sheet_number": "E21-0329-RAIL",
+        "title": "Shukuma Revised Estimate - Train Tunnel",
+        "revision": null,
+        "date": "2021-05-13",
+        "scale": "NTS",
+        "pages": 3,
+        "status": "estimate",
+        "extracted": true,
+        "notes": "Shukuma flooring estimate. Slab 200F: 1816m², Slab 250H+2: 765m², Slab 150F: 370m². Core Open: 800m. Total Value: R3,098,729.79 excl VAT (R3,563,539.26 incl). Rate/m²: R1,050.06. Engineer: Andries Stücki Pr. Eng. Estimate valid 120 days."
+      }
+    ]
+  },
+
+  "specifications": {
+    "received": false,
+    "format": null,
+    "filename": null,
+    "sections_identified": [],
+    "missing_sections": [
+      "preliminaries",
+      "earthworks",
+      "concrete_work",
+      "structural_steelwork",
+      "precast_concrete",
+      "stone_cladding",
+      "terraforce_blocks",
+      "waterproofing"
+    ],
+    "notes": "No formal specification document received. Technical requirements extracted from drawing notes."
+  },
+
+  "extracted_specifications": {
+    "structural_steelwork": {
+      "grade": "S355JR",
+      "standards": ["SABS 1200 H"],
+      "welding": ["SABS 0147-1984", "044 specs"],
+      "bolts": "All structural bolts Grade 8.8 unless otherwise noted",
+      "corrosion_protection": [
+        "Hot dipped galvanized (heavy duty)",
+        "All nuts, bolts and washers to be hot dipped galvanized",
+        "All steelwork below ground to be painted with epoxy-tar"
+      ],
+      "welds": "All welding to be 6mm fillet weld unless otherwise shown"
+    },
+    "concrete": {
+      "cover": "50mm to reinforcement",
+      "notes": "Foundation details shown on F-001 and F-002"
+    },
+    "shukuma_flooring": {
+      "supplier": "Shukuma Flooring Systems (Port Elizabeth)",
+      "engineer": "Andries Stücki Pr. Eng",
+      "panel_types": {
+        "car_tunnel": {
+          "200F": "1720 m²",
+          "250H+2": "478 m²",
+          "120B": "778 m²",
+          "150F": "248 m²",
+          "total_area": "3224 m²"
+        },
+        "rail_tunnel": {
+          "200F": "1816 m²",
+          "250H+2": "765 m²",
+          "150F": "370 m²",
+          "total_area": "2951 m²"
+        }
+      },
+      "installation": "30T crane provisional",
+      "design_criteria": "As per Andries Stücki Pr. Eng"
+    }
+  },
+
+  "site_information": {
+    "survey_received": false,
+    "geotech_report_received": false,
+    "existing_services_drawing": false,
+    "site_photos": false,
+    "notes": "National park location - environmental and access considerations apply. Site within Addo Elephant National Park."
+  },
+
+  "key_quantities_extracted": {
+    "bridge_overall": {
+      "total_length": "~233m",
+      "source": "SP-001C site plan"
+    },
+    "car_tunnel": {
+      "foundation_length": "~87m",
+      "clear_width": "~16.5m (between headwalls)",
+      "shukuma_floor_area": "3224 m²",
+      "shukuma_value": "R3,182,572 excl VAT"
+    },
+    "rail_tunnel": {
+      "clear_width": "~13.2m (between headwalls)",
+      "shukuma_floor_area": "2951 m²",
+      "shukuma_value": "R3,098,729.79 excl VAT"
+    },
+    "combined_shukuma": {
+      "total_floor_area": "6175 m²",
+      "total_value": "R6,281,301.79 excl VAT",
+      "total_value_incl_vat": "R7,223,497.06"
+    }
+  },
+
+  "gaps_and_flags": {
+    "critical": [
+      {
+        "code": "GAP-001",
+        "category": "specifications",
+        "description": "No formal specification document received",
+        "impact": "Relying on drawing notes for technical requirements - may miss important specifications",
+        "action_required": "RFI to consultant for full specification",
+        "status": "pending"
+      },
+      {
+        "code": "GAP-002",
+        "category": "drawings",
+        "description": "No earthworks/bulk filling drawings received",
+        "impact": "Cannot quantify significant earth filling over tunnel structure",
+        "action_required": "RFI for earthworks details and filling requirements",
+        "status": "pending"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "WARN-001",
+        "category": "estimates",
+        "description": "Shukuma estimates dated May 2021 - approximately 4.5 years old",
+        "impact": "Pricing likely outdated - significant escalation required",
+        "action_required": "Request updated Shukuma quotation or apply appropriate escalation",
+        "status": "pending"
+      },
+      {
+        "code": "WARN-002",
+        "category": "drawings",
+        "description": "Multiple revisions of same drawings present (S-002P and S-002P-A)",
+        "impact": "Need to confirm which revision is current",
+        "action_required": "Clarify current revision status",
+        "status": "acknowledged"
+      },
+      {
+        "code": "WARN-003",
+        "category": "drawings",
+        "description": "No detailed reinforcement schedules for foundations",
+        "impact": "Rebar quantities will need to be estimated from layout drawings",
+        "action_required": "Request reinforcement schedules or confirm measurement from layouts",
+        "status": "pending"
+      }
+    ],
+    "information": [
+      {
+        "code": "INFO-001",
+        "category": "location",
+        "description": "Project located within Addo Elephant National Park - SANParks jurisdiction",
+        "impact": "Environmental compliance and access restrictions may apply",
+        "action_required": "Confirm any specific SANParks requirements",
+        "status": "noted"
+      },
+      {
+        "code": "INFO-002",
+        "category": "supply_chain",
+        "description": "Shukuma Flooring Systems identified as specialist supplier (Port Elizabeth based)",
+        "impact": "Nominated subcontractor for precast flooring",
+        "action_required": "None - supplier already engaged",
+        "status": "noted"
+      },
+      {
+        "code": "INFO-003",
+        "category": "structural",
+        "description": "Terra-Force blocks (L11) shown for retaining walls",
+        "impact": "Specialist interlocking block system required",
+        "action_required": "Confirm Terra-Force supply and installation arrangements",
+        "status": "pending"
+      }
+    ]
+  },
+
+  "workflow": {
+    "current_checkpoint": "init-complete",
+    "checkpoints_completed": [
+      {
+        "checkpoint": "intake-received",
+        "timestamp": "2025-12-10T00:00:00Z",
+        "agent": "qs-intake-analyst"
+      },
+      {
+        "checkpoint": "folder-structure-created",
+        "timestamp": "2025-12-10T00:01:00Z",
+        "agent": "qs-intake-analyst"
+      },
+      {
+        "checkpoint": "drawings-catalogued",
+        "timestamp": "2025-12-10T00:02:00Z",
+        "agent": "qs-intake-analyst"
+      },
+      {
+        "checkpoint": "init-complete",
+        "timestamp": "2025-12-10T00:03:00Z",
+        "agent": "qs-intake-analyst"
+      }
+    ],
+    "next_steps": [
+      "request_specifications",
+      "request_earthworks_drawings",
+      "update_shukuma_pricing",
+      "drawing_extraction",
+      "measurement"
+    ],
+    "blocked_by": [],
+    "requires_user_input": [
+      "GAP-001",
+      "GAP-002",
+      "WARN-001"
+    ]
+  },
+
+  "audit": {
+    "created_by": "qs-intake-analyst",
+    "created_at": "2025-12-10T00:00:00Z",
+    "last_modified_by": "qs-intake-analyst",
+    "last_modified_at": "2025-12-10T00:03:00Z",
+    "version": 1,
+    "change_log": [
+      {
+        "version": 1,
+        "timestamp": "2025-12-10T00:03:00Z",
+        "agent": "qs-intake-analyst",
+        "action": "manifest_created",
+        "details": "Initial manifest generated from project intake. 12 drawings classified and catalogued. Shukuma estimates extracted. Gaps identified."
+      }
+    ]
+  }
+}

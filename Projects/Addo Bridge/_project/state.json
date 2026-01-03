@@ -1,0 +1,116 @@
+{
+  "project_id": "DP3976",
+  "project_name": "Addo Elephant Bridge Over Road and Rail",
+  "current_phase": "intake",
+  "current_checkpoint": "init-complete",
+  "status": "active",
+
+  "phases": {
+    "intake": {
+      "status": "complete",
+      "started_at": "2025-12-10T00:00:00Z",
+      "completed_at": "2025-12-10T00:03:00Z",
+      "agent": "qs-intake-analyst",
+      "outputs": [
+        "manifest.json",
+        "completeness_report.md",
+        "measurement_scope.md"
+      ]
+    },
+    "analysis": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "agent": null,
+      "outputs": [],
+      "blocked_by": ["GAP-001", "GAP-002"]
+    },
+    "measurement": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "agent": null,
+      "outputs": []
+    },
+    "costing": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "agent": null,
+      "outputs": []
+    },
+    "qa": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "agent": null,
+      "outputs": []
+    },
+    "output": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "agent": null,
+      "outputs": []
+    }
+  },
+
+  "checkpoints": [
+    {
+      "id": "intake-received",
+      "status": "complete",
+      "timestamp": "2025-12-10T00:00:00Z"
+    },
+    {
+      "id": "folder-structure-created",
+      "status": "complete",
+      "timestamp": "2025-12-10T00:01:00Z"
+    },
+    {
+      "id": "drawings-catalogued",
+      "status": "complete",
+      "timestamp": "2025-12-10T00:02:00Z"
+    },
+    {
+      "id": "init-complete",
+      "status": "complete",
+      "timestamp": "2025-12-10T00:03:00Z"
+    }
+  ],
+
+  "pending_actions": [
+    {
+      "action": "issue_rfi",
+      "target": "specifications",
+      "priority": "high",
+      "description": "Request formal project specification from consultant"
+    },
+    {
+      "action": "issue_rfi",
+      "target": "earthworks_drawings",
+      "priority": "high",
+      "description": "Request earthworks/civil drawings"
+    },
+    {
+      "action": "request_quote",
+      "target": "shukuma_update",
+      "priority": "medium",
+      "description": "Request updated Shukuma pricing (2021 estimates outdated)"
+    },
+    {
+      "action": "clarification",
+      "target": "drawing_revisions",
+      "priority": "low",
+      "description": "Confirm current revision status for steelwork drawings"
+    }
+  ],
+
+  "resume_point": {
+    "last_action": "intake_complete",
+    "next_action": "await_rfi_responses",
+    "can_proceed_with": ["measurement_structural_steel", "measurement_foundations", "measurement_shukuma"]
+  },
+
+  "last_updated": "2025-12-10T00:03:00Z",
+  "updated_by": "qs-intake-analyst"
+}

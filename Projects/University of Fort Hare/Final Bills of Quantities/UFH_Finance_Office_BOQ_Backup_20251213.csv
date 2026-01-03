@@ -1,0 +1,61 @@
+Project: UFH - Alice Campus Finance Office Conversion,,,,,,,,,,
+Project Number: P20002-00,,,,,,,,,,
+Date: 2025-12-13 16:12:50,,,,,,,,,,
+Software: DELLQS-AI,,,,,,,,,,
+,,,,,,,,,,
+Item Number,Section,Subsection,Description,Unit,Quantity,Rate,Amount,Calculation Notes,Reference Drawing,Measurement Rule
+1.1,ALTERATIONS,Removals,Remove existing internal brick walls including making good,m2,85.0,0.0,0.0,Estimated internal walls: 28m length x 3.0m height,A-(01)1002,DQRule
+1.2,ALTERATIONS,Removals,Remove existing floor finishes,m2,398.0,0.0,0.0,Full internal floor area,A-(01)1002,DQRule
+1.3,ALTERATIONS,Removals,Remove existing ceiling finishes,m2,398.0,0.0,0.0,Full internal ceiling area,A-(01)1002,DQRule
+1.4,ALTERATIONS,Removals,Remove existing doors and frames,No,12.0,0.0,0.0,Existing doors to be removed,A-(01)1002,DQRule
+1.5,ALTERATIONS,Removals,Remove existing sanitary fittings including disconnection,No,8.0,0.0,0.0,"WCs, WHBs to be removed",A-(01)1002,DQRule
+2.1,FOUNDATIONS,Excavations,Excavate for surface trenches 450mm wide x 600mm deep,m3,17.55,0.0,0.0,65m new walls x 0.45m wide x 0.60m deep,S-01-25055-20-001,DQRule
+2.2,FOUNDATIONS,Excavations,Risk of collapse to sides of excavations <=1.5m deep,m2,78.0,0.0,0.0,65m x 0.6m depth x 2 sides,S-01-25055-20-001,DQRule
+2.3,FOUNDATIONS,Concrete,Mass concrete 25MPa in strip footings 450 x 200mm,m3,5.85,0.0,0.0,65m x 0.45m x 0.20m,S-01-25055-20-001,DQRule
+2.4,FOUNDATIONS,Brickwork,Brickwork in foundations one brick wall,m2,26.0,0.0,0.0,65m x 0.4m height,S-01-25055-20-001,DQRule
+2.5,FOUNDATIONS,Filling,Backfilling to trenches with selected material,m3,8.78,0.0,0.0,Excavation less concrete and brickwork,S-01-25055-20-001,DQRule
+3.1,SURFACE BEDS,Filling,Filling beneath floors compacted in 150mm layers,m3,18.0,0.0,0.0,120m2 x 0.15m thick,S-01-25055-20-002,DQRule
+3.2,SURFACE BEDS,Filling,Compaction to filling,m2,120.0,0.0,0.0,Area of new surface beds,S-01-25055-20-002,DQRule
+3.3,SURFACE BEDS,DPM,250 micron plastic dampproof membrane,m2,120.0,0.0,0.0,Under new surface beds,S-01-25055-20-002,DQRule
+3.4,SURFACE BEDS,Concrete,Concrete 25MPa in surface beds 100mm thick,m3,12.0,0.0,0.0,120m2 x 0.10m,S-01-25055-20-002,DQRule
+3.5,SURFACE BEDS,Reinforcement,Ref 193 fabric reinforcement in surface beds,m2,120.0,0.0,0.0,Area of new surface beds,S-01-25055-20-002,DQRule
+3.6,SURFACE BEDS,Surface Treatment,Power float finish to surface beds,m2,120.0,0.0,0.0,Top surface of new beds,S-01-25055-20-002,DQRule
+4.1,BRICKWORK,DPC,Dampproof course 230mm wide under walls,m2,14.95,0.0,0.0,65m length x 0.23m wide,S-01-25055-20-003,DQRule
+4.2,BRICKWORK,Walls,Half-brick walls in stock bricks,m2,195.0,0.0,0.0,65m x 3.0m height,A-(11)1000,DQRule
+4.3,BRICKWORK,Reinforcement,Brick reinforcement (brickforce) to walls,m,573.3,0.0,0.0,195m2 x 2.94m per m2,A-(11)1000,DQRule
+5.1,WALL FINISHES,Plaster,12mm Cement plaster to walls,m2,620.0,0.0,0.0,New walls 390m2 + existing 280m2 - openings 50m2,A-(51)1001,DQRule
+5.2,WALL FINISHES,Paint,One coat primer and two coats PVA paint to walls,m2,580.0,0.0,0.0,Plastered walls less tiled areas,A-(51)1001,DQRule
+5.3,WALL FINISHES,Tiling,Ceramic wall tiles to ablutions full height,m2,85.0,0.0,0.0,WC areas perimeter x 2.4m height,A-(51)1001,DQRule
+6.1,FLOOR FINISHES,Screed,40mm Cement screed to floors,m2,368.0,0.0,0.0,398m2 total - 30m2 veranda,A-(52)1001,DQRule
+6.2,FLOOR FINISHES,Tiles,Ceramic floor tiles including adhesive bedding,m2,188.0,0.0,0.0,"Offices, passages, ablutions",A-(52)1001,DQRule
+6.3,FLOOR FINISHES,Carpet,Carpet tiles to consulting and waiting areas,m2,154.0,0.0,0.0,Student Consulting 64m2 + Waiting 90m2,A-(52)1001,DQRule
+6.4,FLOOR FINISHES,Skirtings,75mm Ceramic tile skirting,m,320.0,0.0,0.0,Perimeter of tiled areas,A-(52)1002,DQRule
+7.1,CEILINGS,Suspended Ceiling,600x600mm Suspended ceiling tiles on exposed grid,m2,368.0,0.0,0.0,Internal ceiling area,A-(14)1000,DQRule
+7.2,CEILINGS,Paint,One coat primer and two coats PVA paint to ceilings,m2,368.0,0.0,0.0,Internal ceiling area,A-(14)1000,DQRule
+7.3,CEILINGS,Bulkheads,Gypsum board bulkheads including framing,m,45.0,0.0,0.0,Bulkheads at service areas,A-(14)1000,DQRule
+8.1,DOORS,Supply and Install,Custom Aluminium glazed door 1800x2350mm Type D01 complete with frame and hardware,No,2.0,0.0,0.0,As per fenestration schedule D01,A-(31)5001,DQRule
+8.2,DOORS,Supply and Install,Custom Aluminium glazed door Type D02 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule D02,A-(31)5002,DQRule
+8.3,DOORS,Supply and Install,Custom Aluminium glazed door Type D03 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule D03,A-(31)5003,DQRule
+8.4,DOORS,Supply and Install,Custom Aluminium glazed door Type D04 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule D04,A-(31)5004,DQRule
+8.5,DOORS,Supply and Install,Custom Aluminium glazed door Type D05 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule D05,A-(31)5005,DQRule
+8.6,DOORS,Supply and Install,Custom Aluminium glazed door Type D06 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule D06,A-(31)5006,DQRule
+8.7,DOORS,Supply and Install,Custom Aluminium glazed door Type D07 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule D07,A-(31)5007,DQRule
+8.8,DOORS,Supply and Install,Custom Aluminium glazed door Type D08 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule D08,A-(31)5008,DQRule
+8.9,DOORS,Supply and Install,Steel security gate Type G01 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule G01,A-(31)5009,DQRule
+8.10,DOORS,Supply and Install,Steel security gate Type G02 complete with frame and hardware,No,1.0,0.0,0.0,As per fenestration schedule G02,A-(31)50010,DQRule
+8.11,DOORS,Lintels,Precast concrete lintels over door openings,m,22.0,0.0,0.0,11 door openings x 2.0m average,A-(11)1000,DQRule
+9.1,WINDOWS,Supply and Install,Custom Aluminium glazed window W01 600x2805mm high,No,6.0,0.0,0.0,Type W01 as per schedule,A-(35)5001,DQRule
+9.2,WINDOWS,Supply and Install,Custom Aluminium glazed windows W02-W06 various sizes,No,12.0,0.0,0.0,Types W02-W06 as per schedule,A-(35)5002-5006,DQRule
+9.3,WINDOWS,Shopfronts,Custom Aluminium glazed shopfront SF01-SF09,No,9.0,0.0,0.0,Types SF01-SF09 as per schedule,A-(32)5001-5009,DQRule
+9.4,WINDOWS,Lintels,Precast concrete lintels over window/shopfront openings,m,35.0,0.0,0.0,Window and shopfront openings,A-(11)1000,DQRule
+10.1,JOINERY,Fixed Furniture,Security desk JT01 complete,No,1.0,0.0,0.0,As per joinery schedule,A-(74)6001,DQRule
+10.2,JOINERY,Fixed Furniture,Kitchenette unit JT02 complete,No,1.0,0.0,0.0,As per joinery schedule,A-(74)6002,DQRule
+11.1,PLUMBING,Sanitary Fittings,"WC suite complete with seat, cistern and connections",No,6.0,0.0,0.0,Male 2 + Female 2 + UA 1 + Staff 1,A-(50)6001,DQRule
+11.2,PLUMBING,Sanitary Fittings,Wash hand basin complete with taps and trap,No,6.0,0.0,0.0,As per ablution layout,A-(50)6001,DQRule
+11.3,PLUMBING,Sanitary Fittings,Stainless steel sink unit to kitchenette,No,1.0,0.0,0.0,Kitchenette area,A-(74)6002,DQRule
+11.4,PLUMBING,Pipework,Sanitary plumbing installation complete (provisional),Item,1.0,0.0,0.0,Provisional sum,A-(50)6001,DQRule
+12.1,ELECTRICAL,Installation,Electrical installation complete (provisional),Item,1.0,0.0,0.0,Provisional sum,Electrical,DQRule
+13.1,EXTERNAL WORKS,Paving,Interlocking concrete block paving,m2,90.0,0.0,0.0,Student outside waiting area,A-(11)1000,DQRule
+13.2,EXTERNAL WORKS,Paving,Paving layerworks 150mm thick compacted,m2,90.0,0.0,0.0,Under paving,Paving,DQRule
+,,,,,,,,,,
+,,,TOTAL,,,,0.00,,,
