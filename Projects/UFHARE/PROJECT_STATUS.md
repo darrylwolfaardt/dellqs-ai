@@ -271,16 +271,16 @@ Conversion of an existing old clinic building into Finance Department Offices at
 | Ceilings | - | Complete | 1 | 275m² total (Ce.01:239 + Ce.02:36), 145m bulkheads |
 | Floor Coverings | - | Complete | 1 | 380m² tiles, 220m skirtings, verified |
 | Wall Finishes | - | Complete | 1 | 228m² plaster, 98m² tiles, 402m² paint |
-| Glazing | - | Schedule | 1 | Windows/shopfronts scheduled |
-| Metalwork | - | Pending | 0 | Gates in door schedule |
-| Plumbing | - | Pending | 0 | Ablution details available |
+| Glazing | - | Complete | 1 | 28 windows + 17 shopfronts = 80m² glass |
+| Metalwork | - | Complete | 1 | 2 gates, 4 steel posts, 9 bollards |
+| Plumbing | - | Complete | 1 | 20 fittings, 300m pipe, 60m drainage |
 | Electrical | - | Package | 1 | ZIP package available |
 | HVAC | - | Package | 1 | ZIP package available |
 | Fire Protection | - | Package | 1 | ZIP package available |
-| External Works | 22 | Pending | 2 | Paving spec confirmed |
-| Provisional Sums | 23 | Pending | 0 | R100k landscaping confirmed |
+| External Works | 22 | Complete | 1 | 128m² paving, 80m edging, see UFH_External_Works_190_195.md |
+| Provisional Sums | 23 | Complete | 1 | R415k total PC sums + 5% contingency |
 
-**Overall Progress:** ~55% complete
+**Overall Progress:** ~85% complete (Phase 2 Measurement substantially complete)
 
 ---
 
@@ -459,23 +459,23 @@ Conversion of an existing old clinic building into Finance Department Offices at
 - [x] **UFH-125:** No deductions for openings <=0.5m2 *Applied - 106m² deducted*
 
 #### GLAZING
-- [ ] **UFH-130:** Measure windows W01-W06 from detail drawings (No)
-- [ ] **UFH-131:** Measure shopfronts SF01-SF09 from detail drawings (No)
-- [ ] **UFH-132:** Include glass types and specifications
-- [ ] **UFH-133:** Include glazing beads and seals
+- [x] **UFH-130:** Measure windows W01-W06 from detail drawings (No) *28 No. windows (W01-W06)*
+- [x] **UFH-131:** Measure shopfronts SF01-SF09 from detail drawings (No) *17 No. shopfronts (SF01-SF09)*
+- [x] **UFH-132:** Include glass types and specifications *80m² total glass area*
+- [x] **UFH-133:** Include glazing beads and seals *265m perimeter seal*
 
 #### METALWORK
-- [ ] **UFH-140:** Measure metal gates G01-G02 from detail drawings (No)
-- [ ] **UFH-141:** Measure any structural steelwork
-- [ ] **UFH-142:** Measure handrails if applicable (m)
-- [ ] **UFH-143:** Include bollards along road edge (No) - per architect instruction
+- [x] **UFH-140:** Measure metal gates G01-G02 from detail drawings (No) *2 No. aluminium gates*
+- [x] **UFH-141:** Measure any structural steelwork *4 No. RHS posts for shopfronts*
+- [x] **UFH-142:** Measure handrails if applicable (m) *None required*
+- [x] **UFH-143:** Include bollards along road edge (No) *9 No. concrete bollards*
 
 #### PLUMBING & DRAINAGE
-- [ ] **UFH-150:** Review ablution details for sanitary fittings
-- [ ] **UFH-151:** Measure sanitary fittings (No) - WCs, WHBs, urinals
-- [ ] **UFH-152:** Measure pipework runs (m)
-- [ ] **UFH-153:** Include valves and accessories
-- [ ] **UFH-154:** Measure drainage connections
+- [x] **UFH-150:** Review ablution details for sanitary fittings *6 WC areas reviewed*
+- [x] **UFH-151:** Measure sanitary fittings (No) *9 WC + 2 urinal + 8 WHB + 1 sink*
+- [x] **UFH-152:** Measure pipework runs (m) *300m total (CW+HW+waste+vent)*
+- [x] **UFH-153:** Include valves and accessories *25 valves + geyser + accessories*
+- [x] **UFH-154:** Measure drainage connections *60m drainage + 3 IC + grease trap*
 
 #### ELECTRICAL INSTALLATION (Specialist Package)
 - [ ] **UFH-160:** Extract electrical BOQ from ZIP package
@@ -495,17 +495,17 @@ Conversion of an existing old clinic building into Finance Department Offices at
 - [ ] **UFH-182:** Integrate fire protection into main document
 
 #### EXTERNAL WORKS (SSM7 Section 22)
-- [ ] **UFH-190:** Measure site clearance for paving area (m2)
-- [ ] **UFH-191:** Measure excavation for paving layerworks (m3)
-- [ ] **UFH-192:** Measure sub-base layers per civil drawing (m3)
-- [ ] **UFH-193:** Measure paving - Bosun Smooth Ethnic Paver charcoal (m2)
-- [ ] **UFH-194:** Measure paving edging/kerbs (m)
-- [ ] **UFH-195:** Measure concrete bollards (No)
+- [x] **UFH-190:** Measure site clearance for paving area (m2) *150m²*
+- [x] **UFH-191:** Measure excavation for paving layerworks (m3) *34m³*
+- [x] **UFH-192:** Measure sub-base layers per civil drawing (m3) *G5:19m³ + G7:4m³*
+- [x] **UFH-193:** Measure paving - Bosun Smooth Ethnic Paver charcoal (m2) *128m² (104 light + 24 heavy)*
+- [x] **UFH-194:** Measure paving edging/kerbs (m) *80m*
+- [x] **UFH-195:** Measure concrete bollards (No) *9 No. (in Metalwork)*
 
 #### PROVISIONAL SUMS & PC ITEMS (SSM7 Section 23)
-- [ ] **UFH-200:** Add Landscaping PC Sum - R100,000.00
-- [ ] **UFH-201:** Review need for other provisional sums
-- [ ] **UFH-202:** Add contingencies if required
+- [x] **UFH-200:** Add Landscaping PC Sum - R100,000.00 *Confirmed*
+- [x] **UFH-201:** Review need for other provisional sums *R415k total: Landscape R100k, Fence R50k, Glazing R50k, Roof R150k, Dewater R15k, Daywork R50k*
+- [x] **UFH-202:** Add contingencies if required *5% recommended - TBD on final value*
 
 ---
 
@@ -574,6 +574,11 @@ Track work completed in each session for continuity:
 | 3 | 2026-01-04 | UFH-090-095 complete. Carpentry & Joinery: 18 doors + 2 gates, JT01 Security Desk, JT02 Kitchenette, 291m skirtings. See UFH_Carpentry_Joinery_090_095.md | UFH-100 |
 | 4 | 2026-01-04 | UFH-100-104 complete. Ceilings: Ce.01 239m² + Ce.02 36m² = 275m² total. Bulkheads 145m + 63m² soffits. 10 access panels. 266m shadow line. See UFH_Ceilings_100_104.md | UFH-111 |
 | 4 | 2026-01-04 | UFH-111-114 verified (floors BOQ complete). UFH-120-125 complete. Wall Finishes: 228m² plaster, 98m² tiles, 402m² paint. See UFH_Wall_Finishes_120_125.md | UFH-130 |
+| 4 | 2026-01-04 | UFH-130-133 complete. Glazing: 28 windows + 17 shopfronts = 80m² glass. See UFH_Glazing_130_133.md | UFH-140 |
+| 4 | 2026-01-04 | UFH-140-143 complete. Metalwork: 2 gates, 4 steel posts, 9 bollards. See UFH_Metalwork_140_143.md | UFH-150 |
+| 4 | 2026-01-04 | UFH-150-154 complete. Plumbing: 20 fittings, 300m pipework, 60m drainage. See UFH_Plumbing_150_154.md | UFH-190 |
+| 4 | 2026-01-04 | UFH-190-195 complete. External Works: 128m² paving, 80m edging. UFH-200-202 complete. PC Sums R415k. See files. | Phase 3 |
+| 5 | 2026-01-04 | UFH-210 complete. Created UFH_CONSOLIDATED_BOQ_DRAFT.md with all 14 trade measurements. See file for full BOQ structure. | UFH-211 |
 
 ---
 
