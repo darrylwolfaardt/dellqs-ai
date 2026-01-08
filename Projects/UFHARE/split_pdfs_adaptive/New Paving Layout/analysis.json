@@ -1,0 +1,28 @@
+{
+  "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\New Paving Layout.pdf",
+  "drawing_name": "paving_layout",
+  "page_count": 1,
+  "strategy": "direct",
+  "total_tiles": 1,
+  "estimated_tokens": 1185,
+  "trades": [
+    "external_works",
+    "paving"
+  ],
+  "output_files": [
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\New Paving Layout\\New Paving Layout_p01.png"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "width_pts": 841.8900146484375,
+      "height_pts": 595.2757568359375,
+      "text_blocks": 0,
+      "drawings": 1,
+      "density": "low",
+      "detected_scale": null,
+      "strategy": "direct",
+      "recommended_dpi": 120
+    }
+  ]
+}

@@ -1,0 +1,730 @@
+{
+  "project": "UFH Alice Campus Finance Offices",
+  "processed_date": "2026-01-08",
+  "total_drawings": 22,
+  "total_tiles": 127,
+  "total_estimated_tokens": 771130,
+  "drawings": {
+    "ground_plan": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(11)1000-Ground Storey Plan-(4).pdf",
+      "drawing_name": "ground_plan",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 9,
+      "estimated_tokens": 44295,
+      "trades": [
+        "masonry",
+        "partitions",
+        "doors",
+        "glazing",
+        "floor_finishes",
+        "wall_finishes",
+        "plumbing"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile06_r2c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile07_r3c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile08_r3c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1000-Ground Storey Plan-(4)\\A-(11)1000-Ground Storey Plan-(4)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 311,
+          "drawings": 135380,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "roof_plan": {
+      "source": "../Projects/UFHARE/1 Pre-Tender/ALL DRAWINGS SPECS/Architectural Drawings/A-(11)1001-Roof Plan-(4).pdf",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 9,
+      "estimated_tokens": 22316,
+      "output_files": [
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile01_r1c1.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile02_r1c2.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile03_r1c3.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile04_r2c1.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile05_r2c2.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile06_r2c3.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile07_r3c1.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile08_r3c2.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1001-Roof Plan-(4)\\A-(11)1001-Roof Plan-(4)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 118,
+          "drawings": 179154,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "clerestory_plan": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(11)1002-Clerestory Plan Level-(3).pdf",
+      "drawing_name": "clerestory_plan",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 4,
+      "estimated_tokens": 37132,
+      "trades": [
+        "roofing",
+        "glazing",
+        "structure"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1002-Clerestory Plan Level-(3)\\A-(11)1002-Clerestory Plan Level-(3)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1002-Clerestory Plan Level-(3)\\A-(11)1002-Clerestory Plan Level-(3)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1002-Clerestory Plan Level-(3)\\A-(11)1002-Clerestory Plan Level-(3)_p01_tile03_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1002-Clerestory Plan Level-(3)\\A-(11)1002-Clerestory Plan Level-(3)_p01_tile04_r2c2.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 244,
+          "drawings": 76325,
+          "density": "very_high",
+          "detected_scale": "1:5",
+          "strategy": "adaptive",
+          "recommended_dpi": 180
+        }
+      ]
+    },
+    "general_arrangement": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(11)1003-General Arrangement Layout-(4).pdf",
+      "drawing_name": "general_arrangement",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 9,
+      "estimated_tokens": 42686,
+      "trades": [
+        "all"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile06_r2c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile07_r3c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile08_r3c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 87,
+          "drawings": 111600,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "sections": {
+      "source": "../Projects/UFHARE/1 Pre-Tender/ALL DRAWINGS SPECS/Architectural Drawings/A-(12)2000-Sections-(4).pdf",
+      "page_count": 1,
+      "strategy": "tiled",
+      "total_tiles": 9,
+      "estimated_tokens": 108587,
+      "output_files": [
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile01_r1c1.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile02_r1c2.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile03_r1c3.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile04_r2c1.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile05_r2c2.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile06_r2c3.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile07_r3c1.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile08_r3c2.png",
+        "..\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(12)2000-Sections-(4)\\A-(12)2000-Sections-(4)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 232,
+          "drawings": 5119,
+          "density": "high",
+          "detected_scale": "1:100",
+          "strategy": "tiled",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "elevations": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(13)3000-Elevations-(4).pdf",
+      "drawing_name": "elevations",
+      "page_count": 1,
+      "strategy": "tiled",
+      "total_tiles": 9,
+      "estimated_tokens": 108587,
+      "trades": [
+        "external_finishes",
+        "roofing",
+        "glazing"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile06_r2c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile07_r3c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile08_r3c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(13)3000-Elevations-(4)\\A-(13)3000-Elevations-(4)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 118,
+          "drawings": 846,
+          "density": "low",
+          "detected_scale": "1:100",
+          "strategy": "tiled",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "ceiling_plan": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(14)1000-Ceiling Plan-(3).pdf",
+      "drawing_name": "ceiling_plan",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 6,
+      "estimated_tokens": 20173,
+      "trades": [
+        "ceilings",
+        "bulkheads"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1000-Ceiling Plan-(3)\\A-(14)1000-Ceiling Plan-(3)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1000-Ceiling Plan-(3)\\A-(14)1000-Ceiling Plan-(3)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1000-Ceiling Plan-(3)\\A-(14)1000-Ceiling Plan-(3)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1000-Ceiling Plan-(3)\\A-(14)1000-Ceiling Plan-(3)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1000-Ceiling Plan-(3)\\A-(14)1000-Ceiling Plan-(3)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1000-Ceiling Plan-(3)\\A-(14)1000-Ceiling Plan-(3)_p01_tile06_r2c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 255,
+          "drawings": 17621,
+          "density": "very_high",
+          "detected_scale": "1:25",
+          "strategy": "adaptive",
+          "recommended_dpi": 300
+        }
+      ]
+    },
+    "ground_ceiling": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(14)1003-GROUND STOREY CEILING PLAN (1).pdf",
+      "drawing_name": "ground_ceiling",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 9,
+      "estimated_tokens": 21250,
+      "trades": [
+        "ceilings",
+        "bulkheads"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile06_r2c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile07_r3c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile08_r3c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(14)1003-GROUND STOREY CEILING PLAN (1)\\A-(14)1003-GROUND STOREY CEILING PLAN (1)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 288,
+          "drawings": 21046,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "fenestration_key": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(30)1001-Fenestration Key Plan-(2).pdf",
+      "drawing_name": "fenestration_key",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 9,
+      "estimated_tokens": 21902,
+      "trades": [
+        "glazing",
+        "doors"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile06_r2c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile07_r3c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile08_r3c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1001-Fenestration Key Plan-(2)\\A-(30)1001-Fenestration Key Plan-(2)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 199,
+          "drawings": 39518,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "fenestration_clerestory": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(30)1002-Fenestration Key Plan_Clerestory-(2).pdf",
+      "drawing_name": "fenestration_clerestory",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 9,
+      "estimated_tokens": 36162,
+      "trades": [
+        "glazing"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile06_r2c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile07_r3c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile08_r3c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)\\A-(30)1002-Fenestration Key Plan_Clerestory-(2)_p01_tile09_r3c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2381.0,
+          "height_pts": 1686.5,
+          "text_blocks": 178,
+          "drawings": 74214,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "wall_finishes": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(51)1001-Wall Finishes Layout(1).pdf",
+      "drawing_name": "wall_finishes",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 6,
+      "estimated_tokens": 24003,
+      "trades": [
+        "wall_finishes",
+        "plastering",
+        "painting",
+        "tiling"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(51)1001-Wall Finishes Layout(1)\\A-(51)1001-Wall Finishes Layout(1)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(51)1001-Wall Finishes Layout(1)\\A-(51)1001-Wall Finishes Layout(1)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(51)1001-Wall Finishes Layout(1)\\A-(51)1001-Wall Finishes Layout(1)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(51)1001-Wall Finishes Layout(1)\\A-(51)1001-Wall Finishes Layout(1)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(51)1001-Wall Finishes Layout(1)\\A-(51)1001-Wall Finishes Layout(1)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(51)1001-Wall Finishes Layout(1)\\A-(51)1001-Wall Finishes Layout(1)_p01_tile06_r2c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 1684.0,
+          "text_blocks": 105,
+          "drawings": 36111,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 312
+        }
+      ]
+    },
+    "floor_finishes": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(52)1001-Floor Finishes Layout(1).pdf",
+      "drawing_name": "floor_finishes",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 6,
+      "estimated_tokens": 28644,
+      "trades": [
+        "floor_finishes",
+        "tiling"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1001-Floor Finishes Layout(1)\\A-(52)1001-Floor Finishes Layout(1)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1001-Floor Finishes Layout(1)\\A-(52)1001-Floor Finishes Layout(1)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1001-Floor Finishes Layout(1)\\A-(52)1001-Floor Finishes Layout(1)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1001-Floor Finishes Layout(1)\\A-(52)1001-Floor Finishes Layout(1)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1001-Floor Finishes Layout(1)\\A-(52)1001-Floor Finishes Layout(1)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1001-Floor Finishes Layout(1)\\A-(52)1001-Floor Finishes Layout(1)_p01_tile06_r2c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 1684.0,
+          "text_blocks": 183,
+          "drawings": 54879,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "skirtings": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(52)1002-Skirtings(1).pdf",
+      "drawing_name": "skirtings",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 6,
+      "estimated_tokens": 32919,
+      "trades": [
+        "carpentry",
+        "skirtings"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1002-Skirtings(1)\\A-(52)1002-Skirtings(1)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1002-Skirtings(1)\\A-(52)1002-Skirtings(1)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1002-Skirtings(1)\\A-(52)1002-Skirtings(1)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1002-Skirtings(1)\\A-(52)1002-Skirtings(1)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1002-Skirtings(1)\\A-(52)1002-Skirtings(1)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(52)1002-Skirtings(1)\\A-(52)1002-Skirtings(1)_p01_tile06_r2c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 1684.0,
+          "text_blocks": 88,
+          "drawings": 48454,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "ablution_details": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(50)6001-Ablution Details-(1).pdf",
+      "drawing_name": "ablution_details",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 2,
+      "estimated_tokens": 8246,
+      "trades": [
+        "plumbing",
+        "tiling",
+        "waterproofing"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(50)6001-Ablution Details-(1)\\A-(50)6001-Ablution Details-(1)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(50)6001-Ablution Details-(1)\\A-(50)6001-Ablution Details-(1)_p01_tile02_r1c2.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 1190.5,
+          "height_pts": 836.5,
+          "text_blocks": 123,
+          "drawings": 22591,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "security_desk": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(74)6001-JT01 - Security Desk(1).pdf",
+      "drawing_name": "security_desk",
+      "page_count": 1,
+      "strategy": "tiled",
+      "total_tiles": 6,
+      "estimated_tokens": 77005,
+      "trades": [
+        "joinery"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6001-JT01 - Security Desk(1)\\A-(74)6001-JT01 - Security Desk(1)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6001-JT01 - Security Desk(1)\\A-(74)6001-JT01 - Security Desk(1)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6001-JT01 - Security Desk(1)\\A-(74)6001-JT01 - Security Desk(1)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6001-JT01 - Security Desk(1)\\A-(74)6001-JT01 - Security Desk(1)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6001-JT01 - Security Desk(1)\\A-(74)6001-JT01 - Security Desk(1)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6001-JT01 - Security Desk(1)\\A-(74)6001-JT01 - Security Desk(1)_p01_tile06_r2c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 1684.0,
+          "text_blocks": 211,
+          "drawings": 2941,
+          "density": "medium",
+          "detected_scale": "1:25",
+          "strategy": "tiled",
+          "recommended_dpi": 300
+        }
+      ]
+    },
+    "kitchenette": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(74)6002-JT02 - Kitchenette(1).pdf",
+      "drawing_name": "kitchenette",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 4,
+      "estimated_tokens": 15024,
+      "trades": [
+        "joinery",
+        "plumbing"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile03_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile04_r2c2.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 1684.0,
+          "text_blocks": 212,
+          "drawings": 7125,
+          "density": "very_high",
+          "detected_scale": "1:10",
+          "strategy": "adaptive",
+          "recommended_dpi": 225
+        }
+      ]
+    },
+    "paving_layout": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\New Paving Layout.pdf",
+      "drawing_name": "paving_layout",
+      "page_count": 1,
+      "strategy": "direct",
+      "total_tiles": 1,
+      "estimated_tokens": 1185,
+      "trades": [
+        "external_works",
+        "paving"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\New Paving Layout\\New Paving Layout_p01.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 841.8900146484375,
+          "height_pts": 595.2757568359375,
+          "text_blocks": 0,
+          "drawings": 1,
+          "density": "low",
+          "detected_scale": null,
+          "strategy": "direct",
+          "recommended_dpi": 120
+        }
+      ]
+    },
+    "demolition_plan": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(01)1002-Demolition Plan(3).pdf",
+      "drawing_name": "demolition_plan",
+      "page_count": 1,
+      "strategy": "adaptive",
+      "total_tiles": 6,
+      "estimated_tokens": 36002,
+      "trades": [
+        "demolitions"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(01)1002-Demolition Plan(3)\\A-(01)1002-Demolition Plan(3)_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(01)1002-Demolition Plan(3)\\A-(01)1002-Demolition Plan(3)_p01_tile02_r1c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(01)1002-Demolition Plan(3)\\A-(01)1002-Demolition Plan(3)_p01_tile03_r1c3.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(01)1002-Demolition Plan(3)\\A-(01)1002-Demolition Plan(3)_p01_tile04_r2c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(01)1002-Demolition Plan(3)\\A-(01)1002-Demolition Plan(3)_p01_tile05_r2c2.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(01)1002-Demolition Plan(3)\\A-(01)1002-Demolition Plan(3)_p01_tile06_r2c3.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 1684.0,
+          "text_blocks": 249,
+          "drawings": 62893,
+          "density": "very_high",
+          "detected_scale": "1:100",
+          "strategy": "adaptive",
+          "recommended_dpi": 350
+        }
+      ]
+    },
+    "foundation_layout": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Structural Drawings\\S-01-25055-20-001-Rev E-Foundation Layout.pdf",
+      "drawing_name": "foundation_layout",
+      "page_count": 1,
+      "strategy": "tiled",
+      "total_tiles": 2,
+      "estimated_tokens": 21253,
+      "trades": [
+        "earthworks",
+        "concrete",
+        "formwork",
+        "reinforcement"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-001-Rev E-Foundation Layout\\S-01-25055-20-001-Rev E-Foundation Layout_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-001-Rev E-Foundation Layout\\S-01-25055-20-001-Rev E-Foundation Layout_p01_tile02_r2c1.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 3370.0,
+          "text_blocks": 0,
+          "drawings": 0,
+          "density": "low",
+          "detected_scale": null,
+          "strategy": "tiled",
+          "recommended_dpi": 120
+        }
+      ]
+    },
+    "surface_bed": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Structural Drawings\\S-01-25055-20-002-Rev E-Surface Bed Layout.pdf",
+      "drawing_name": "surface_bed",
+      "page_count": 1,
+      "strategy": "tiled",
+      "total_tiles": 2,
+      "estimated_tokens": 21253,
+      "trades": [
+        "concrete",
+        "formwork",
+        "reinforcement"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-002-Rev E-Surface Bed Layout\\S-01-25055-20-002-Rev E-Surface Bed Layout_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-002-Rev E-Surface Bed Layout\\S-01-25055-20-002-Rev E-Surface Bed Layout_p01_tile02_r2c1.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 3370.0,
+          "text_blocks": 0,
+          "drawings": 0,
+          "density": "low",
+          "detected_scale": null,
+          "strategy": "tiled",
+          "recommended_dpi": 120
+        }
+      ]
+    },
+    "ring_beam": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Structural Drawings\\S-01-25055-20-003-Rev E-Ring Beam Layout.pdf",
+      "drawing_name": "ring_beam",
+      "page_count": 1,
+      "strategy": "tiled",
+      "total_tiles": 2,
+      "estimated_tokens": 21253,
+      "trades": [
+        "concrete",
+        "formwork",
+        "reinforcement"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-003-Rev E-Ring Beam Layout\\S-01-25055-20-003-Rev E-Ring Beam Layout_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-003-Rev E-Ring Beam Layout\\S-01-25055-20-003-Rev E-Ring Beam Layout_p01_tile02_r2c1.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 3370.0,
+          "text_blocks": 0,
+          "drawings": 0,
+          "density": "low",
+          "detected_scale": null,
+          "strategy": "tiled",
+          "recommended_dpi": 120
+        }
+      ]
+    },
+    "structural_sections": {
+      "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Structural Drawings\\S-01-25055-20-004-Rev D-Sections.pdf",
+      "drawing_name": "structural_sections",
+      "page_count": 1,
+      "strategy": "tiled",
+      "total_tiles": 2,
+      "estimated_tokens": 21253,
+      "trades": [
+        "concrete",
+        "structure"
+      ],
+      "output_files": [
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-004-Rev D-Sections\\S-01-25055-20-004-Rev D-Sections_p01_tile01_r1c1.png",
+        "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-004-Rev D-Sections\\S-01-25055-20-004-Rev D-Sections_p01_tile02_r2c1.png"
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "width_pts": 2384.0,
+          "height_pts": 3370.0,
+          "text_blocks": 0,
+          "drawings": 0,
+          "density": "low",
+          "detected_scale": null,
+          "strategy": "tiled",
+          "recommended_dpi": 120
+        }
+      ]
+    }
+  }
+}

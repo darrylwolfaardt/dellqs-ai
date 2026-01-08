@@ -1,0 +1,35 @@
+{
+  "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(11)1003-General Arrangement Layout-(4).pdf",
+  "drawing_name": "general_arrangement",
+  "page_count": 1,
+  "strategy": "adaptive",
+  "total_tiles": 9,
+  "estimated_tokens": 42686,
+  "trades": [
+    "all"
+  ],
+  "output_files": [
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile01_r1c1.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile02_r1c2.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile03_r1c3.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile04_r2c1.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile05_r2c2.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile06_r2c3.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile07_r3c1.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile08_r3c2.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(11)1003-General Arrangement Layout-(4)\\A-(11)1003-General Arrangement Layout-(4)_p01_tile09_r3c3.png"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "width_pts": 2381.0,
+      "height_pts": 1686.5,
+      "text_blocks": 87,
+      "drawings": 111600,
+      "density": "very_high",
+      "detected_scale": "1:100",
+      "strategy": "adaptive",
+      "recommended_dpi": 350
+    }
+  ]
+}

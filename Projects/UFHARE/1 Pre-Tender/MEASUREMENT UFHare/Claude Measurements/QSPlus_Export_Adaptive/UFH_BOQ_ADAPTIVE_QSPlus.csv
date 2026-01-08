@@ -1,0 +1,193 @@
+Project: UFH Alice Campus - Finance Offices Conversion (ADAPTIVE),,,,,,,,,,
+Project Number: UFH-FINANCE-2026-ADAPTIVE,,,,,,,,,,
+Date: 2026-01-08 22:28:59,,,,,,,,,,
+Software: DELLQS-AI,,,,,,,,,,
+,,,,,,,,,,
+Item Number,Section,Subsection,Description,Unit,Quantity,Rate,Amount,Calculation Notes,Reference Drawing,Measurement Rule
+4.1.1,BILL 4 - EARTHWORKS,4.1 SITE CLEARANCE,"Clear site of vegetation, grass and weeds",m2,250.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.2.1,BILL 4 - EARTHWORKS,4.2 EXCAVATION,"Excavation to reduce levels for surface bed formation, maximum depth not exceeding 2.00m, in earth",m3,65.0,0.0,0.0,Verified from adaptive structural drawings +4,,ASAQS SSM7 / DQRules
+4.2.2,BILL 4 - EARTHWORKS,4.2 EXCAVATION,"Excavation for strip foundations 600mm wide x 700mm deep, maximum depth not exceeding 2.00m, in earth",m3,48.0,0.0,0.0,Verified from foundation layout +3,,ASAQS SSM7 / DQRules
+4.2.3,BILL 4 - EARTHWORKS,4.2 EXCAVATION,"Excavation to reduce levels for external paving layerworks, maximum depth not exceeding 500mm, in earth",m3,34.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.3.1,BILL 4 - EARTHWORKS,4.3 DISPOSAL,"Disposal of excavated material off site, including loading and carting away",m3,147.0,0.0,0.0,Increased from 140 to 147,,ASAQS SSM7 / DQRules
+4.4.1,BILL 4 - EARTHWORKS,4.4 FILLING - INTERNAL,"Filling to make up levels under surface beds with approved crushed stone or G5 material, compacted in layers not exceeding 150mm, average thickness 150mm",m3,30.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.4.2,BILL 4 - EARTHWORKS,4.4 FILLING - INTERNAL,"Sand blinding over hardcore filling, 50mm thick, levelled and compacted to receive DPM",m2,198.0,0.0,0.0,Verified from surface bed layout +12,,ASAQS SSM7 / DQRules
+4.5.1,BILL 4 - EARTHWORKS,4.5 FILLING - EXTERNAL PAVING,150mm thick G7 filling compacted to 93% Mod AASHTO density (heavy duty paving areas only),m3,4.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.5.2,BILL 4 - EARTHWORKS,4.5 FILLING - EXTERNAL PAVING,150mm thick G5 crusher run sub-base compacted to 98% Mod AASHTO density,m3,19.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.5.3,BILL 4 - EARTHWORKS,4.5 FILLING - EXTERNAL PAVING,"25mm thick sand bedding to paving, levelled and screeded",m2,128.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.6.1,BILL 4 - EARTHWORKS,4.6 COMPACTION,Compaction of formation to receive filling under surface beds,m2,198.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.6.2,BILL 4 - EARTHWORKS,4.6 COMPACTION,Compaction of insitu subgrade to 90% Mod AASHTO for external paving,m2,128.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.7.1,BILL 4 - EARTHWORKS,4.7 SUNDRIES,"Keep excavations free of water during construction including pumping, temporary drainage and all associated works",Item,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+4.7.2,BILL 4 - EARTHWORKS,4.7 SUNDRIES,Provisional Sum for dewatering if extensive pumping required,P.Sum,15000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.1.1,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.1 CONCRETE,"Blinding concrete, 15MPa/19mm, 50mm thick under foundations",m3,4.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.1.2,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.1 CONCRETE,"Reinforced concrete, 25MPa/26mm, in strip foundations 600mm wide x 700mm deep",m3,48.0,0.0,0.0,Verified +3 from structural drawings,,ASAQS SSM7 / DQRules
+7.1.3,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.1 CONCRETE,"Reinforced concrete, 25MPa/19mm, in ring beams RB1 (350x450mm) to SANS 1200 G",m3,12.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.1.4,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.1 CONCRETE,"Reinforced concrete, 25MPa/19mm, in ring beams RB2 (250x250mm) to SANS 1200 G",m3,3.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.1.5,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.1 CONCRETE,"Reinforced concrete, 30MPa/19mm, in surface beds 125mm thick, power floated finish",m3,25.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.1.6,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.1 CONCRETE,"Reinforced concrete, 25MPa/19mm, in columns to SANS 1200 G as per Structural Engineer's details",m3,2.0,0.0,0.0,NEW - identified from adaptive sections,,ASAQS SSM7 / DQRules
+7.1.7,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.1 CONCRETE,"Reinforced concrete, 25MPa/19mm, in canopy slab and beam (Provisional)",m3,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.2.1,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.2 FORMWORK,"Formwork, rough, to sides of strip foundations",m2,160.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.2.2,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.2 FORMWORK,"Formwork, smooth (Class F2), to sides and soffits of ring beams",m2,122.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.2.3,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.2 FORMWORK,"Formwork, smooth, to edges of surface beds 125mm deep",m,115.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.2.4,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.2 FORMWORK,"Formwork, smooth, to columns",m2,18.0,0.0,0.0,NEW - for new column concrete,,ASAQS SSM7 / DQRules
+7.2.5,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.2 FORMWORK,"Formwork, smooth, to canopy slab and beam (Provisional)",m2,8.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.3.1,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.3 REINFORCEMENT,"High tensile reinforcement to BS4449, including cutting, bending, fixing with spacers and tying wire",t,5.8,0.0,0.0,+0.5t for columns,,ASAQS SSM7 / DQRules
+7.3.2,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.3 REINFORCEMENT,"Welded steel fabric reinforcement Ref 193, including laps",m2,198.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.4.1,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.4 SUNDRIES,Concrete test cubes including laboratory testing,No,65.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.4.2,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.4 SUNDRIES,"Isolation joints, 10mm wide, to perimeter of surface beds and around columns",m,130.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+7.4.3,"BILL 7 - CONCRETE, FORMWORK & REINFORCEMENT",7.4 SUNDRIES,"Sawcut joints to surface beds, 3mm wide",m,85.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.1.1,BILL 10 - MASONRY,10.1 BLOCKWORK,"Corobrik Breeze Block walling, 14MPa, 230mm thick, in cement mortar Class II, to external walls",m2,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.1.2,BILL 10 - MASONRY,10.1 BLOCKWORK,"Concrete block walling, 7MPa, 230mm thick, in cement mortar Class II, to internal walls",m2,82.0,0.0,0.0,Verified from ground plan +6,,ASAQS SSM7 / DQRules
+10.2.1,BILL 10 - MASONRY,10.2 FAIR FACE,Extra over blockwork for fair face finish (Platinum Satin),m2,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.3.1,BILL 10 - MASONRY,10.3 BEAM FILLING,Filling to underside of ring beams with blockwork,m2,24.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.4.1,BILL 10 - MASONRY,10.4 DAMP PROOF COURSE,"Malthoid DPC, 230mm wide, under walls",m,62.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.5.1,BILL 10 - MASONRY,10.5 LINTELS,"Fabricated steel lintels, various sizes, over openings",No,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.6.1,BILL 10 - MASONRY,10.6 BRICKFORCE,"Brickforce reinforcement, 75mm wide, in every alternate course to loadbearing blockwork",m,480.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.6.2,BILL 10 - MASONRY,10.6 BRICKFORCE,"Brickforce reinforcement, 75mm wide, in every fourth course to non-loadbearing blockwork",m,320.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+10.7.1,BILL 10 - MASONRY,10.7 DRYWALL PARTITIONS,"Gyproc drywall partitions, 110mm thick, double sided with insulation, complete with all framing, angles and jointing",m2,82.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+W.1.1,WATERPROOFING,W.1 DAMP PROOF MEMBRANE,"250 micron polyethylene DPM to SANS 952-1985 Type C, lapped 150mm at joints, under surface beds",m2,198.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+W.2.1,WATERPROOFING,W.2 WET AREA WATERPROOFING,"Torch-on waterproofing membrane to ablution floors, turned up at edges 100mm",m2,28.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+W.2.2,WATERPROOFING,W.2 WET AREA WATERPROOFING,Waterproof membrane/coating to ablution walls to 1800mm height,m2,68.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+W.3.1,WATERPROOFING,W.3 SUNDRIES,Waterproof seal to floor/wall junctions in wet areas,m,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+W.3.2,WATERPROOFING,W.3 SUNDRIES,Waterproof seal around floor wastes and pipe penetrations,No,14.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.1.1,ROOFING,R.1 ROOF COVERING,"BMI Coverland 420 x 330mm Elite concrete roof tiles, Colour Slate Grey, installed as per strict Manufacturer's specifications including all clips, fixings and underlays, on timber battens",m2,295.0,0.0,0.0,CORRECTED from Klip-Lok steel - BMI tiles verified from adaptive extraction,,ASAQS SSM7 / DQRules
+R.2.1,ROOFING,R.2 FLASHINGS,"BMI Coverland 420 x 200mm Elite ridge tiles, Colour Slate Grey, installed as per Manufacturer's specifications",m,32.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.2.2,ROOFING,R.2 FLASHINGS,Lead flashing 300mm girth to abutments,m,45.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.2.3,ROOFING,R.2 FLASHINGS,Lead flashing stepped to gable ends,m,28.0,0.0,0.0,NEW - from adaptive,,ASAQS SSM7 / DQRules
+R.2.4,ROOFING,R.2 FLASHINGS,Valley flashing including valley trough,m,12.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.2.5,ROOFING,R.2 FLASHINGS,"Hip tiles, BMI Coverland Elite, Slate Grey",m,23.0,0.0,0.0,NEW - from adaptive,,ASAQS SSM7 / DQRules
+R.3.1,ROOFING,R.3 RAINWATER GOODS,"Aluminium seamless gutter 125 x 125 x 0.9mm thick, ColourTech G4 coating, including dual-purpose brackets at 600mm centres",m,54.0,0.0,0.0,+10m verified from adaptive,,ASAQS SSM7 / DQRules
+R.3.2,ROOFING,R.3 RAINWATER GOODS,Extra over for gutter mitred angles,No,6.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.3.3,ROOFING,R.3 RAINWATER GOODS,"Extra over for gutter stop ends, riveted",No,6.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.3.4,ROOFING,R.3 RAINWATER GOODS,Extra over for gutter outlets,No,6.0,0.0,0.0,+2 verified from roof plan,,ASAQS SSM7 / DQRules
+R.3.5,ROOFING,R.3 RAINWATER GOODS,"Aluminium rainwater downpipes 80mm diameter, including brackets, bends and connections",m,21.0,0.0,0.0,+8m verified from sections,,ASAQS SSM7 / DQRules
+R.3.6,ROOFING,R.3 RAINWATER GOODS,Aluminium rainwater shoes,No,6.0,0.0,0.0,+2 for additional downpipes,,ASAQS SSM7 / DQRules
+R.3.7,ROOFING,R.3 RAINWATER GOODS,Aluminium valley gutter to BMI specifications,m,10.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.4.1,ROOFING,R.4 ROOF WATERPROOFING,"Torch-on waterproofing membrane to flat roof areas (clerestory), 2-layer system including primer",m2,35.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.4.2,ROOFING,R.4 ROOF WATERPROOFING,Extra over for upstands and kerbs,m,20.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+R.5.1,ROOFING,R.5 INSULATION,"135mm Think Pink Aerolite glass fibre insulation blanket to roof, laid over ceiling",m2,282.0,0.0,0.0,+17 from accurate ceiling area,,ASAQS SSM7 / DQRules
+R.6.1,ROOFING,R.6 PROVISIONAL SUM,"P.Sum for roof timber structure (trusses, purlins, battens, bracing) as per Structural Engineer's details - INCREASED FOR CONCRETE TILE LOAD",P.Sum,180000.0,0.0,0.0,Increased from R150k for heavier tile load,,ASAQS SSM7 / DQRules
+CJ.1.1,CARPENTRY & JOINERY,CJ.1 DOORS,"Timber flush door D01, 900x2100mm, complete with hardwood frame and ironmongery (3 hinges, lever handles, mortice lock, stop)",No,9.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.1.2,CARPENTRY & JOINERY,CJ.1 DOORS,"Timber flush door D02, 800x2100mm, complete with hardwood frame and ironmongery",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.1.3,CARPENTRY & JOINERY,CJ.1 DOORS,"Timber flush door D03, 700x2100mm (WC type), with indicator lock and ironmongery",No,7.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.1.4,CARPENTRY & JOINERY,CJ.1 DOORS,"Steel security door D04, 900x2100mm, to strong rooms, complete with heavy duty frame, multi-point locking system",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.1.5,CARPENTRY & JOINERY,CJ.1 DOORS,"Timber flush door D05, 820x2100mm, complete with hardwood frame and ironmongery",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.1.6,CARPENTRY & JOINERY,CJ.1 DOORS,"Timber flush door D06, 750x2100mm, complete with hardwood frame and ironmongery",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.1.7,CARPENTRY & JOINERY,CJ.1 DOORS,"Timber door D07, 900x2400mm, full height",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.1.8,CARPENTRY & JOINERY,CJ.1 DOORS,"Timber door D08, 800x2100mm",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.2.1,CARPENTRY & JOINERY,CJ.2 GATES,"Steel security gate G01, 1200x2100mm, complete with frame, heavy duty hinges, gate lock, drop bolts",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.2.2,CARPENTRY & JOINERY,CJ.2 GATES,"Steel security gate G02, 900x2100mm, complete as before",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.3.1,CARPENTRY & JOINERY,CJ.3 BUILT-IN JOINERY,"Security desk unit JT01, complete as drawing A-(74)6001, Melawood carcass, MDF doors, EeziQuartz countertop, including all fittings, locks and finishes",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.3.2,CARPENTRY & JOINERY,CJ.3 BUILT-IN JOINERY,"Kitchenette unit JT02, complete as drawing A-(74)6002, Melawood carcass, MDF doors and drawers, EeziQuartz countertop and splashback, including all fittings (excluding sink and mixer)",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.4.1,CARPENTRY & JOINERY,CJ.4 SKIRTINGS,"Capco Gamma Base Reveal 75 skirting (Type 01), concealed fixed with bonding agent",m,210.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.4.2,CARPENTRY & JOINERY,CJ.4 SKIRTINGS,"Capco Gamma Flat Skirting 76 (Type 02), concealed fixed with bonding agent",m,98.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.4.3,CARPENTRY & JOINERY,CJ.4 SKIRTINGS,Extra over for internal corners,No,52.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.4.4,CARPENTRY & JOINERY,CJ.4 SKIRTINGS,Extra over for external corners,No,14.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CJ.4.5,CARPENTRY & JOINERY,CJ.4 SKIRTINGS,Extra over for stop ends,No,40.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.1.1,CEILINGS,CE.1 SUSPENDED CEILINGS,"600 x 600 x 15mm mineral fiber acoustic ceiling tiles (Ce.01) on 24mm exposed aluminium T-bar suspension grid system, including all hangers, main runners, cross tees, wall angles and accessories, fixed at 2700mm AFFL - general areas",m2,252.0,0.0,0.0,+13 verified,,ASAQS SSM7 / DQRules
+CE.1.2,CEILINGS,CE.1 SUSPENDED CEILINGS,"600 x 600 x 15mm vinyl faced moisture resistant ceiling tiles (Ce.02) on concealed aluminium suspension grid, complete as before - wet areas",m2,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.2.1,CEILINGS,CE.2 BULKHEADS,"Gypsum plasterboard bulkhead 400mm wide x 300mm drop (Type 01) on light steel framing, jointed and finished ready for painting - perimeter",m,72.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.2.2,CEILINGS,CE.2 BULKHEADS,"Gypsum plasterboard bulkhead 600mm wide x 400mm drop (Type 02) on light steel framing, complete as before - over ring beams",m,48.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.2.3,CEILINGS,CE.2 BULKHEADS,"Gypsum plasterboard bulkhead 300mm wide x 200mm drop (Type 03) on light steel framing, complete as before - internal partitions",m,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.2.4,CEILINGS,CE.2 BULKHEADS,12.5mm gypsum plasterboard to soffits of bulkheads including jointing and finishing,m2,70.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.3.1,CEILINGS,CE.3 ACCESS PANELS,600 x 600mm hinged metal access panel in suspended ceiling including frame and trim,No,8.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.3.2,CEILINGS,CE.3 ACCESS PANELS,450 x 450mm plastic hinged access panel in suspended ceiling including frame and trim,No,4.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+CE.4.1,CEILINGS,CE.4 SHADOW LINES,20mm shadow line detail at wall/ceiling junction formed in suspended ceiling grid system,m,285.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+FL.1.1,FLOOR COVERINGS,FL.1 FLOOR TILES,"600 x 600 x 10mm glazed porcelain floor tiles (Fl.01), fixed with tile adhesive, 3mm grouted joints, colour to architect's selection - general areas",m2,365.0,0.0,0.0,+15 verified from floor finishes layout,,ASAQS SSM7 / DQRules
+FL.1.2,FLOOR COVERINGS,FL.1 FLOOR TILES,"300 x 300 x 9mm anti-slip ceramic floor tiles (Fl.02), fixed with tile adhesive, 3mm grouted joints - wet areas",m2,32.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+FL.2.1,FLOOR COVERINGS,FL.2 FLOOR PREPARATION,Prepare surface bed to receive floor tiles including grinding and priming,m2,397.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+FL.3.1,FLOOR COVERINGS,FL.3 TILE SKIRTINGS,100mm high coved ceramic tile skirting to match floor tiles (Type 01),m,102.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+FL.3.2,FLOOR COVERINGS,FL.3 TILE SKIRTINGS,100mm high straight ceramic tile skirting (Type 02),m,132.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.1.1,WALL FINISHES & PAINTING,WF.1 PLASTERING,"15mm thick cement plaster (1:4) wood float finish to new blockwork walls internally including dubbing out, rounded internal angles and preparing for painting",m2,205.0,0.0,0.0,+17 verified,,ASAQS SSM7 / DQRules
+WF.1.2,WALL FINISHES & PAINTING,WF.1 PLASTERING,"Hack off defective plaster and make good to existing walls including dubbing out, feathering edges and preparing for painting",m2,42.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.1.3,WALL FINISHES & PAINTING,WF.1 PLASTERING,15mm thick cement plaster to exposed faces of ring beams including rounded arrises and preparing for painting,m2,48.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.2.1,WALL FINISHES & PAINTING,WF.2 WALL TILING,"300 x 600 x 9mm glazed ceramic wall tiles to SANS 1285, fixed with TAL Professional tile adhesive, grouted with TAL Fine Epoxy grout in 3mm joints, colour to architect's selection - ablution walls full height to 2100mm AFFL",m2,102.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.2.2,WALL FINISHES & PAINTING,WF.2 WALL TILING,Ditto but 600mm high splashback to kitchenette,m2,3.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.2.3,WALL FINISHES & PAINTING,WF.2 WALL TILING,Aluminium straight edge trim to exposed tile edges including bedding in adhesive,m,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.3.1,WALL FINISHES & PAINTING,WF.3 PAINTING - WALLS,"Prepare, apply 1 coat DULUX Trade Alkali Resistant Primer (full coat) and 2 coats DULUX Trade 100 Low Sheen to new plastered/drywalled walls internally (WF01), colour to architect's selection",m2,285.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.3.2,WALL FINISHES & PAINTING,WF.3 PAINTING - WALLS,"Prepare, apply 1 coat DULUX Trade Alkali Resistant Primer (patching) and 2 coats DULUX Trade 100 Low Sheen to existing plastered walls internally (WF02), colour to architect's selection",m2,145.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.4.1,WALL FINISHES & PAINTING,WF.4 PAINTING - CEILINGS/BULKHEADS,"Prepare, apply 1 coat primer and 2 coats DULUX Trade 100 Low Sheen to gypsum plasterboard bulkhead soffits",m2,70.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+WF.4.2,WALL FINISHES & PAINTING,WF.4 PAINTING - CEILINGS/BULKHEADS,"Prepare, apply 1 coat primer and 2 coats DULUX Trade 100 Low Sheen to gypsum plasterboard bulkhead sides",m2,56.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.1.1,GLAZING,GL.1 ALUMINIUM WINDOWS,"Aluminium window type W01, 600 x 2805mm, side hung, H-SYSTEM flush glazing or equal, 60-80um powder coated finish, complete with friction stays, handles, weatherstripping, 6.38mm clear laminated safety glass",No,3.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.1.2,GLAZING,GL.1 ALUMINIUM WINDOWS,"Aluminium window type W02, 350 x 900mm, side hung opening, complete as before",No,12.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.1.3,GLAZING,GL.1 ALUMINIUM WINDOWS,"Aluminium window type W03, 900 x 1200mm, top hung opening, complete as before",No,5.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.1.4,GLAZING,GL.1 ALUMINIUM WINDOWS,"Aluminium window type W04, 1200 x 1500mm, side hung opening, complete as before",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.1.5,GLAZING,GL.1 ALUMINIUM WINDOWS,"Aluminium window type W05, 1500 x 1200mm, top hung opening, complete as before",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.1.6,GLAZING,GL.1 ALUMINIUM WINDOWS,"Aluminium window type W06, 600 x 600mm, fixed glazing, complete as before",No,8.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.1,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF01, 1275 x 400mm, fixed glazing, complete with 10.38mm laminated safety glass",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.2,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF02, 2400 x 2400mm, fixed glazing with transom, complete as before",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.3,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF03, 1800 x 2400mm, single door with sidelight, including door closer, floor spring, handles",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.4,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF04, 2400 x 2400mm, double doors with sidelights, including closers, floor springs, handles, panic hardware",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.5,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF05, 1200 x 2400mm, fixed full height glazing",No,5.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.6,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF06, 3000 x 1200mm, counter screen with transaction opening",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.7,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF07, 1500 x 2100mm, fixed glazing",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.8,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF08, 900 x 2400mm, fixed full height glazing",No,4.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.2.9,GLAZING,GL.2 ALUMINIUM SHOPFRONTS,"Aluminium shopfront type SF09, 3600 x 2400mm, entrance screen with single door",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.3.1,GLAZING,GL.3 SUNDRIES,Approved polysulphide sealant to perimeter of aluminium frames,m,285.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.3.2,GLAZING,GL.3 SUNDRIES,Safety manifestation to glass doors and floor-to-ceiling panels to SANS 10400 requirements,m2,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+GL.4.1,GLAZING,GL.4 PC SUM,PC Sum for specialist glazing works if glass specification varies,P.Sum,50000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+MW.1.1,METALWORK,MW.1 GATES,"Aluminium security gate type G01, 1200 x 2100mm high, powder coated finish, complete with frame, infill panels, heavy duty hinges (3 No.), gate lock, drop bolts, fixed in prepared opening",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+MW.1.2,METALWORK,MW.1 GATES,"Aluminium security gate type G02, 900 x 2100mm high, complete as before",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+MW.2.1,METALWORK,MW.2 STRUCTURAL STEEL,"100 x 100 x 3mm RHS steel post, 2700mm long, hot dip galvanized and powder coated, including base plate, holding down bolts and grouting - shopfront supports",No,4.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+MW.3.1,METALWORK,MW.3 BOLLARDS,"Precast concrete bollard 150mm dia x 900mm high above ground, including 300mm embedment in 300 x 300 x 400mm concrete base grade 25/19, natural finish or painted",No,9.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+MW.4.1,METALWORK,MW.4 SUNDRIES,Galvanized steel frame anchors for aluminium door and window frames,No,204.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+MW.4.2,METALWORK,MW.4 SUNDRIES,"Heavy duty cast iron manhole cover 600 x 600mm, grade A15, including frame bedded in mortar",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.1.1,PLUMBING & DRAINAGE,PL.1 WC SUITES,"Close coupled WC suite comprising vitreous china pan, dual flush cistern (6/3L), seat and cover, complete with flush pipe, soil connector, fixing bolts, all white",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.1.2,PLUMBING & DRAINAGE,PL.1 WC SUITES,"Wall hung WC pan vitreous china with concealed cistern, seat and cover, support frame, flush plate, complete with connections, all white",No,5.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.1.3,PLUMBING & DRAINAGE,PL.1 WC SUITES,"Doc M WC suite 480mm high pan, close coupled cistern, seat and cover, complete with grab rails, all white",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.2.1,PLUMBING & DRAINAGE,PL.2 URINALS,"Wall hung urinal vitreous china with concealed auto-flush system, waste outlet, including spreader and trap, all white",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.3.1,PLUMBING & DRAINAGE,PL.3 WASH HAND BASINS,"Wall hung wash hand basin 500mm vitreous china with pillar mixer tap, bottle trap, waste, brackets, all white/chrome",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.3.2,PLUMBING & DRAINAGE,PL.3 WASH HAND BASINS,"Vanity counter-mounted wash hand basin 450mm vitreous china with deck mixer tap, bottle trap, waste, all white/chrome",No,5.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.3.3,PLUMBING & DRAINAGE,PL.3 WASH HAND BASINS,"Doc M accessible wash hand basin with lever taps (150mm handles), bottle trap, waste, support brackets, all white/chrome",No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.4.1,PLUMBING & DRAINAGE,PL.4 SINKS,"Single bowl stainless steel sink 450x400mm with mixer tap and swivel spout, strainer waste, bottle trap, complete with clips",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.5.1,PLUMBING & DRAINAGE,PL.5 COLD WATER PIPEWORK,"25mm HDPE Class 10 pipe including fittings, clips, sleeves through walls",m,48.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.5.2,PLUMBING & DRAINAGE,PL.5 COLD WATER PIPEWORK,"22mm copper Class 0 pipe including fittings, clips, sleeves",m,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.5.3,PLUMBING & DRAINAGE,PL.5 COLD WATER PIPEWORK,"15mm copper Class 0 pipe including fittings, clips, sleeves",m,65.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.6.1,PLUMBING & DRAINAGE,PL.6 HOT WATER PIPEWORK,"22mm copper Class 0 pipe including fittings, clips, insulation",m,28.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.6.2,PLUMBING & DRAINAGE,PL.6 HOT WATER PIPEWORK,"15mm copper Class 0 pipe including fittings, clips, insulation",m,45.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.7.1,PLUMBING & DRAINAGE,PL.7 WASTE & VENT PIPES,"110mm uPVC waste pipe including fittings, clips",m,28.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.7.2,PLUMBING & DRAINAGE,PL.7 WASTE & VENT PIPES,"50mm uPVC waste pipe including fittings, clips",m,38.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.7.3,PLUMBING & DRAINAGE,PL.7 WASTE & VENT PIPES,"40mm uPVC waste pipe including fittings, clips",m,18.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.7.4,PLUMBING & DRAINAGE,PL.7 WASTE & VENT PIPES,110mm uPVC vent pipe through roof including flashing,m,10.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.7.5,PLUMBING & DRAINAGE,PL.7 WASTE & VENT PIPES,50mm uPVC vent pipe including fittings,m,14.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.8.1,PLUMBING & DRAINAGE,PL.8 VALVES & EQUIPMENT,25mm gate valve,No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.8.2,PLUMBING & DRAINAGE,PL.8 VALVES & EQUIPMENT,22mm ball valve,No,5.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.8.3,PLUMBING & DRAINAGE,PL.8 VALVES & EQUIPMENT,15mm angle service valve,No,22.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.8.4,PLUMBING & DRAINAGE,PL.8 VALVES & EQUIPMENT,25mm non-return valve,No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.8.5,PLUMBING & DRAINAGE,PL.8 VALVES & EQUIPMENT,"150L electric geyser horizontal with thermostat, drip tray and connections",No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.8.6,PLUMBING & DRAINAGE,PL.8 VALVES & EQUIPMENT,Expansion vessel 8L,No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.9.1,PLUMBING & DRAINAGE,PL.9 BELOW GROUND DRAINAGE,110mm uPVC below ground drain pipe in trench including bedding,m,48.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.9.2,PLUMBING & DRAINAGE,PL.9 BELOW GROUND DRAINAGE,160mm uPVC below ground drain pipe in trench including bedding,m,18.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.9.3,PLUMBING & DRAINAGE,PL.9 BELOW GROUND DRAINAGE,Precast concrete inspection chamber 600x450 including cover,No,4.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.9.4,PLUMBING & DRAINAGE,PL.9 BELOW GROUND DRAINAGE,110mm rodding eye including cover,No,5.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.9.5,PLUMBING & DRAINAGE,PL.9 BELOW GROUND DRAINAGE,110mm gully complete with grating,No,3.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.9.6,PLUMBING & DRAINAGE,PL.9 BELOW GROUND DRAINAGE,50L grease trap complete with cover,No,1.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.1,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Toilet roll holder stainless steel,No,9.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.2,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Toilet brush holder stainless steel,No,9.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.3,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Grab rail 600mm stainless steel,No,6.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.4,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Mirror 600x450mm with polished edges,No,9.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.5,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Soap dispenser stainless steel,No,9.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.6,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Paper towel dispenser stainless steel,No,7.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.7,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Sanitary bin stainless steel,No,6.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PL.10.8,PLUMBING & DRAINAGE,PL.10 ACCESSORIES,Bib tap chrome with hose union,No,2.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.1.1,BILL 22 - EXTERNAL WORKS,EW.1 SITE CLEARANCE,"Strip topsoil average 150mm deep, stockpile on site for reuse",m2,150.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.1.2,BILL 22 - EXTERNAL WORKS,EW.1 SITE CLEARANCE,"Break up and remove existing concrete hardstanding average 100mm thick, cart away and dispose off site",m2,85.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.1.3,BILL 22 - EXTERNAL WORKS,EW.1 SITE CLEARANCE,"Clear site of vegetation, grass and weeds",m2,150.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.2.1,BILL 22 - EXTERNAL WORKS,EW.2 PAVING,"60mm thick Bosun Smooth Ethnic interlocking concrete pavers, charcoal colour, laid on sand bedding in herringbone pattern, joints filled with sand, vibrated and compacted (light duty)",m2,108.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.2.2,BILL 22 - EXTERNAL WORKS,EW.2 PAVING,"80mm thick Bosun Smooth Ethnic interlocking concrete pavers, charcoal colour, complete as before (heavy duty)",m2,26.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.2.3,BILL 22 - EXTERNAL WORKS,EW.2 PAVING,"Cutting pavers to curves, angles and at edges",m,85.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.3.1,BILL 22 - EXTERNAL WORKS,EW.3 EDGING,"Precast concrete kerb 200 x 100mm on and including 100mm thick concrete haunching grade 15/19, mortar jointed",m,70.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.3.2,BILL 22 - EXTERNAL WORKS,EW.3 EDGING,Paving edge restraint including pegs,m,18.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.4.1,BILL 22 - EXTERNAL WORKS,EW.4 SURFACE DRAINAGE,"100mm wide ACO channel drain including grating, bedded in concrete",m,14.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.4.2,BILL 22 - EXTERNAL WORKS,EW.4 SURFACE DRAINAGE,"100mm gully with grating, connection to drain",No,3.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.4.3,BILL 22 - EXTERNAL WORKS,EW.4 SURFACE DRAINAGE,110mm uPVC stormwater drain in trench including bedding,m,10.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+EW.5.1,BILL 22 - EXTERNAL WORKS,EW.5 RAMP,"Concrete ramp 1:12 gradient including non-slip finish, handrails both sides",m2,12.0,0.0,0.0,NEW - from Section 4,,ASAQS SSM7 / DQRules
+PS.1.1,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.1 PRIME COST SUMS,"PC Sum for landscaping works to external areas including planting, irrigation and establishment maintenance, all to landscape architect's specification when issued",P.Sum,100000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PS.1.2,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.1 PRIME COST SUMS,PC Sum for boundary treatment/fencing allowance as may be directed,P.Sum,50000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PS.1.3,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.1 PRIME COST SUMS,PC Sum for specialist glazing works if glass specification varies from measured,P.Sum,50000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PS.1.4,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.1 PRIME COST SUMS,"PC Sum for roof timber structure including trusses, purlins, bracing and installation - INCREASED FOR CONCRETE TILE LOAD",P.Sum,180000.0,0.0,0.0,Increased from R150k for heavier BMI tile load,,ASAQS SSM7 / DQRules
+PS.2.4,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.2 PROVISIONAL SUMS,Provisional sum for dewatering if extensive pumping required,P.Sum,15000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PS.3.1,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.3 DAYWORK,Provisional sum for daywork - labour,P.Sum,25000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PS.3.2,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.3 DAYWORK,Provisional sum for daywork - plant and equipment,P.Sum,10000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+PS.3.3,BILL 23 - PROVISIONAL SUMS & PC ITEMS,PS.3 DAYWORK,Provisional sum for daywork - materials,P.Sum,15000.0,0.0,0.0,,,ASAQS SSM7 / DQRules
+,,,,,,,,,,
+,,,TOTAL,,,,0.00,,,

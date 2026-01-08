@@ -1,0 +1,30 @@
+{
+  "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Structural Drawings\\S-01-25055-20-003-Rev E-Ring Beam Layout.pdf",
+  "drawing_name": "ring_beam",
+  "page_count": 1,
+  "strategy": "tiled",
+  "total_tiles": 2,
+  "estimated_tokens": 21253,
+  "trades": [
+    "concrete",
+    "formwork",
+    "reinforcement"
+  ],
+  "output_files": [
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-003-Rev E-Ring Beam Layout\\S-01-25055-20-003-Rev E-Ring Beam Layout_p01_tile01_r1c1.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\S-01-25055-20-003-Rev E-Ring Beam Layout\\S-01-25055-20-003-Rev E-Ring Beam Layout_p01_tile02_r2c1.png"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "width_pts": 2384.0,
+      "height_pts": 3370.0,
+      "text_blocks": 0,
+      "drawings": 0,
+      "density": "low",
+      "detected_scale": null,
+      "strategy": "tiled",
+      "recommended_dpi": 120
+    }
+  ]
+}

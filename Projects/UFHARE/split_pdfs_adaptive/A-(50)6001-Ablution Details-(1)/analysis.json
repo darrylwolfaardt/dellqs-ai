@@ -1,0 +1,30 @@
+{
+  "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(50)6001-Ablution Details-(1).pdf",
+  "drawing_name": "ablution_details",
+  "page_count": 1,
+  "strategy": "adaptive",
+  "total_tiles": 2,
+  "estimated_tokens": 8246,
+  "trades": [
+    "plumbing",
+    "tiling",
+    "waterproofing"
+  ],
+  "output_files": [
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(50)6001-Ablution Details-(1)\\A-(50)6001-Ablution Details-(1)_p01_tile01_r1c1.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(50)6001-Ablution Details-(1)\\A-(50)6001-Ablution Details-(1)_p01_tile02_r1c2.png"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "width_pts": 1190.5,
+      "height_pts": 836.5,
+      "text_blocks": 123,
+      "drawings": 22591,
+      "density": "very_high",
+      "detected_scale": "1:100",
+      "strategy": "adaptive",
+      "recommended_dpi": 350
+    }
+  ]
+}

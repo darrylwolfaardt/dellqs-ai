@@ -1,0 +1,31 @@
+{
+  "source": "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\1 Pre-Tender\\ALL DRAWINGS SPECS\\Architectural Drawings\\A-(74)6002-JT02 - Kitchenette(1).pdf",
+  "drawing_name": "kitchenette",
+  "page_count": 1,
+  "strategy": "adaptive",
+  "total_tiles": 4,
+  "estimated_tokens": 15024,
+  "trades": [
+    "joinery",
+    "plumbing"
+  ],
+  "output_files": [
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile01_r1c1.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile02_r1c2.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile03_r2c1.png",
+    "C:\\Users\\darryl\\source\\repos\\dellqs-ai\\Projects\\UFHARE\\split_pdfs_adaptive\\A-(74)6002-JT02 - Kitchenette(1)\\A-(74)6002-JT02 - Kitchenette(1)_p01_tile04_r2c2.png"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "width_pts": 2384.0,
+      "height_pts": 1684.0,
+      "text_blocks": 212,
+      "drawings": 7125,
+      "density": "very_high",
+      "detected_scale": "1:10",
+      "strategy": "adaptive",
+      "recommended_dpi": 225
+    }
+  ]
+}
